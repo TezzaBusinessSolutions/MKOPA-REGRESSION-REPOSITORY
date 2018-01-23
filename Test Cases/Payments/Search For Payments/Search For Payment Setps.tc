@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search For Payment Setps</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d145fad0-4c2f-4eaf-9df6-62cb4632c5e2</testCaseGuid>
+   <variable>
+      <defaultValue>'KU87KDFUYDF'</defaultValue>
+      <description></description>
+      <id>6c93afa9-7850-42bf-9668-2b4b95686e95</id>
+      <masked>false</masked>
+      <name>Receiptno</name>
+   </variable>
+   <variable>
+      <defaultValue>'0729601488'</defaultValue>
+      <description></description>
+      <id>18f951e8-704d-4690-a68b-8d0938007afb</id>
+      <masked>false</masked>
+      <name>Paymentphone</name>
+   </variable>
+   <variable>
+      <defaultValue>'2017-03-18'</defaultValue>
+      <description></description>
+      <id>3869dcb7-81ba-401e-b2db-ba8083dcff09</id>
+      <masked>false</masked>
+      <name>PaymentDate</name>
+   </variable>
+</TestCaseEntity>
