@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Link-Search For Payment</name>
+   <name>Link-RecentCustomerPayments</name>
    <tag></tag>
-   <elementGuidId>ef285c3e-f78e-4a71-b2bd-db6692541df9</elementGuidId>
+   <elementGuidId>7a1478cc-8088-4d76-90d0-90fedb14cc66</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li[4]/div/ul/li[3]/a</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
