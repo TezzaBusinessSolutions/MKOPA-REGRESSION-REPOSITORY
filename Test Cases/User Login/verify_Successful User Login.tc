@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify_Successful User Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8f97cb21-741a-4881-b66d-d9b902b2c043</testCaseGuid>
+   <variable>
+      <defaultValue>'Kennedy.Mwangi@m-kopa.com'</defaultValue>
+      <description></description>
+      <id>e9f0f335-bc5f-4321-b06c-e3c3d9806ef0</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'Ken0726//'</defaultValue>
+      <description></description>
+      <id>8eac8019-c675-4114-a3fd-4d21b015d9f6</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Kennedy Mwangi'</defaultValue>
+      <description></description>
+      <id>2947a425-7500-4f37-955a-e8aa8e677ee5</id>
+      <masked>false</masked>
+      <name>fullname</name>
+   </variable>
+</TestCaseEntity>
