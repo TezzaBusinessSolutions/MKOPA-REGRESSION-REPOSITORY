@@ -24,3 +24,5 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-
 
 WebUI.verifyElementPresent(findTestObject('Header/message_Logged User', [('name') : fullname]), 5)
 
+WebUI.closeBrowser()
+
