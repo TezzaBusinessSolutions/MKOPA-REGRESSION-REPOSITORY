@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Link-ListLoanPaymentPlans</name>
+   <tag></tag>
+   <elementGuidId>82d720c8-0a4b-4e77-bb69-4f1e2fdb63eb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@href=&quot;/Accounts/LoanPaymentPlan/List&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

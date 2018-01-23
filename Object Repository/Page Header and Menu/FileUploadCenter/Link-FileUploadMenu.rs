@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Link-FileUploadMenu</name>
+   <tag></tag>
+   <elementGuidId>be8f22f5-bbb9-4047-a012-3fb706dc4b2d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@href=&quot;/Payment/FileUploadCenter/FileUploadCenter&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
