@@ -2,4 +2,9 @@
 <GlobalVariableEntities>
    <description></description>
    <tag></tag>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://keuat.kopasolar.net'</initValue>
+      <name>UAT</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
