@@ -22,5 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Header/message_Logged User', [('name') : fullname]), 5)
+WebUI.verifyElementPresent(findTestObject('Page Header and Menu/message_Logged User', [('name') : fullname]), 5)
+
+WebUI.closeBrowser()
 
