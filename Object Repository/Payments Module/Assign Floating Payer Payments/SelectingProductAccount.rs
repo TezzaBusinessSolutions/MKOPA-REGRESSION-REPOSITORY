@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Link-Search For Payment</name>
+   <name>SelectingProductAccount</name>
    <tag></tag>
-   <elementGuidId>ef285c3e-f78e-4a71-b2bd-db6692541df9</elementGuidId>
+   <elementGuidId>02ae4d7f-9b2b-401b-a23c-c2c332c19e8c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li[4]/div/ul/li[3]/a</value>
+         <value>html/body/div[6]/div/ul/li </value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[4]/div/ul/li[3]/a</value>
+      <value>html/body/div[6]/div/ul/li </value>
    </webElementProperties>
 </WebElementEntity>
