@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>ID:16572 assign unmatched payments</description>
-   <name>verify a user can assign unmatched payments</name>
+   <name>verify_Assign unmatched payments</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>17095f00-e964-4906-b28a-1f75e217a2d2</testCaseGuid>
@@ -11,5 +11,12 @@
       <id>1737c0ca-4893-4ac0-87b7-735fcdfd42be</id>
       <masked>false</masked>
       <name>reference</name>
+   </variable>
+   <variable>
+      <defaultValue>'Assigned'</defaultValue>
+      <description></description>
+      <id>23748d43-bcd3-4992-bffd-c59128e137e7</id>
+      <masked>false</masked>
+      <name>Comments</name>
    </variable>
 </TestCaseEntity>

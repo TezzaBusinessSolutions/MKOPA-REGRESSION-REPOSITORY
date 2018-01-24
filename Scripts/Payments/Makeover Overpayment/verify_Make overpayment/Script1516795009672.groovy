@@ -19,3 +19,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('File Upload Center Module/Upload Payments File'), [('Amount') : '200', ('Account') : '13190435'
+        , ('Phone') : '0713246697 ', ('filePath') : 'C:\\Users\\Stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : '', ('text') : ''], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-CustomerPayments'))
+
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-FloatingPayments'))
+
+WebUI.delay(6)
+
+WebUI.getText(findTestObject('Payments Module/Floating Payer Payments/text_receiptNumber', [('receiptNumber') : receiptNumber]))
+
+WebUI.verifyEqual(receiptNumber, text)
+

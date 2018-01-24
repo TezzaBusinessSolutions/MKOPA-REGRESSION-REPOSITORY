@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 int rowNum = new Random().nextInt(248 - 1) + 1
 
-WebUI.callTestCase(findTestCase('Payments/View unmatched payments/verify a user can view an unmatched payments'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/View unmatched payments/verify_View unmatched payments'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Assign', [('reference') : reference]))
 
@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Payer Comments'), 'Assigned')
+WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Payer Comments'), Comments)
 
 WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/button_Payer Resolve'))
 
