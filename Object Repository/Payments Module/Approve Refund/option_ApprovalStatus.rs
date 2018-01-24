@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>html/body/div[5]/div/ul/li[text()='${approvalStatus}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div[5]/div/ul/li[text()='Approved']</value>
+      <value>html/body/div[5]/div/ul/li[text()='${approvalStatus}']</value>
    </webElementProperties>
 </WebElementEntity>

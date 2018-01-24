@@ -22,17 +22,33 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
+WebUI.delay(delay)
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+WebUI.delay(delay)
 
-//String errormsg = WebUI.getText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes'))
-String errormsg = 'Please fill in the request notes'
+WebUI.click(findTestObject('Page Header and Menu/Products/link_AddCashPaymentPlan'))
 
-WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]), 
-    errormsg)
+WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_PaymentPlanName'), payment_PlanName)
+
+WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_PaymentPlanDisplayName'), payment_PlanDisplayName)
+
+WebUI.delay(delay)
+
+WebUI.scrollToElement(findTestObject('Products Module/Add Cash Payment Plan/option_OutletProductType', [('outletproducttype') : outletproducttype]), 
+    0)
+
+WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/option_OutletProductType', [('outletproducttype') : outletproducttype]), 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/button_AddProductType'))
+
+WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_TotalPrice'), total_Price)
+
+WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_RequesterNotes'), requester_Notes)
+
+WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/button_SaveCashPaymentPlan'))
 

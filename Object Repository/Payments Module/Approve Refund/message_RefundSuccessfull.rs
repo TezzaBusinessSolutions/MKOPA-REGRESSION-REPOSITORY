@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>option_OutletProductType</name>
+   <description>It is a frame that confirms refund approval is successful</description>
+   <name>message_RefundSuccessfull</name>
    <tag></tag>
-   <elementGuidId>e8ca8d79-66dc-4e63-9ee9-8b64c23189e3</elementGuidId>
+   <elementGuidId>fce2ee66-6ca9-4a03-89d5-9811bae9f2e2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ProductTypesToAdd']/option[text()='${outletproducttype}']</value>
+         <value>.//*[@id='divBodyMain']//div[text()='Refund Approved Successfully']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ProductTypesToAdd']/option[text()='${outletproducttype}']</value>
+      <value>.//*[@id='divBodyMain']//div[text()='Refund Approved Successfully']</value>
    </webElementProperties>
 </WebElementEntity>

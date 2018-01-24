@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>option_OutletProductType</name>
+   <description>Link to access Add Cash Payment Plan</description>
+   <name>link_AddCashPaymentPlan</name>
    <tag></tag>
-   <elementGuidId>e8ca8d79-66dc-4e63-9ee9-8b64c23189e3</elementGuidId>
+   <elementGuidId>c430bf13-8cbf-45d5-a730-d6d43f910f53</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ProductTypesToAdd']/option[text()='${outletproducttype}']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ProductTypesToAdd']/option[text()='${outletproducttype}']</value>
+      <value>.//*[@id='Menu']//a[text()='Add Cash Payment Plan']</value>
    </webElementProperties>
 </WebElementEntity>

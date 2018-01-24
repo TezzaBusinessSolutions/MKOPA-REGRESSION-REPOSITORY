@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[td[text()='${accountNumber}']]/td/a[text()='Approve']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[td[text()='22247633']]/td/a[text()='Approve']</value>
+      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[td[text()='${accountNumber}']]/td/a[text()='Approve']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -19,20 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
-
-//String errormsg = WebUI.getText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes'))
-String errormsg = 'Please fill in the request notes'
-
-WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]), 
-    errormsg)
+WebUI.callTestCase(findTestCase('Payments/Search For Payments/Search For Payment Setps'), [('Receiptno') : 'KU87KDFUYDF'
+        , ('Paymentphone') : '0729601488', ('PaymentDate') : '2017-03-18'], FailureHandling.STOP_ON_FAILURE)
 

@@ -22,17 +22,29 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
+WebUI.delay(delay)
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Refund'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+WebUI.delay(delay)
 
-//String errormsg = WebUI.getText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes'))
-String errormsg = 'Please fill in the request notes'
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-ApproveCustomerRefund'))
 
-WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]), 
-    errormsg)
+WebUI.click(findTestObject('Payments Module/Refunds Pending Approval/link_ApprovePendingRefund', [('accountNumber') : accountNumber]))
+
+WebUI.click(findTestObject('Payments Module/Approve Refund/dropdown_ApprovalStatus'))
+
+WebUI.delay(delay)
+
+WebUI.click(findTestObject('Payments Module/Approve Refund/option_ApprovalStatus', [('approvalStatus') : approvalStatus]))
+
+WebUI.setText(findTestObject('Payments Module/Approve Refund/input_ApprovalNotes'), approvalNotes)
+
+WebUI.click(findTestObject('Payments Module/Approve Refund/button_SaveRefundApproval'))
+
+WebUI.delay(delay)
+
+WebUI.takeScreenshot()
 

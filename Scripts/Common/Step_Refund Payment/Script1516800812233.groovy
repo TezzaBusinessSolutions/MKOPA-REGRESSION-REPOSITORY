@@ -19,20 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page Header and Menu/Customers/Link-Customer'))
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page Header and Menu/Customers/Link-ListCustomers'))
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerAccount', [('customerAccount') : customerAccount]))
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+String availablebalance = WebUI.getText(findTestObject('Customer Module/Customer List/label_AvailableBalance'))
 
-//String errormsg = WebUI.getText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes'))
-String errormsg = 'Please fill in the request notes'
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt'))
 
-WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]), 
-    errormsg)
+System.out.println(availablebalance)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button_RefundPayment'))
 

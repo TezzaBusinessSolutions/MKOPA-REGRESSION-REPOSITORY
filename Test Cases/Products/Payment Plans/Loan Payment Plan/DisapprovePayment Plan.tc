@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DisapprovePayment Plan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae613a27-7ff7-47c5-b762-2c7cd4f7b1dd</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Approver Notes/Approver Notes').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>d37765f1-1dcf-40b3-9b62-a43f9cdf5ad2</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

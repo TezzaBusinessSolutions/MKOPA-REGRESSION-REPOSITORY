@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>The test case:
+1. Refunds a customer
+2. Approves a refunded account</description>
+   <name>Step_Refund Payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ca526f66-ac62-47b5-8fde-7240ed34a379</testCaseGuid>
+   <variable>
+      <defaultValue>'27360571'</defaultValue>
+      <description></description>
+      <id>64e4587f-29ba-457f-ba74-4134fd4ff478</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+</TestCaseEntity>

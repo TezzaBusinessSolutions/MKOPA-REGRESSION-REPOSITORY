@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='Menu']//a[text()='Approve Customer Refunds']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@href=&quot;/Accounts/ProductRefund/ListForApproval&quot;]</value>
+      <value>.//*[@id='Menu']//a[text()='Approve Customer Refunds']</value>
    </webElementProperties>
 </WebElementEntity>
