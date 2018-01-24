@@ -27,7 +27,7 @@ import WebUiBuiltInKeywords as WebUI
 
 
 
-String generateRandom(String chars='QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length=7) {
+String generateRandom(String chars='QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length=10) {
 	Random rand = new Random()
 
 	StringBuilder sb = new StringBuilder()
@@ -64,13 +64,13 @@ def  paymentFileGenerator(String account,String phone,String amount=null) {
 	}
 	
 	//Deletes the file if it exists
-	else fileGenerated.delete()	
+	else {fileGenerated.delete()	
 	
 	//Generates the file and stores it in the location
 	def text=generateRandom()
 	fileGenerated.append("Receipt No.,Completion Time,Initiation Time,Details,Transaction Status,Paid In,Withdrawn,Balance,Balance Confirmed,Reason Type,Other Party Info,Linked Transaction ID,A/C No.\r\n")
 	fileGenerated.append(text+",15:50,20-04-2017 15:50,Pay Bill from "+phone+ "- Customer Credits Acc. "
-		+account+",Completed,"+amount+",,66,TRUE,Pay Utility,"+phone+"- Customer Credits,,"+account)
+		+account+",Completed,"+amount+",,66,TRUE,Pay Utility,"+phone+"- Customer Credits,,"+account)}
 	
 }
 
