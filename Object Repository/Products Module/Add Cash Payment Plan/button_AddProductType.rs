@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>The object clicks on Assign Link of a Payer</description>
-   <name>link_AssignFloatingPayer</name>
+   <description>Button to add product type</description>
+   <name>button_AddProductType</name>
    <tag></tag>
-   <elementGuidId>82fea08f-8ac7-4ef2-ba82-a56ff70ae5d4</elementGuidId>
+   <elementGuidId>bb88b1ab-5188-487e-a98a-aa13e4a0b8c0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='${ReciptNo}']]/td/a[text()='Assign']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='${ReciptNo}']]/td/a[text()='Assign']</value>
+      <value>.//*[@id='add-product-type']</value>
    </webElementProperties>
 </WebElementEntity>

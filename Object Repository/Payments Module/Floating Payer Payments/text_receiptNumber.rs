@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>The object clicks on Assign Link of a Payer</description>
-   <name>link_AssignFloatingPayer</name>
+   <description>most recent payment receipt number</description>
+   <name>text_receiptNumber</name>
    <tag></tag>
-   <elementGuidId>82fea08f-8ac7-4ef2-ba82-a56ff70ae5d4</elementGuidId>
+   <elementGuidId>c945784e-ce45-41a9-b3fb-5c2619210e25</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='${ReciptNo}']]/td/a[text()='Assign']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='${ReciptNo}']]/td/a[text()='Assign']</value>
+      <value>//td[contains(.,'${receiptNumber}')]</value>
    </webElementProperties>
 </WebElementEntity>

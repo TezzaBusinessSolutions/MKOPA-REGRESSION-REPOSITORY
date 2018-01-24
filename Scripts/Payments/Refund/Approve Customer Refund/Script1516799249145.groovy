@@ -18,16 +18,4 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
-
-int rownum = new Random().nextInt(248 - 1) + 1
-
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Search For Customer/Search Customer').getValue(
-        1, rownum))
-
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
 

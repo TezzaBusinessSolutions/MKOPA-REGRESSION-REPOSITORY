@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li[4]/div/ul/li[6]/div/ul/li[1]/a</value>
+         <value>.//*[@id='Menu']//a[text()='Floating Payments']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[4]/div/ul/li[6]/div/ul/li[1]/a</value>
+      <value>.//*[@id='Menu']//a[text()='Floating Payments']</value>
    </webElementProperties>
 </WebElementEntity>

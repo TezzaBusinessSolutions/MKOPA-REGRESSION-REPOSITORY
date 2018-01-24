@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='AvailableBalance']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

@@ -18,16 +18,22 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
 
-int rownum = new Random().nextInt(248 - 1) + 1
+WebUI.callTestCase(findTestCase('File Upload Center Module/Upload Payments File'), [('Amount') : '42100', ('Account') : '21737779'
+        , ('Phone') : '0727662019', ('filePath') : 'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(5)
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Search For Customer/Search Customer').getValue(
-        1, rownum))
+WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), CustomerAccount)
 
 WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+
+WebUI.delay(5)
+
+WebUI.verifyTextPresent('Finished Payment', false)
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Customer Module/Customer List/Radio-SMSBotton'))
 

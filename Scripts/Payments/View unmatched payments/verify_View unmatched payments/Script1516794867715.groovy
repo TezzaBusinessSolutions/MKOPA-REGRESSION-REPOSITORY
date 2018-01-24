@@ -18,16 +18,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
 
-int rownum = new Random().nextInt(248 - 1) + 1
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Search For Customer/Search Customer').getValue(
-        1, rownum))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
+
+WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
 
