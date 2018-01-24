@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
+   <description>link to all customer payments</description>
    <name>Link-CustomerPayments</name>
    <tag></tag>
-   <elementGuidId>123a03f4-bb47-43cf-84cd-d207adb3d0ed</elementGuidId>
+   <elementGuidId>75ca31da-af9b-4d5d-914c-4af804866417</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']//span[text()='Customer Payments']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

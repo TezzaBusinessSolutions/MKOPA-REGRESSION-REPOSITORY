@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 int rowNum = new Random().nextInt(248 - 1) + 1
 
-WebUI.callTestCase(findTestCase('Payments/View unmatched payments/verify_View unmatched payments'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/View unmatched payments/View unmatched payments steps'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Assign', [('reference') : reference]))
 

@@ -19,16 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center Module/Upload Payments File'), [('Amount') : '200', ('Account') : '13190435'
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '200', ('Account') : '13190435'
         , ('Phone') : '0713246697 ', ('filePath') : 'C:\\Users\\Stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : '', ('text') : ''], 
-    FailureHandling.STOP_ON_FAILURE)
+        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('') : '', ('text') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-CustomerPayments'))
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-CustomerPayments'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-FloatingPayments'))
 
@@ -37,4 +40,14 @@ WebUI.delay(6)
 WebUI.getText(findTestObject('Payments Module/Floating Payer Payments/text_receiptNumber', [('receiptNumber') : receiptNumber]))
 
 WebUI.verifyEqual(receiptNumber, text)
+
+WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), Account)
+
+WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
+
+WebUI.getText(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+
+WebUI.verifyNotEqual(depositReceipt, text)
 
