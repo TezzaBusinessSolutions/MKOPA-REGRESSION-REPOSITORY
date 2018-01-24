@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='Menu']//a[text()='UnMatched Payments']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//a[contains(text(), &quot;UnMatched Payments&quot;)]</value>
+      <value>.//*[@id='Menu']//a[text()='UnMatched Payments']</value>
    </webElementProperties>
 </WebElementEntity>

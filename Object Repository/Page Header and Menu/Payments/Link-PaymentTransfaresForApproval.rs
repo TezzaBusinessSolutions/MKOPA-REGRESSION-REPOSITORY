@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='Menu']//a[text()='Payment Transfers for Approval']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//a[contains(text(), &quot;Payment Transfers for Approval&quot;)]</value>
+      <value>.//*[@id='Menu']//a[text()='Payment Transfers for Approval']</value>
    </webElementProperties>
 </WebElementEntity>
