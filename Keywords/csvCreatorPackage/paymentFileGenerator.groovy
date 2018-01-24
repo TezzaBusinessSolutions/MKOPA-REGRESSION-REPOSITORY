@@ -27,7 +27,7 @@ import WebUiBuiltInKeywords as WebUI
 
 
 
-String generateRandom(String chars='QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length=7) {
+String generateRandom(String chars='QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length=10) {
 	Random rand = new Random()
 
 	StringBuilder sb = new StringBuilder()
