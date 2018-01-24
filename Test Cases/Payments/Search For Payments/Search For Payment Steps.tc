@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Search For Payment Setps</name>
+   <name>Search For Payment Steps</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d145fad0-4c2f-4eaf-9df6-62cb4632c5e2</testCaseGuid>

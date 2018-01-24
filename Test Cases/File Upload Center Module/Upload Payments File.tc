@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>b6e2d17c-ccf7-4f92-8b9a-a1c88b28951d</testCaseGuid>
    <variable>
-      <defaultValue>'200'</defaultValue>
+      <defaultValue>'23,330'</defaultValue>
       <description></description>
       <id>67b15b6d-287c-4312-bf04-5ff1aec7b63d</id>
       <masked>false</masked>
       <name>Amount</name>
    </variable>
    <variable>
-      <defaultValue>'12345700'</defaultValue>
+      <defaultValue>'4961968'</defaultValue>
       <description></description>
       <id>cc7487dd-ad3e-45e9-a665-cdfe294902d3</id>
       <masked>false</masked>
@@ -27,7 +27,7 @@
       <name>Phone</name>
    </variable>
    <variable>
-      <defaultValue>'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
+      <defaultValue>'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
       <description></description>
       <id>0e2b2314-9a0f-4587-a764-22537774a6aa</id>
       <masked>false</masked>

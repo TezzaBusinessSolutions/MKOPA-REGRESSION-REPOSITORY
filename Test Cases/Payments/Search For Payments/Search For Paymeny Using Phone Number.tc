@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search For Paymeny Using Phone Number</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3a692e8e-41c5-4278-b2f9-333de1387b4f</testCaseGuid>
+   <variable>
+      <defaultValue>'0729601488'</defaultValue>
+      <description></description>
+      <id>ce8b7d2f-16df-4ae8-b175-c93253a67fd8</id>
+      <masked>false</masked>
+      <name>PhoneNo</name>
+   </variable>
+</TestCaseEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>The object clicks on Assign Link of a Payer</description>
-   <name>link_AssignFloatingPayer</name>
+   <description></description>
+   <name>Radio_Paymentlist</name>
    <tag></tag>
-   <elementGuidId>82fea08f-8ac7-4ef2-ba82-a56ff70ae5d4</elementGuidId>
+   <elementGuidId>94942d23-a84e-48ee-b5e6-ac4dfd2d0886</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='${ReciptNo}']]/td/a[text()='Assign']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='${ReciptNo}']]/td/a[text()='Assign']</value>
+      <value>.//*[@value='4']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search For Payment Using a Receipt Number</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8dbff62e-e5c4-48db-bfa8-44bdef5e9b8f</testCaseGuid>
+   <variable>
+      <defaultValue>'KU87KDFUYDF'</defaultValue>
+      <description></description>
+      <id>b4245c0a-e8cf-4c6e-8a35-b9cd38e0121d</id>
+      <masked>false</masked>
+      <name>Receiptno</name>
+   </variable>
+</TestCaseEntity>
