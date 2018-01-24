@@ -26,7 +26,6 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
 
-
 String generateRandom(String chars='QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length=10) {
 	Random rand = new Random()
 
