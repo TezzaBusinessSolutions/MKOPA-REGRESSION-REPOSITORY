@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify_EnterNotesError</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>579c12a2-ec66-4312-9b1c-0d640684dcd7</testCaseGuid>
+   <variable>
+      <defaultValue>'40'</defaultValue>
+      <description></description>
+      <id>5e9db0cf-dc7a-4fea-a426-fcabf8b5aeb8</id>
+      <masked>false</masked>
+      <name>inputAmount</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d02f74bb-1ac2-430e-8d92-c28e36e1204f</id>
+      <masked>false</masked>
+      <name>inputNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'Please fill in the request notes'</defaultValue>
+      <description></description>
+      <id>3ba2486f-1b9b-45ed-bd2d-91a6d5771782</id>
+      <masked>false</masked>
+      <name>error</name>
+   </variable>
+</TestCaseEntity>

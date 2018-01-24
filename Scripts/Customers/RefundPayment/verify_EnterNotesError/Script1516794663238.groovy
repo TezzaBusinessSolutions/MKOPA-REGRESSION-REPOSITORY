@@ -18,16 +18,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
 
-int rownum = new Random().nextInt(248 - 1) + 1
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Approve Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Search For Customer/Search Customer').getValue(
-        1, rownum))
+WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
 
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+
+//String errormsg = WebUI.getText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes'))
+String errormsg = 'Please fill in the request notes'
+
+WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]), 
+    errormsg)
 

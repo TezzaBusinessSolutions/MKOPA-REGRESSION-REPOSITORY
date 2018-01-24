@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='Menu']//span[text()='Customer Payments']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[4]/div/ul/li[6]/span</value>
+      <value>.//*[@id='Menu']//span[text()='Customer Payments']</value>
    </webElementProperties>
 </WebElementEntity>
