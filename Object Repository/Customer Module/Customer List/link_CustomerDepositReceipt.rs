@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr/td/a[text()='LID37Q43Y9']</value>
+         <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr/td/a[text()='${depositReceipt}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr/td/a[text()='LID37Q43Y9']</value>
+      <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr/td/a[text()='${depositReceipt}']</value>
    </webElementProperties>
 </WebElementEntity>
