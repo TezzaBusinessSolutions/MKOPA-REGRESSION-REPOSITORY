@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Refund</name>
+   <name>message_Fillrequirednotes</name>
    <tag></tag>
-   <elementGuidId>aa7df7d8-2d84-4203-a1c0-7446a1bc13c5</elementGuidId>
+   <elementGuidId>3025e0d6-22c2-4d4d-a040-c05c771fc58d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']//span[text()='Refund']</value>
+         <value>.//*[@id='addRefundDiv']/div[1]/div/ul/li[text()='${error}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']//span[text()='Refund']</value>
+      <value>.//*[@id='addRefundDiv']/div[1]/div/ul/li[text()='${error}']</value>
    </webElementProperties>
 </WebElementEntity>
