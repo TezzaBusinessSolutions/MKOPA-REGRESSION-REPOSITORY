@@ -22,15 +22,23 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.delay(5)
+WebUI.delay(delay)
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Search For Payment'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Refund'))
 
-WebUI.setText(findTestObject('Payments Module/Search for Payments/Input-ReceiptNumber'), Receiptno)
+WebUI.delay(delay)
 
-WebUI.click(findTestObject('Payments Module/Search for Payments/Btn-Submit'))
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-ApproveCustomerRefund'))
 
-WebUI.takeScreenshot()
+WebUI.click(findTestObject('Payments Module/Refunds Pending Approval/link_ApprovePendingRefund', [('accountNumber') : accountNumber]))
+
+WebUI.click(findTestObject('Payments Module/Approve Refund/button_SaveRefundApproval'))
+
+WebUI.getText(findTestObject('Payments Module/Approve Refund/message_ApprovalStatus'))
+
+String error = 'Please select an approval status'
+
+WebUI.verifyElementText(findTestObject('Payments Module/Approve Refund/message_ApprovalStatus'), error)
 

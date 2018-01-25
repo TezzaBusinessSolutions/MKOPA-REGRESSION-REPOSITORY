@@ -22,15 +22,19 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Search For Payment'))
+WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
 
-WebUI.setText(findTestObject('Payments Module/Search for Payments/Input-ReceiptNumber'), Receiptno)
+WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
 
-WebUI.click(findTestObject('Payments Module/Search for Payments/Btn-Submit'))
+WebUI.delay(delay)
 
-WebUI.takeScreenshot()
+WebUI.getText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'))
+
+String success = 'Refund Approved Successfully'
+
+WebUI.verifyElementText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'), success)
 

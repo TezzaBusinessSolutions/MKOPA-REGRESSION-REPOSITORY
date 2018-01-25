@@ -19,18 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('Payments/Search For Payments/Search For Payment Using a Receipt Number'), [('Receiptno') : 'KU87KDFUYDF'], 
     FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Search For Payment'))
-
-WebUI.setText(findTestObject('Payments Module/Search for Payments/Input-ReceiptNumber'), Receiptno)
-
-WebUI.click(findTestObject('Payments Module/Search for Payments/Btn-Submit'))
-
-WebUI.takeScreenshot()
 

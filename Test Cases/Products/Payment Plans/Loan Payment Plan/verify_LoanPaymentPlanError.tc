@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID:16539</description>
+   <name>verify_LoanPaymentPlanError</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>07ed9062-c6f4-4694-af1f-5660a58fcc1f</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('PaymentPlans/Paymentplannames').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>87ff9fae-2184-4004-b15a-b1d5ad2d1aa3</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>e1a6a5a7-7af7-43f8-b27e-cbd807f67b50</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>'Loan Name'</defaultValue>
+      <description></description>
+      <id>b8bc49b2-84d4-4bfe-b5f9-2e1af6df343a</id>
+      <masked>false</masked>
+      <name>loan_PaymentPlanName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Loan Display Name'</defaultValue>
+      <description></description>
+      <id>b42af394-2d3b-466f-a0ab-f14a766893a7</id>
+      <masked>false</masked>
+      <name>loan_PaymentDisplayName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f4da89f6-9ad1-4816-bb20-70d3cafc2bc0</id>
+      <masked>false</masked>
+      <name>outletproducttype</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e56917d6-8de7-44bc-92d4-de5bb087d6d9</id>
+      <masked>false</masked>
+      <name>loan_Deposit</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aabaccdb-4319-44ce-9c92-cb699caac80c</id>
+      <masked>false</masked>
+      <name>costpercredit</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6b748ae2-03bb-4dcb-9f3d-c1f7d57e1d08</id>
+      <masked>false</masked>
+      <name>loan_Duration</name>
+   </variable>
+   <variable>
+      <defaultValue>'Loan Error Message'</defaultValue>
+      <description></description>
+      <id>037b814f-0b7f-4eef-ad3d-4ac3efb39e01</id>
+      <masked>false</masked>
+      <name>requester_Notes</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f35676af-59b6-40c5-ad9a-6683539612e5</id>
+      <masked>false</masked>
+      <name>total_Price</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ae286c14-d3c0-44a4-ae8e-56548c934621</id>
+      <masked>false</masked>
+      <name>free_Activation</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8fe7015b-30f2-4fb5-8485-7db6b19aaae0</id>
+      <masked>false</masked>
+      <name>loan_Type</name>
+   </variable>
+</TestCaseEntity>
