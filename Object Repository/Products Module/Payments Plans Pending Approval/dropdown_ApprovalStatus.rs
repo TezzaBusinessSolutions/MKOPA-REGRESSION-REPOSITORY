@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>dropdown_ApprovalStatus</name>
+   <tag></tag>
+   <elementGuidId>38765210-c15e-4cb2-975e-760392b5eb8d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='divBodyMain']/form/fieldset[2]/table/tbody/tr[2]/td[2]/div/div/span[2]/span</value>
+   </webElementProperties>
+</WebElementEntity>

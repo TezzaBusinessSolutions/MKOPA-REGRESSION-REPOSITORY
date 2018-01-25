@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>link_PaymentPlanPendingApprove</name>
+   <tag></tag>
+   <elementGuidId>325db375-794b-4caa-b23d-fa6b910ed631</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()='${plan_toApprove}']]/td/a[text()='Approve']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()='${plan_toApprove}']]/td/a[text()='Approve']</value>
+   </webElementProperties>
+</WebElementEntity>

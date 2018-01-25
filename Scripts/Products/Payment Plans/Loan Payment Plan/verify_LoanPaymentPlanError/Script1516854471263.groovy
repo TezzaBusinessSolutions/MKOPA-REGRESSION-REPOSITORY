@@ -22,19 +22,27 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
 
 WebUI.delay(delay)
 
-WebUI.getText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
 
-String success = 'Refund Approved Successfully'
+WebUI.delay(delay)
 
-WebUI.verifyElementText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'), success)
+WebUI.click(findTestObject('Page Header and Menu/Products/link_AddLoanPaymentPlan'))
+
+WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_LoanPaymentPlanName'), loan_PaymentPlanName)
+
+WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_DisplayName'), loan_PaymentDisplayName)
+
+WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_RequesterNotes'), requester_Notes)
+
+WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/button_SaveLoanPaymentPlan'))
+
+WebUI.getText(findTestObject('Products Module/Add Loan Payment Plan/message_ValidLoanType'))
+
+String error = 'Please supply a valid loan type'
+
+WebUI.verifyElementText(findTestObject('Products Module/Add Loan Payment Plan/message_ValidLoanType'), error)
 

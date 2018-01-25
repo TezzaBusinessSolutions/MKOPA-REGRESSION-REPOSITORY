@@ -22,19 +22,27 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
 
 WebUI.delay(delay)
 
-WebUI.getText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
 
-String success = 'Refund Approved Successfully'
+WebUI.delay(delay)
 
-WebUI.verifyElementText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'), success)
+WebUI.click(findTestObject('Page Header and Menu/Products/link_PaymentPlansApproval'))
+
+WebUI.delay(delay)
+
+WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/link_PaymentPlanPendingApprove', [('plan_toApprove') : plan_toApprove]))
+
+WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/dropdown_ApprovalStatus'))
+
+WebUI.delay(delay)
+
+WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/option_ApproveStatus'))
+
+WebUI.setText(findTestObject('Products Module/Payments Plans Pending Approval/input_ApproverNotes'), approver_notes)
+
+not_run: WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/button_Save'))
 

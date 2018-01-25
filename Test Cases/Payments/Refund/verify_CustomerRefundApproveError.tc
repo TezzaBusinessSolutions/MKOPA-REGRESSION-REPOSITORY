@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID:</description>
+   <name>verify_CustomerRefundApproveError</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d11d2c65-991c-4704-b2fb-b96c4aaa2c16</testCaseGuid>
+   <variable>
+      <defaultValue>'24040686'</defaultValue>
+      <description></description>
+      <id>de6f56b9-befa-4266-8a15-aedbed1c9fbd</id>
+      <masked>false</masked>
+      <name>accountNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'Approved'</defaultValue>
+      <description></description>
+      <id>be939390-40d0-4083-b0cb-cf9d5361921b</id>
+      <masked>false</masked>
+      <name>approvalStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>'Account Approved'</defaultValue>
+      <description></description>
+      <id>06196a9a-3503-4de1-8b3d-e1c7aa9a956f</id>
+      <masked>false</masked>
+      <name>approvalNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>d0bdc107-13e8-4f79-991d-c500b8b02313</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+</TestCaseEntity>
