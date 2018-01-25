@@ -18,17 +18,31 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
-
-int rownum = new Random().nextInt(248 - 1) + 1
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Customer Accounts/customer accounts').getValue(
-        1, rownum))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
 
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+WebUI.delay(delay)
+
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
+
+WebUI.delay(delay)
+
+WebUI.click(findTestObject('Page Header and Menu/Products/link_AddLoanPaymentPlan'))
+
+WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_LoanPaymentPlanName'), loan_PaymentPlanName)
+
+WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_DisplayName'), loan_PaymentDisplayName)
+
+WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_RequesterNotes'), requester_Notes)
+
+WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/button_SaveLoanPaymentPlan'))
+
+WebUI.getText(findTestObject('Products Module/Add Loan Payment Plan/message_ValidLoanType'))
+
+String error = 'Please supply a valid loan type'
+
+WebUI.verifyElementText(findTestObject('Products Module/Add Loan Payment Plan/message_ValidLoanType'), error)
 

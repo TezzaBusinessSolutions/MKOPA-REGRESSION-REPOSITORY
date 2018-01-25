@@ -18,17 +18,27 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
-
-int rownum = new Random().nextInt(248 - 1) + 1
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Customer Accounts/customer accounts').getValue(
-        1, rownum))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+WebUI.delay(delay)
+
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Refund'))
+
+WebUI.delay(delay)
+
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-ApproveCustomerRefund'))
+
+WebUI.click(findTestObject('Payments Module/Refunds Pending Approval/link_ApprovePendingRefund', [('accountNumber') : accountNumber]))
+
+WebUI.click(findTestObject('Payments Module/Approve Refund/button_SaveRefundApproval'))
+
+WebUI.getText(findTestObject('Payments Module/Approve Refund/message_ApprovalStatus'))
+
+String error = 'Please select an approval status'
+
+WebUI.verifyElementText(findTestObject('Payments Module/Approve Refund/message_ApprovalStatus'), error)
 

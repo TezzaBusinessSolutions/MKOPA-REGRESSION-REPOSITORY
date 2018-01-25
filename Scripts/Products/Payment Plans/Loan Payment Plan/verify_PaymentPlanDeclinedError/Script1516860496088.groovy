@@ -18,17 +18,29 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
-
-int rownum = new Random().nextInt(248 - 1) + 1
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Customer Accounts/customer accounts').getValue(
-        1, rownum))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
 
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+WebUI.delay(delay)
+
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
+
+WebUI.delay(delay)
+
+WebUI.click(findTestObject('Page Header and Menu/Products/link_PaymentPlansApproval'))
+
+WebUI.delay(delay)
+
+WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/link_PaymentPlanPendingApprove', [('plan_toApprove') : plan_toApprove]))
+
+WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/button_Save'))
+
+WebUI.getText(findTestObject('Products Module/Approve New Subscription Payment Plan/message_ApprovalNotes'))
+
+String error = 'Please fill in the approval notes'
+
+WebUI.verifyElementText(findTestObject('Products Module/Approve New Subscription Payment Plan/message_ApprovalNotes'), error)
 

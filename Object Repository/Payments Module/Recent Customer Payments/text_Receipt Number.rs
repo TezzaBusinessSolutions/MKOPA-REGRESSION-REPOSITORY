@@ -8,7 +8,7 @@ The Xpath is Parametized using the variable receiptNumber</description>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//td[contains(.,'${receiptNumber}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,6 +18,6 @@ The Xpath is Parametized using the variable receiptNumber</description>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[ td[text()='${receiptNumber}']]/td/a[text()='Info']</value>
+      <value>//td[contains(.,'${receiptNumber}')]</value>
    </webElementProperties>
 </WebElementEntity>

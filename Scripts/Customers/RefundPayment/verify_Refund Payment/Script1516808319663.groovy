@@ -28,5 +28,13 @@ WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inpu
 
 WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
 
-not_run: WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+
+WebUI.delay(delay)
+
+WebUI.getText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'))
+
+String success = 'Refund Approved Successfully'
+
+WebUI.verifyElementText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'), success)
 

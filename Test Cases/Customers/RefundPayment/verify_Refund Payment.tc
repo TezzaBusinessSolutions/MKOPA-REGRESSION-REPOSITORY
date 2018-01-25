@@ -23,4 +23,11 @@ Test Case ID:16573</description>
       <masked>false</masked>
       <name>inputNotes</name>
    </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>20b9c07e-5158-4970-9c69-6b6f8e47b4b9</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
 </TestCaseEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Button to save transfer to customer</description>
-   <name>button_SaveTransferToCustomer</name>
+   <description></description>
+   <name>link_PaymentPlanPendingApprove</name>
    <tag></tag>
-   <elementGuidId>c93e694f-1c6c-4a3c-873a-7656836b2c87</elementGuidId>
+   <elementGuidId>325db375-794b-4caa-b23d-fa6b910ed631</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()='${plan_toApprove}']]/td/a[text()='Approve']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='btnTransferToCust']</value>
+      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()='${plan_toApprove}']]/td/a[text()='Approve']</value>
    </webElementProperties>
 </WebElementEntity>
