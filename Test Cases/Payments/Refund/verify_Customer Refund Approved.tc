@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
-   <name>Approve Customer Refund</name>
+   <description>Test Case ID:</description>
+   <name>verify_Customer Refund Approved</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e19a5040-f565-49af-bc84-032ee5b1d095</testCaseGuid>

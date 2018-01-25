@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>option_loanType</name>
+   <tag></tag>
+   <elementGuidId>8eb65c18-aaab-4fe2-8897-d7cd7e24f13e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>html/body/div[6]/div/ul/li[text()='${loan_Type}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>html/body/div[6]/div/ul/li[text()='${loan_Type}']</value>
+   </webElementProperties>
+</WebElementEntity>

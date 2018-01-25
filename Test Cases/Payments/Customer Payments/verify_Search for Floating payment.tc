@@ -2,9 +2,10 @@
 <TestCaseEntity>
    <description>These test case searches for a floating payment.
 Steps are as follows
-1. Identify the customer. These case will use 0729601488
-2. Calling search for Payment test case</description>
-   <name>Search for Floating payment</name>
+1. Identify the customer. These case will use KU87KDFUYDF as the receipt number
+2. Calling search for Payment test case
+TestCase ID: 16666</description>
+   <name>verify_Search for Floating payment</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8f78ce17-4af5-4ef3-aad2-460cadabdf8a</testCaseGuid>

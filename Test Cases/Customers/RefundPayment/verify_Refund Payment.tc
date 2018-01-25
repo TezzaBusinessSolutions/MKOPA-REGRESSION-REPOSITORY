@@ -2,8 +2,10 @@
 <TestCaseEntity>
    <description>The test case:
 1. Refunds a customer
-2. Approves a refunded account</description>
-   <name>Refund Payment</name>
+2. Approves a refunded account
+
+Test Case ID:16573</description>
+   <name>verify_Refund Payment</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1298bbdc-57bb-4a02-b851-24d359f99c61</testCaseGuid>
