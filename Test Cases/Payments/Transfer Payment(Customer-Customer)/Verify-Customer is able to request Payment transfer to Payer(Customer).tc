@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Transfer Payment Customer to Customer (i.e) Payer.
+
+Steps
+1. Search for Customer
+2. Customer Payment Info
+3. Transfer Payment Customer to Customer</description>
+   <name>Verify-Customer is able to request Payment transfer to Payer(Customer)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff573b69-ebb3-41b2-a7b9-5c2e775cb22e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>360044da-2781-4685-b82b-55f0e7687d40</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have transferred the payment to your account'</defaultValue>
+      <description></description>
+      <id>4cc44067-87e5-4114-aeaa-f4f44225b9e2</id>
+      <masked>false</masked>
+      <name>payerComment</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject(null)</defaultValue>
+      <description></description>
+      <id>f83318f1-a48e-4591-a21d-13eebc2c84c6</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>
