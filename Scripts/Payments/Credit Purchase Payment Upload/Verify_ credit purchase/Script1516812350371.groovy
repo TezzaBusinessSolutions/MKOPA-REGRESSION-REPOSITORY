@@ -33,7 +33,7 @@ CPC = WebUI.getText(findTestObject('Customer Module/Customer List/label_CostPerC
 previousCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits'))
 
 WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '500', ('Account') : '10760526'
-        , ('Phone') : '0722949777', ('filePath') : 'C:\\Users\\Stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Phone') : '254722949777', ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
         , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
@@ -68,4 +68,6 @@ if (currentCredits > previousCredits) {
 } else {
     WebUI.closeBrowser()
 }
+
+WebUI.closeBrowser()
 

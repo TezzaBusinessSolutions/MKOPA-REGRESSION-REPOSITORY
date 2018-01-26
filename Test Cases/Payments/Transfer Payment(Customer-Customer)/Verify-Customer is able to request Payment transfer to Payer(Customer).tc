@@ -31,4 +31,18 @@ Steps
       <masked>false</masked>
       <name>status</name>
    </variable>
+   <variable>
+      <defaultValue>'1000'</defaultValue>
+      <description></description>
+      <id>91fa7539-c1b0-4993-8daf-ae20b4ee4b56</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6c0b6155-4954-45dd-b007-730f114be448</id>
+      <masked>false</masked>
+      <name>amountInPayment</name>
+   </variable>
 </TestCaseEntity>

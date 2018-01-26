@@ -20,20 +20,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 def rownum = new Random().nextInt(248 - 1) + 1
-def status = findTestObject('Customer Module/Customer List/Label-In Payment')
 
-WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
+def status = findTestObject('Customer Module/Customer List/Label-In Payment')
 
 WebUI.getText(findTestObject('Customer Module/Customer List/Label-In Payment'))
 
-if (!status) {
-	WebUI.closeBrowser()
-	
+if (!(status)) {
+    WebUI.closeBrowser()
+} else {
+    WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 }
-else
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
+
+amountInPayment = WebUI.getText(findTestObject('Customer Module/Customer List/radio_Dealer', [('amount') : amount]))
 
 depositReceipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
+
+WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
 
@@ -68,7 +70,8 @@ WebUI.click(findTestObject('Customer Module/Customer List/button_SaveTransferToC
 
 WebUI.delay(2)
 
-WebUI.verifyElementVisible(findTestObject('Customer Module/Customer List/successMsg-transfer has been requested succesfully'))
+WebUI.verifyElementPresent(findTestObject('Customer Module/Customer List/successMsg-transfer has been requested succesfully'), 
+    0)
 
 WebUI.click(findTestObject('Customer Module/Customer List/button-Close Payment Details Window'))
 
