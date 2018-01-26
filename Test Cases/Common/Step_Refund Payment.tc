@@ -14,4 +14,11 @@
       <masked>false</masked>
       <name>customerAccount</name>
    </variable>
+   <variable>
+      <defaultValue>'QWRTE67T12189hdfff'</defaultValue>
+      <description></description>
+      <id>86d1663b-0006-43f3-8bfe-b6e5ae0f8be2</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
+   </variable>
 </TestCaseEntity>

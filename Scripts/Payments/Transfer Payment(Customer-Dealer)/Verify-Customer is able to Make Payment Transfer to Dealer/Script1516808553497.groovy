@@ -19,9 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+def rownum = new Random().nextInt(100 - 1) + 1
+
+def status = findTestObject('Customer Module/Customer List/Label-In Payment')
+
 WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
+WebUI.getText(findTestObject('Customer Module/Customer List/Label-In Payment'))
+
+if (!(status)) {
+    WebUI.closeBrowser()
+} else {
+    WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
+}
+
+depositReceipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
 
 WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
 
@@ -29,9 +41,24 @@ WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment
 
 WebUI.check(findTestObject('Customer Module/Customer List/radio_Dealer'))
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), accountNumber)
+WebUI.delay(3)
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerComment'), comments)
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), findTestData('Dealer Accounts/Dealers Accounts').getValue(
+        1, rownum))
+
+WebUI.doubleClick(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'))
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerComment'), dealerComment)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Customer Module/Customer List/button_SaveTransferToDealer'))
+
+WebUI.delay(5)
+
+WebUI.verifyElementPresent(findTestObject('Customer Module/Customer List/successMsg-successful dealer transfer'), 10)
+
+not_run: WebUI.click(findTestObject('Customer Module/Customer List/button-Close Payment Details Window'))
 
