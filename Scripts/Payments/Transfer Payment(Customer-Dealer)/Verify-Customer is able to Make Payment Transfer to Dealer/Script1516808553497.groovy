@@ -18,17 +18,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
 
-int rownum = new Random().nextInt(248 - 1) + 1
+WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Customer Accounts/customer accounts').getValue(
-        1, rownum))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
 
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
+
+WebUI.check(findTestObject('Customer Module/Customer List/radio_Dealer'))
+
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), accountNumber)
+
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerComment'), comments)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button_SaveTransferToDealer'))
 

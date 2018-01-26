@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID: 16688
+credits increase proportionally upon making a payment</description>
+   <name>Verify_ credit purchase</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f0752d0-1a64-4216-903b-636b9ee4ba27</testCaseGuid>
+   <variable>
+      <defaultValue>'10760526'</defaultValue>
+      <description></description>
+      <id>fc54a1ab-a623-4f2d-b3dc-bb813910aa4c</id>
+      <masked>false</masked>
+      <name>Account</name>
+   </variable>
+   <variable>
+      <defaultValue>'credits have increased proprtionally'</defaultValue>
+      <description></description>
+      <id>242a755e-a686-449d-9ac2-0449c4b03dec</id>
+      <masked>false</masked>
+      <name>alert</name>
+   </variable>
+</TestCaseEntity>

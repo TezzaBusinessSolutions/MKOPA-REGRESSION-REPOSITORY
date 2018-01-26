@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Button to save transfer to customer</description>
-   <name>button_SaveTransferToCustomer</name>
+   <description>Ths is the Product Account to select from</description>
+   <name>label_Product Account</name>
    <tag></tag>
-   <elementGuidId>c93e694f-1c6c-4a3c-873a-7656836b2c87</elementGuidId>
+   <elementGuidId>a1479346-467d-4c9f-a123-29be039fd325</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='btnTransferToCust']</value>
+      <value>html/body/div[15]/div/ul/li</value>
    </webElementProperties>
 </WebElementEntity>

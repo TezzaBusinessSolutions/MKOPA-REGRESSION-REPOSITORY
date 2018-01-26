@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Button to save transfer to customer</description>
-   <name>button_SaveTransferToCustomer</name>
+   <description>number of credits a customer has been alocated</description>
+   <name>label_Credits</name>
    <tag></tag>
-   <elementGuidId>c93e694f-1c6c-4a3c-873a-7656836b2c87</elementGuidId>
+   <elementGuidId>dfcd4676-8294-48bd-b5a4-68189a918917</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='div-account-info']/div[1]/div/div[5]/div[1]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='btnTransferToCust']</value>
+      <value>.//*[@id='div-account-info']/div[1]/div/div[5]/div[1]/div[2]</value>
    </webElementProperties>
 </WebElementEntity>

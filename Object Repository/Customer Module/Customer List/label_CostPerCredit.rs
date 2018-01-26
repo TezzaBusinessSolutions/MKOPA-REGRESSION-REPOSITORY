@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Button to save transfer to customer</description>
-   <name>button_SaveTransferToCustomer</name>
+   <description>the value of cost per credit for a given customer</description>
+   <name>label_CostPerCredit</name>
    <tag></tag>
-   <elementGuidId>c93e694f-1c6c-4a3c-873a-7656836b2c87</elementGuidId>
+   <elementGuidId>3d9683ff-9211-4e30-b0b9-c7e4231ebc19</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='btnTransferToCust']</value>
+      <value>.//*[@id='CurrentCostPerCredit']</value>
    </webElementProperties>
 </WebElementEntity>
