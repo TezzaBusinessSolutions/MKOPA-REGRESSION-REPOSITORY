@@ -20,18 +20,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 def rownum = new Random().nextInt(248 - 1) + 1
+
 def status = findTestObject('Customer Module/Customer List/Label-In Payment')
 
 WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.getText(findTestObject('Customer Module/Customer List/Label-In Payment'))
 
-if (!status) {
-	WebUI.closeBrowser()
-	
+if (!(status)) {
+    WebUI.closeBrowser()
+} else {
+    WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 }
-else
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
 depositReceipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
 
