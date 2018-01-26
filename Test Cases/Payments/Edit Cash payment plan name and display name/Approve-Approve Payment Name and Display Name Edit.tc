@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case to Approve Payment Name and Display Name Edit</description>
+   <name>Approve-Approve Payment Name and Display Name Edit</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3a30c140-7147-4c01-84dd-5a659ace9886</testCaseGuid>
+   <variable>
+      <defaultValue>'Moran'</defaultValue>
+      <description></description>
+      <id>ccdb47dd-8939-4284-afb1-dbeee5cd5ded</id>
+      <masked>false</masked>
+      <name>approveName</name>
+   </variable>
+   <variable>
+      <defaultValue>'I find it necessary and fair enough to approve the change of name and display name. Reason being the current name is way too much \'bulk\''</defaultValue>
+      <description></description>
+      <id>61ab902f-9d67-4311-b767-540c5e5077cd</id>
+      <masked>false</masked>
+      <name>approverNotes</name>
+   </variable>
+</TestCaseEntity>

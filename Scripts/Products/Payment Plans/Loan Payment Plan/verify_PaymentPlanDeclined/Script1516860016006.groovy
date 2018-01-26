@@ -44,5 +44,10 @@ WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/opti
 
 WebUI.setText(findTestObject('Products Module/Payments Plans Pending Approval/input_ApproverNotes'), approver_notes)
 
-not_run: WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/button_Save'))
+WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/button_Save'))
+
+WebUI.delay(delay)
+
+WebUI.verifyElementPresent(findTestObject('Products Module/Loan Payment Plan List/link_LoanPaymentPlanName', [('plan_toApprove') : plan_toApprove]), 
+    5)
 

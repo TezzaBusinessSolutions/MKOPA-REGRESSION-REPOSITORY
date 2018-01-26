@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Steps
+
+File Upload Center
+Format the MPESA payment File Appropriately
+Upload the Payment file andd it should be in CSV Format</description>
+   <name>Verify-User is able to Upload Payment File</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b39765b0-be27-44ce-97c8-c47e66045f07</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7c7f9223-3507-4a3e-8e08-24b04c1ba285</id>
+      <masked>false</masked>
+      <name>tagged</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d38a1a3d-b62b-4283-8554-f300d6bcb062</id>
+      <masked>false</masked>
+      <name>tagForUpload</name>
+   </variable>
+</TestCaseEntity>

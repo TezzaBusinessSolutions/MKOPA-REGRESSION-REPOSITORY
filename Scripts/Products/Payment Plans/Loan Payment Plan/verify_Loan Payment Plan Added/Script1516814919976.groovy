@@ -71,5 +71,16 @@ WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/option_loanTyp
 
 WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_RequesterNotes'), requester_Notes)
 
-not_run: WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/button_SaveLoanPaymentPlan'))
+WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/button_SaveLoanPaymentPlan'))
+
+WebUI.delay(delay)
+
+WebUI.getText(findTestObject('Products Module/Add Loan Payment Plan/label_SuccessfulLoanPaymentPlanDetails'))
+
+String loanpaymentdetails = 'Loan Payment Plan Details'
+
+WebUI.verifyElementText(findTestObject('Products Module/Add Loan Payment Plan/label_SuccessfulLoanPaymentPlanDetails'), 
+    loanpaymentdetails)
+
+WebUI.takeScreenshot()
 

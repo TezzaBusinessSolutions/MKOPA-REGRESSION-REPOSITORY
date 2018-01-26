@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>The test case:
+   <description>The test case does the following:
 1. Refunds a customer
 2. Approves a refunded account
 
@@ -10,7 +10,11 @@ Test Case ID:16573</description>
    <comment></comment>
    <testCaseGuid>1298bbdc-57bb-4a02-b851-24d359f99c61</testCaseGuid>
    <variable>
+<<<<<<< HEAD
       <defaultValue>'100'</defaultValue>
+=======
+      <defaultValue>'10'</defaultValue>
+>>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
       <description></description>
       <id>abaabdf8-6f8b-487d-af7b-92eb00f7a059</id>
       <masked>false</masked>

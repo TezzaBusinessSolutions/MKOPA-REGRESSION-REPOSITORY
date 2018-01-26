@@ -19,13 +19,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+<<<<<<< HEAD
 WebUI.click(findTestObject('Page Header and Menu/Customers/Link-Customer'))
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Page Header and Menu/Customers/Link-ListCustomers'))
-
-WebUI.delay(2)
 
 WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerAccount', [('customerAccount') : customerAccount]))
 
@@ -33,6 +32,14 @@ WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInfor
 
 String availablebalance = WebUI.getText(findTestObject('Customer Module/Customer List/label_AvailableBalance'))
 
+<<<<<<< HEAD
+=======
+WebUI.delay(delay)
+
+WebUI.scrollToElement(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]), 
+    0)
+
+>>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
 WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
 
 System.out.println(availablebalance)

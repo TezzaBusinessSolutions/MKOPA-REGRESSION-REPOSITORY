@@ -19,9 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
-
 WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
 WebUI.delay(delay)
@@ -32,7 +29,7 @@ WebUI.delay(delay)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-ApproveCustomerRefund'))
 
-WebUI.click(findTestObject('Payments Module/Refunds Pending Approval/link_ApprovePendingRefund', [('accountNumber') : accountNumber]))
+WebUI.click(findTestObject('Payments Module/Refunds Pending Approval/link_ApprovePendingRefund', [('accountNumber') : 'KE11118563-2']))
 
 WebUI.click(findTestObject('Payments Module/Approve Refund/dropdown_ApprovalStatus'))
 
@@ -45,6 +42,12 @@ WebUI.setText(findTestObject('Payments Module/Approve Refund/input_ApprovalNotes
 WebUI.click(findTestObject('Payments Module/Approve Refund/button_SaveRefundApproval'))
 
 WebUI.delay(delay)
+
+WebUI.getText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'))
+
+String success = 'Refund Approved Successfully'
+
+WebUI.verifyElementText(findTestObject('Payments Module/Approve Refund/message_RefundSuccessfull'), success)
 
 WebUI.takeScreenshot()
 

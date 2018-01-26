@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Editing the Payment Plan's Name and display Name.
+
+Steps
+1. Products On the Dashboard
+2. List Cash Payment Plan
+3. Edit 
+4. Update
+5. Approve The Changes in the Approver's Account</description>
+   <name>Verify- Payment Plan name and Display Name are Editable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7d51251f-3fd0-4427-942c-c9f06c7d9041</testCaseGuid>
+   <variable>
+      <defaultValue>'Moran'</defaultValue>
+      <description></description>
+      <id>c6cc9021-0df8-464e-9642-a1f37b5a9b0b</id>
+      <masked>false</masked>
+      <name>editCashPaymentPlan</name>
+   </variable>
+   <variable>
+      <defaultValue>'Moran'</defaultValue>
+      <description></description>
+      <id>d8d5160e-e86a-40c4-b49a-795e0eaf9905</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>14a6a52d-7d6e-4ea3-8cd2-4d78c181be47</id>
+      <masked>false</masked>
+      <name>displayNameGenerator</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have changed the name, Kindly check'</defaultValue>
+      <description></description>
+      <id>b4a901f5-e49f-40d3-8bdc-3aa74db3fd63</id>
+      <masked>false</masked>
+      <name>requestorNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'Moran'</defaultValue>
+      <description></description>
+      <id>a319a787-ff9c-4b89-9fa1-17aa038ffd9b</id>
+      <masked>false</masked>
+      <name>paymentPlan</name>
+   </variable>
+</TestCaseEntity>

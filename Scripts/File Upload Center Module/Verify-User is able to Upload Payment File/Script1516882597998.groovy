@@ -19,23 +19,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '23,330', ('Account') : '4961968'
+        , ('Phone') : '0727662019', ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.refresh()
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('File Upload Center Module/File Upload Center/link_View Uploaded File', [('tagged') : tagged]), 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.getText(findTestObject('File Upload Center Module/File Upload Center/label-TagForUploadedFile', [('tagForUpload') : tagForUpload]))
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
-
-WebUI.delay(delay)
+WebUI.verifyEqual(tagForUpload, tagged)
 
 WebUI.closeBrowser()
-
-WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Payments/Refund/verify_Customer Refund Approved'), [('accountNumber') : '344474', ('approvalStatus') : 'Approved'
-        , ('approvalNotes') : 'Account Approved', ('delay') : '5'], FailureHandling.STOP_ON_FAILURE)
 

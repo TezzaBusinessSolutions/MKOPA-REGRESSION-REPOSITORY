@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Test Case ID:16539</description>
+   <description>Test Case ID:16539
+
+The case validates if error message is displayed when loan payment plan is added withou entering all required fields</description>
    <name>verify_LoanPaymentPlanError</name>
    <tag></tag>
    <comment></comment>
