@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case ID 16629</description>
+   <name>Verify_Customer Sms is Created On Incoming Payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90d7e376-3371-4f2b-bc9a-c72e26536e01</testCaseGuid>
+   <variable>
+      <defaultValue>'100'</defaultValue>
+      <description></description>
+      <id>5075ce8a-2e6d-4260-8535-d2943905e9cb</id>
+      <masked>false</masked>
+      <name>Amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'30638208'</defaultValue>
+      <description></description>
+      <id>127de3c0-7487-4b0d-afcc-fb7a93b95fad</id>
+      <masked>false</masked>
+      <name>Account</name>
+   </variable>
+   <variable>
+      <defaultValue>'254722471191'</defaultValue>
+      <description></description>
+      <id>895ec61e-5502-4abe-b6ad-c552dfadd19a</id>
+      <masked>false</masked>
+      <name>Phone</name>
+   </variable>
+   <variable>
+      <defaultValue>'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
+      <description></description>
+      <id>867a958f-7981-4ca7-b0b1-60519183b46c</id>
+      <masked>false</masked>
+      <name>filepath</name>
+   </variable>
+</TestCaseEntity>

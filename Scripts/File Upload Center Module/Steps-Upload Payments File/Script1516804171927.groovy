@@ -47,6 +47,8 @@ if (blankTag == true) {
 
 WebUI.setText(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/input_COMMENT'), Comment)
 
+WebUI.delay(3)
+
 WebUI.setText(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/input_Tag'), tagged)
 
 WebUI.click(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/button_UPLOAD'))

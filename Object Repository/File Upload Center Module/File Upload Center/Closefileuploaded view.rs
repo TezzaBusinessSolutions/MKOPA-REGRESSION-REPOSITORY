@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Link to View Uploaded Payment File</description>
-   <name>link_View Uploaded File</name>
+   <description></description>
+   <name>Closefileuploaded view</name>
    <tag></tag>
-   <elementGuidId>265d0086-ac7e-4ad9-9e7d-f71cae8f3384</elementGuidId>
+   <elementGuidId>1a94d707-2eb8-422a-b514-daefa0ea5ce4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='file-upload-center-details-window']//span[text()='Close']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='history_logs_panel']/li/div[div[contains(normalize-space(),'${tagged}')]]/div/a[text()='view']</value>
+      <value>.//*[@id='file-upload-center-details-window']//span[text()='Close']</value>
    </webElementProperties>
 </WebElementEntity>
