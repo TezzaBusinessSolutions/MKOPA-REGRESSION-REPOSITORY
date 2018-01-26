@@ -24,9 +24,13 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Search For Payment'))
 
 WebUI.setText(findTestObject('Payments Module/Search for Payments/Input-PaymentDate'), PaymentDate)
 
 WebUI.click(findTestObject('Payments Module/Search for Payments/Btn-Submit'))
+
+WebUI.takeScreenshot()
 

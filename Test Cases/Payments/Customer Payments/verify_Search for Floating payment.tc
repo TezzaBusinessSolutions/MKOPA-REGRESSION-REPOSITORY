@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>These test case searches for a floating payment.
+   <description>Test CaseID: 16666
+These test case searches for a floating payment.
 Steps are as follows
 1. Identify the customer. These case will use KU87KDFUYDF as the receipt number
 2. Calling search for Payment test case

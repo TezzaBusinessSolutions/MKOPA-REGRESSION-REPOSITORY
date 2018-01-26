@@ -12,22 +12,22 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>76e9e505-c439-4f34-a4e7-10bbe83e42d8</id>
+      <id>6820b2f8-2f13-451b-a7cf-420773a9c30d</id>
       <masked>false</masked>
       <name>depositReceipt</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'I have transferred the payment to your account'</defaultValue>
       <description></description>
-      <id>475d24ce-b67d-4a73-b85d-d1ca2065d2f8</id>
+      <id>e74d821f-278e-4404-ba1c-74eff1f21ede</id>
       <masked>false</masked>
-      <name>accountNumber</name>
+      <name>dealerComment</name>
    </variable>
    <variable>
-      <defaultValue>'I have transferred a payment to your account i hope you will appreciate. Thanks'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>0fc80059-2c06-4628-bf59-1afb277542a7</id>
+      <id>4918b64e-4113-4db6-8d50-f5b20072d90e</id>
       <masked>false</masked>
-      <name>comments</name>
+      <name>status</name>
    </variable>
 </TestCaseEntity>

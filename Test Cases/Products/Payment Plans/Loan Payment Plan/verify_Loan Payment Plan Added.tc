@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Test Case ID:16539</description>
+   <description>Test Case ID:16539
+
+The test case validates if a loan payment plan has been added successfully</description>
    <name>verify_Loan Payment Plan Added</name>
    <tag></tag>
    <comment></comment>
@@ -34,7 +36,7 @@
       <name>loan_PaymentDisplayName</name>
    </variable>
    <variable>
-      <defaultValue>'BluetoothTV Test'</defaultValue>
+      <defaultValue>'BluetoothTVOpt'</defaultValue>
       <description></description>
       <id>743f8648-e56a-41ad-805f-764b15c096ce</id>
       <masked>false</masked>

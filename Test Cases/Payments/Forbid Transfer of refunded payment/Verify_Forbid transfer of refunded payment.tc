@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID:16604
+an account that has requested for a payment refund should not be able to transfer payment</description>
+   <name>Verify_Forbid transfer of refunded payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8bc7a153-454f-4584-9048-2d6941c45802</testCaseGuid>
+   <variable>
+      <defaultValue>'27360571'</defaultValue>
+      <description></description>
+      <id>b9db4be7-08d5-46ee-a5bd-ed9497d3ad16</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'Refund Pending'</defaultValue>
+      <description></description>
+      <id>6a3e0165-642a-45e2-9a38-6a27169c301c</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>
