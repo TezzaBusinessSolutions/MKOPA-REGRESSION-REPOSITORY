@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '200', ('Account') : '13190435'
-        , ('Phone') : '0713246697 ', ('filePath') : 'C:\\Users\\Stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Phone') : '254713246697 ', ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
         , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('') : '', ('text') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
@@ -50,4 +50,6 @@ WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInfor
 WebUI.getText(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
 
 WebUI.verifyNotEqual(depositReceipt, text)
+
+WebUI.closeBrowser()
 
