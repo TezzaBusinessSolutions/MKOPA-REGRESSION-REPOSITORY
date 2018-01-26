@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>90d7e376-3371-4f2b-bc9a-c72e26536e01</testCaseGuid>
    <variable>
-      <defaultValue>'500'</defaultValue>
+      <defaultValue>'100'</defaultValue>
       <description></description>
       <id>5075ce8a-2e6d-4260-8535-d2943905e9cb</id>
       <masked>false</masked>
@@ -27,7 +27,7 @@
       <name>Phone</name>
    </variable>
    <variable>
-      <defaultValue>'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv\''</defaultValue>
+      <defaultValue>'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
       <description></description>
       <id>867a958f-7981-4ca7-b0b1-60519183b46c</id>
       <masked>false</masked>
