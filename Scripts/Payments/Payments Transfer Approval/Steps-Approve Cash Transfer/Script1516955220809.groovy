@@ -19,20 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '23,330', ('Account') : '4961968'
-        , ('Phone') : '0727662019', ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.refresh()
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('File Upload Center Module/File Upload Center/link_ViewUploadedFile', [('tagged') : tagged]), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
 
-WebUI.getText(findTestObject('File Upload Center Module/File Upload Center/label-TagForUploadedFile', [('tagForUpload') : tagForUpload]))
+WebUI.delay(2)
 
-WebUI.verifyEqual(tagForUpload, tagged)
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-PaymentTransfaresForApproval'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Payments Module/Approve Payments Transfers/Link_Approve Transfer', [('requestorNotes') : requestorNotes]))
+
+WebUI.setText(findTestObject('Payments Module/Approve Payments Transfers/input_Comments'), comments)
+
+WebUI.click(findTestObject('Payments Module/Approve Payments Transfers/Button-Save'))
+
+WebUI.delay(2)
+
+WebUI.verifyAlertPresent(20)
+
+WebUI.acceptAlert()
 

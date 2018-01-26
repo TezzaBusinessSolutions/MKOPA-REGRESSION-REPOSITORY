@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>link_ViewFileAfterupload</name>
+   <tag></tag>
+   <elementGuidId>701c4bac-cf31-4bed-8d36-7060cca77638</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>.//*[@id='history_logs_panel']/li[1]//a[text()='view']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='history_logs_panel']/li[1]//a[text()='view']</value>
+   </webElementProperties>
+</WebElementEntity>

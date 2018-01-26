@@ -19,20 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '23,330', ('Account') : '4961968'
-        , ('Phone') : '0727662019', ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.refresh()
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('File Upload Center Module/File Upload Center/link_ViewUploadedFile', [('tagged') : tagged]), 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.getText(findTestObject('File Upload Center Module/File Upload Center/label-TagForUploadedFile', [('tagForUpload') : tagForUpload]))
-
-WebUI.verifyEqual(tagForUpload, tagged)
+WebUI.callTestCase(findTestCase('Payments/Transfer Payment(Customer-Customer)/Verify-Customer is able to request Payment transfer to Payer(Customer)'), 
+    [('depositReceipt') : '', ('payerComment') : 'kwanza', ('status') : findTestObject(null)], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Payments/Payments Transfer Approval/Steps-Approve Cash Transfer'), [('requestorNotes') : 'kwanza'
+        , ('comments') : 'I have approved the Transfer of the payment to the requested Account'], FailureHandling.STOP_ON_FAILURE)
 
