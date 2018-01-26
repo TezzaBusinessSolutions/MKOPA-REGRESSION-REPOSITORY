@@ -25,7 +25,7 @@ WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments
 
 WebUI.refresh()
 
-WebUI.click(findTestObject('File Upload Center Module/File Upload Center/link_viewfileuploaded'))
+WebUI.click(findTestObject('File Upload Center Module/File Upload Center/link_ViewFileAfterupload'))
 
 WebUI.delay(5)
 
@@ -37,7 +37,7 @@ WebUI.sendKeys(findTestObject('Customer Module/Input-SearchForCustomer'), Accoun
 
 WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
 
-WebUI.delay(2)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Customer Module/Customer List/Radio-SMSBotton'))
 

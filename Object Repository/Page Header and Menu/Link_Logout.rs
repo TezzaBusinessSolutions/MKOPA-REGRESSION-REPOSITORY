@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Link to View Uploaded Payment File</description>
-   <name>link_View Uploaded File</name>
+   <description></description>
+   <name>Link_Logout</name>
    <tag></tag>
-   <elementGuidId>265d0086-ac7e-4ad9-9e7d-f71cae8f3384</elementGuidId>
+   <elementGuidId>83744225-57d0-42be-bf4b-cee873ab9d38</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='history_logs_panel']/li/div[div[contains(normalize-space(),'${tagged}')]]/div/a[text()='view']</value>
+      <value>.//*[@id='topUserDetails']//a[text()='Logout']</value>
    </webElementProperties>
 </WebElementEntity>

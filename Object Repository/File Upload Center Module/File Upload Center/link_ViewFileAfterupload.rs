@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CloseWindowforRefund</name>
+   <name>link_ViewFileAfterupload</name>
    <tag></tag>
-   <elementGuidId>615dd763-f840-4a29-9aa5-8a3869a54f82</elementGuidId>
+   <elementGuidId>701c4bac-cf31-4bed-8d36-7060cca77638</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='history_logs_panel']/li[1]//a[text()='view']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='wdw-payment-details']//span[text()='Close']</value>
+      <value>.//*[@id='history_logs_panel']/li[1]//a[text()='view']</value>
    </webElementProperties>
 </WebElementEntity>

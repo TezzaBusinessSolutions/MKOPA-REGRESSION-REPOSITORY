@@ -24,7 +24,7 @@ WebUI.callTestCase(findTestCase('Customers/RefundPayment/Refund Payment'), [('in
 
 WebUI.delay(3)
 
-not_run: WebUI.verifyTextPresent('A refund of KES 40.00 has been queued for approval', false)
+WebUI.verifyTextPresent('A refund of KES 40.00 has been queued for approval', false)
 
-WebUI.click(findTestObject('Customer Module/Customer List/CloseWindowforRefund'))
+WebUI.click(findTestObject('Customer Module/Customer List/Close_WindowforRefund'))
 

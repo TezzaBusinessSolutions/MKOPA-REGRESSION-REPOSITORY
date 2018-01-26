@@ -27,7 +27,7 @@ WebUI.refresh()
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('File Upload Center Module/File Upload Center/link_View Uploaded File', [('tagged') : tagged]), 
+WebUI.click(findTestObject('File Upload Center Module/File Upload Center/link_ViewUploadedFile', [('tagged') : tagged]), 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.getText(findTestObject('File Upload Center Module/File Upload Center/label-TagForUploadedFile', [('tagForUpload') : tagForUpload]))

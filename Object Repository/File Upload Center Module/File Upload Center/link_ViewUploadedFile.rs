@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>link_viewfileuploaded</name>
+   <description>Link to View Uploaded Payment File</description>
+   <name>link_ViewUploadedFile</name>
    <tag></tag>
-   <elementGuidId>701c4bac-cf31-4bed-8d36-7060cca77638</elementGuidId>
+   <elementGuidId>265d0086-ac7e-4ad9-9e7d-f71cae8f3384</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='history_logs_panel']/li[1]//a[text()='view']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='history_logs_panel']/li[1]//a[text()='view']</value>
+      <value>.//*[@id='history_logs_panel']/li/div[div[contains(normalize-space(),'${tagged}')]]/div/a[text()='view']</value>
    </webElementProperties>
 </WebElementEntity>
