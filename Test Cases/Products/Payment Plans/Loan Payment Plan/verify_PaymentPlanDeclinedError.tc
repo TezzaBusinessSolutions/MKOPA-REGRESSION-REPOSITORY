@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Test case to declined loan payment plan
-Test Case ID: 16541</description>
+   <description>Test Case ID: 16541
+Test case that validate if error message is thrown when declining a loan/cash payment plan without entering valid data</description>
    <name>verify_PaymentPlanDeclinedError</name>
    <tag></tag>
    <comment></comment>

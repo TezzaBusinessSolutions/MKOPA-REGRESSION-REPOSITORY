@@ -22,6 +22,8 @@ import internal.GlobalVariable as GlobalVariable
 //This step calls the loadind application class
 WebUI.openBrowser(GlobalVariable.UAT)
 
+WebUI.maximizeWindow()
+
 //Fills in the user Email
 WebUI.setText(findTestObject('Login/input_Username'), Email)
 

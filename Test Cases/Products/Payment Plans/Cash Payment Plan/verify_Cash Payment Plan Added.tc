@@ -13,7 +13,7 @@
       <name>delay</name>
    </variable>
    <variable>
-      <defaultValue>'Add Payment Plan Test Name'</defaultValue>
+      <defaultValue>'Add Payment Plan Test Name1'</defaultValue>
       <description></description>
       <id>63fb556f-18bc-4cd7-95ad-1a748cec9af1</id>
       <masked>false</masked>
@@ -27,7 +27,7 @@
       <name>payment_PlanDisplayName</name>
    </variable>
    <variable>
-      <defaultValue>'BluetoothTV Test'</defaultValue>
+      <defaultValue>'BluetoothTVOpt'</defaultValue>
       <description></description>
       <id>7dede0a1-285d-4e32-addd-86d727b8ca9a</id>
       <masked>false</masked>

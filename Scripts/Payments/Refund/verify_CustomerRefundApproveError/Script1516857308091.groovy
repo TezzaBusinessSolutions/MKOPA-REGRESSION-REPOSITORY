@@ -32,6 +32,8 @@ WebUI.delay(delay)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-ApproveCustomerRefund'))
 
+WebUI.delay(delay)
+
 WebUI.click(findTestObject('Payments Module/Refunds Pending Approval/link_ApprovePendingRefund', [('accountNumber') : accountNumber]))
 
 WebUI.click(findTestObject('Payments Module/Approve Refund/button_SaveRefundApproval'))

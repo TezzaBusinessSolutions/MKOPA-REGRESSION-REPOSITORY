@@ -52,3 +52,14 @@ WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_Reques
 
 WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/button_SaveCashPaymentPlan'))
 
+WebUI.delay(delay)
+
+WebUI.getText(findTestObject('Products Module/Add Cash Payment Plan/label_SuccessfulCashPaymentPlanDetails'))
+
+String cashpaymentdetails = 'Cash Payment Plan Details'
+
+WebUI.verifyElementText(findTestObject('Products Module/Add Cash Payment Plan/label_SuccessfulCashPaymentPlanDetails'), 
+    cashpaymentdetails)
+
+WebUI.takeScreenshot()
+

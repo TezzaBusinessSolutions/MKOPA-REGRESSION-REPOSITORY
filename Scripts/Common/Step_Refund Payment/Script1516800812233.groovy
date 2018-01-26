@@ -19,17 +19,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page Header and Menu/Customers/Link-Customer'))
-
-WebUI.click(findTestObject('Page Header and Menu/Customers/Link-ListCustomers'))
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerAccount', [('customerAccount') : customerAccount]))
+WebUI.callTestCase(findTestCase('Common/Step_SearchSpecificCustomer'), [('customerToSearch') : '11118563'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
 String availablebalance = WebUI.getText(findTestObject('Customer Module/Customer List/label_AvailableBalance'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt'))
+WebUI.delay(delay)
+
+WebUI.scrollToElement(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]), 
+    0)
+
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
 
 System.out.println(availablebalance)
 
