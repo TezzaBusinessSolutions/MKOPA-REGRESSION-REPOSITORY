@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID: 16670
+The test case validates absence ofdeclined loan payment plan in loan payment plan list</description>
+   <name>verify_DeclinedLoanPaymentAbsence</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0e9d919a-f727-440c-a21a-3fe9b1a3bad9</testCaseGuid>
+</TestCaseEntity>

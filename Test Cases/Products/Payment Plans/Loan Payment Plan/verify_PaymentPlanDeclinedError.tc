@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID: 16541
+Test case that validate if error message is thrown when declining a loan/cash payment plan without entering valid data</description>
+   <name>verify_PaymentPlanDeclinedError</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d8bae504-da02-4016-8b74-c9f48138b7eb</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Approver Notes/Approver Notes').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>b11b27ec-03f4-4aa7-8cc6-b902b5cb3ba2</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+   <variable>
+      <defaultValue>'test bundled'</defaultValue>
+      <description></description>
+      <id>f4e77d36-4962-4967-89ea-9d7d1ea16351</id>
+      <masked>false</masked>
+      <name>plan_toApprove</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dissapprove Notes'</defaultValue>
+      <description></description>
+      <id>b2f1b74a-87eb-4887-a823-7758e92d6082</id>
+      <masked>false</masked>
+      <name>approver_notes</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>33fadb89-89d0-44f1-aff9-44a78c78fb75</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+</TestCaseEntity>

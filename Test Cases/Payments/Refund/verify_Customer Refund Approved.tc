@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID: 16570
+
+The test case Approves Cash Refund</description>
+   <name>verify_Customer Refund Approved</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e19a5040-f565-49af-bc84-032ee5b1d095</testCaseGuid>
+   <variable>
+      <defaultValue>'KE11118563-2'</defaultValue>
+      <description></description>
+      <id>7b586108-2b36-4d79-8409-c5645de60766</id>
+      <masked>false</masked>
+      <name>accountNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'Approved'</defaultValue>
+      <description></description>
+      <id>ad4c35bb-c7d5-4377-b476-af00af7deccf</id>
+      <masked>false</masked>
+      <name>approvalStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>'Account Approved'</defaultValue>
+      <description></description>
+      <id>16766894-0561-445d-807b-ebff80acff9b</id>
+      <masked>false</masked>
+      <name>approvalNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>faf4b651-ccbd-422a-8536-672f4daa385d</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+</TestCaseEntity>

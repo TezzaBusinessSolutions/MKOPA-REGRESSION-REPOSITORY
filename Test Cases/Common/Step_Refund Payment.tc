@@ -14,4 +14,26 @@
       <masked>false</masked>
       <name>customerAccount</name>
    </variable>
+   <variable>
+<<<<<<< HEAD
+      <defaultValue>'QWRTE67T12189hdfff'</defaultValue>
+      <description></description>
+      <id>86d1663b-0006-43f3-8bfe-b6e5ae0f8be2</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
+=======
+      <defaultValue>'JIF43A7UMM'</defaultValue>
+      <description></description>
+      <id>098207ac-5405-4451-808d-2163001176f7</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>95dfbfc6-0642-4494-8b4f-44d678803a41</id>
+      <masked>false</masked>
+      <name>delay</name>
+>>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
+   </variable>
 </TestCaseEntity>

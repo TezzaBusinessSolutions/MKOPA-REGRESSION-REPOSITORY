@@ -24,9 +24,10 @@ import java.util.Random as Random
 
 int rownum = new Random().nextInt(248 - 1) + 1
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Search For Customer/Search Customer').getValue(
+WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Customer Accounts/customer accounts').getValue(
         1, rownum))
 
 WebUI.click(findTestObject('Customer Module/IconBtn-Search'))

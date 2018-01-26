@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>This test case verifies if error is thrown when notes are not submitted during refund
+
+TestCaseID: 16573</description>
    <name>verify_EnterNotesError</name>
    <tag></tag>
    <comment></comment>

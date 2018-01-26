@@ -24,7 +24,11 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-CustomerPayments'))
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-FloatingPayments'))
 
@@ -59,7 +63,11 @@ WebUI.delay(8)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-CustomerPayments'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-FloatingPayments'))
 

@@ -19,4 +19,18 @@
       <masked>false</masked>
       <name>text</name>
    </variable>
+   <variable>
+      <defaultValue>'13190435'</defaultValue>
+      <description></description>
+      <id>ad980be0-6e55-4727-9092-fc707f12b2c4</id>
+      <masked>false</masked>
+      <name>Account</name>
+   </variable>
+   <variable>
+      <defaultValue>'MBA96FE9I0DF'</defaultValue>
+      <description></description>
+      <id>58750736-3b51-4123-b4de-15bd0195d511</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
+   </variable>
 </TestCaseEntity>
