@@ -6,21 +6,21 @@
    <comment></comment>
    <testCaseGuid>b6e2d17c-ccf7-4f92-8b9a-a1c88b28951d</testCaseGuid>
    <variable>
-      <defaultValue>'23,330'</defaultValue>
+      <defaultValue>'330'</defaultValue>
       <description></description>
       <id>67b15b6d-287c-4312-bf04-5ff1aec7b63d</id>
       <masked>false</masked>
       <name>Amount</name>
    </variable>
    <variable>
-      <defaultValue>'4961968'</defaultValue>
+      <defaultValue>'30638208'</defaultValue>
       <description></description>
       <id>cc7487dd-ad3e-45e9-a665-cdfe294902d3</id>
       <masked>false</masked>
       <name>Account</name>
    </variable>
    <variable>
-      <defaultValue>'0727662019'</defaultValue>
+      <defaultValue>'254722471191'</defaultValue>
       <description></description>
       <id>8e5f15e3-e0bd-49e0-8749-b28116da8b21</id>
       <masked>false</masked>
