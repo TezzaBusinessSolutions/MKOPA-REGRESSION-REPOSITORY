@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>b6e2d17c-ccf7-4f92-8b9a-a1c88b28951d</testCaseGuid>
    <variable>
-      <defaultValue>'330'</defaultValue>
+      <defaultValue>'10000'</defaultValue>
       <description></description>
       <id>67b15b6d-287c-4312-bf04-5ff1aec7b63d</id>
       <masked>false</masked>

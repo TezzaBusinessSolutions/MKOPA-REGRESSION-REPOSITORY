@@ -19,24 +19,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '200', ('Account') : 'K0714'
-        , ('Phone') : '0729921334', ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : '', (text) : ''], 
+WebUI.callTestCase(findTestCase('Payments/Transfering Money from an Account Reverses the Account Status and Credits/Steps- Transfering money by an In finished Customer'), 
+    [('customerInFinishedPayment') : '3853350', ('depositReceipt') : '5XTC0Q6Z94', ('payerComment') : 'kwanza', ('customerReference') : '22715468'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
-
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link_Dealers Payments List'))
-
-WebUI.delay(5)
-
-WebUI.getText(findTestObject('Payments Module/Dealer Payments/text_Receipt Number', [('receiptNumber') : receiptNumber]))
-
-WebUI.verifyEqual(receiptNumber, text)
+WebUI.callTestCase(findTestCase('Payments/Payments Transfer Approval/Steps-Approve Cash Transfer'), [('requestorNotes') : 'kwanza'
+        , ('comments') : 'I have approved the Transfer of the payment to the requested Account'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Common/Step_SearchSpecificCustomer'), [('customerToSearch') : customerInFinishedPayment], 
+    FailureHandling.STOP_ON_FAILURE)
 

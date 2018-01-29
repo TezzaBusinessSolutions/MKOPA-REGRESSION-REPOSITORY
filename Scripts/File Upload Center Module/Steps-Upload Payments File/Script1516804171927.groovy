@@ -53,6 +53,8 @@ WebUI.setText(findTestObject('File Upload Center Module/Upload Payment File (MPE
 
 WebUI.click(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/button_UPLOAD'))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/button_Close Window Button'))
 
 String tagGenerator(String chars, Integer length) {
