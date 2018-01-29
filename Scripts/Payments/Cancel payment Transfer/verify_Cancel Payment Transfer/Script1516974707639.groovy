@@ -19,11 +19,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment(Customer-Customer)/Verify-Customer is able to request Payment transfer to Payer(Customer)'), 
-    [('depositReceipt') : '', ('payerComment') : 'kwanza', ('status') : findTestObject(null)], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.closeBrowser()
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.callTestCase(findTestCase('Payments/Payments Transfer Approval/Steps-Approve Cash Transfer'), [('requestorNotes') : 'kwanza'
-        , ('comments') : 'I have approved the Transfer of the payment to the requested Account'], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-PaymentTransfaresForApproval'))
+
+'requestor notes/ date'
+WebUI.click(findTestObject('Payments Module/Approve Payments Transfers/link_Cancel Transfer', [('dateCreated') : dateCreated]))
+
+WebUI.setText(findTestObject('Payments Module/Approve Payments Transfers/input_CancelComments'), comments)
+
+WebUI.click(findTestObject('Payments Module/Approve Payments Transfers/button_SaveCanceTransferl'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyAlertPresent(10)
+
+WebUI.acceptAlert()
 

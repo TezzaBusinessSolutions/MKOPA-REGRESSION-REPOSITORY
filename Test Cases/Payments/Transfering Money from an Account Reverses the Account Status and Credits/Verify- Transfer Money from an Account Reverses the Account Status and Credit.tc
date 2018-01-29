@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify- Transfer Money from an Account Reverses the Account Status and Credit</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1a83273b-17ce-46a4-b788-9b3bf8fc6747</testCaseGuid>
+   <variable>
+      <defaultValue>'3853350'</defaultValue>
+      <description></description>
+      <id>4adc0c20-e451-4907-81e5-f1025fe71bc1</id>
+      <masked>false</masked>
+      <name>customerInFinishedPayment</name>
+   </variable>
+</TestCaseEntity>

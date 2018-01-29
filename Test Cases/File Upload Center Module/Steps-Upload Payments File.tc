@@ -27,7 +27,11 @@
       <name>Phone</name>
    </variable>
    <variable>
+<<<<<<< HEAD
+      <defaultValue>'C:\\Users\\stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
+=======
       <defaultValue>'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
+>>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
       <description></description>
       <id>0e2b2314-9a0f-4587-a764-22537774a6aa</id>
       <masked>false</masked>

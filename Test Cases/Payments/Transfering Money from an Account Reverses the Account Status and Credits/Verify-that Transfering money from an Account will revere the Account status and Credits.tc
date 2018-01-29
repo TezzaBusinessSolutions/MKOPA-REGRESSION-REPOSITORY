@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Transfer Payment to a Customer and Maker Checker Approves the Payment. Check if the amount has been transferred</description>
-   <name>Verify-that Transfering money from an Account will revere the Account status and Credits</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>dd41deab-f84a-4521-8cb5-5b94413d76b7</testCaseGuid>
-</TestCaseEntity>
