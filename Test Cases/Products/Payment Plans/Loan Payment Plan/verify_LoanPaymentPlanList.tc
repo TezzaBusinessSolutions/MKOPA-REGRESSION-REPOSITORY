@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID: 16543
+The test case lists loan payment plans</description>
+   <name>verify_LoanPaymentPlanList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d47bd0e5-0ad0-4bf8-9985-7af00536a2a6</testCaseGuid>
+   <variable>
+      <defaultValue>'8'</defaultValue>
+      <description></description>
+      <id>d337b815-d95f-421d-a60b-30373b5cc3cf</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>'locha8'</defaultValue>
+      <description></description>
+      <id>e95e5056-053a-4013-9f34-14b484d858c1</id>
+      <masked>false</masked>
+      <name>listName</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify_EnterValueError</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2cda147c-631c-4022-be75-ebcc112ee843</testCaseGuid>
+   <variable>
+      <defaultValue>'A value is required.'</defaultValue>
+      <description></description>
+      <id>64c8fd24-4800-4e77-86c9-46deb047e406</id>
+      <masked>false</masked>
+      <name>error</name>
+   </variable>
+</TestCaseEntity>

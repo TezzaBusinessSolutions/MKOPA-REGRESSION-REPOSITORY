@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test step to add cash apyment plan</description>
+   <name>step_AddCashPaymentPlan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f0a356c-89a9-4427-ba14-e47942b4e4e2</testCaseGuid>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>d94917b1-2cc8-45f6-9319-c5ed3cb33388</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>'PaymentPlan1'</defaultValue>
+      <description></description>
+      <id>18433dd4-96c1-42d0-9880-63ba3179baa9</id>
+      <masked>false</masked>
+      <name>payment_PlanName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment Plan Display Name Test'</defaultValue>
+      <description></description>
+      <id>2976b1a6-4862-4e75-a571-adfdb1c2a8c3</id>
+      <masked>false</masked>
+      <name>payment_PlanDisplayName</name>
+   </variable>
+   <variable>
+      <defaultValue>'BluetoothTVOpt'</defaultValue>
+      <description></description>
+      <id>1da8feb7-b6d5-48fd-99d0-eeed7d3f7d63</id>
+      <masked>false</masked>
+      <name>outletproducttype</name>
+   </variable>
+   <variable>
+      <defaultValue>'50'</defaultValue>
+      <description></description>
+      <id>991ccf27-1a0f-4956-829e-69e9ee2a0955</id>
+      <masked>false</masked>
+      <name>total_Price</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment Cash Plan Notes'</defaultValue>
+      <description></description>
+      <id>51f7c083-cdb3-4378-8f36-a5e50b01dddd</id>
+      <masked>false</masked>
+      <name>requester_Notes</name>
+   </variable>
+</TestCaseEntity>

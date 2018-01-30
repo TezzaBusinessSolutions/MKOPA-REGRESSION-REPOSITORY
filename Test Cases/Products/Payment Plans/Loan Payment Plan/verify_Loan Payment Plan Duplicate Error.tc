@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID:16539
+
+The test case validates if a duplicate loan payment plan can be added</description>
+   <name>verify_Loan Payment Plan Duplicate Error</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>472d4352-320b-4880-833e-574a436d3c71</testCaseGuid>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>1629fac6-8fc2-4bed-9d5d-0685a0e527bd</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>'Loan'</defaultValue>
+      <description></description>
+      <id>d04f58e8-bac2-41d7-b9b2-8b2231672121</id>
+      <masked>false</masked>
+      <name>loan_PaymentPlanName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Loan Display Name'</defaultValue>
+      <description></description>
+      <id>814dcc5a-f376-45a2-bcac-a5aa094868d4</id>
+      <masked>false</masked>
+      <name>loan_PaymentDisplayName</name>
+   </variable>
+   <variable>
+      <defaultValue>'BluetoothTVOpt'</defaultValue>
+      <description></description>
+      <id>c73a2fd7-e90e-41c8-bcca-39e4b327172e</id>
+      <masked>false</masked>
+      <name>outletproducttype</name>
+   </variable>
+   <variable>
+      <defaultValue>'100'</defaultValue>
+      <description></description>
+      <id>b1f5a898-7f38-44d0-97db-8f8b593ea4fa</id>
+      <masked>false</masked>
+      <name>loan_Deposit</name>
+   </variable>
+   <variable>
+      <defaultValue>'15'</defaultValue>
+      <description></description>
+      <id>9d66c402-c0da-4213-b1d8-53526f6a7e42</id>
+      <masked>false</masked>
+      <name>costpercredit</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>53eba299-0656-4b17-9dab-50f2f170d082</id>
+      <masked>false</masked>
+      <name>loan_Duration</name>
+   </variable>
+   <variable>
+      <defaultValue>'Loan Payment Plan'</defaultValue>
+      <description></description>
+      <id>162790e0-3bb1-47c8-a2c4-d03ec6b4843a</id>
+      <masked>false</masked>
+      <name>requester_Notes</name>
+   </variable>
+   <variable>
+      <defaultValue>'56'</defaultValue>
+      <description></description>
+      <id>0ba73fde-440a-4bd1-ac91-83e127813413</id>
+      <masked>false</masked>
+      <name>total_Price</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>4e41c5ab-865f-4def-948f-93e32468264c</id>
+      <masked>false</masked>
+      <name>free_Activation</name>
+   </variable>
+   <variable>
+      <defaultValue>'HirePurchase'</defaultValue>
+      <description></description>
+      <id>762b924f-4248-4fd2-ad2f-5a8040ce44d4</id>
+      <masked>false</masked>
+      <name>loan_Type</name>
+   </variable>
+</TestCaseEntity>

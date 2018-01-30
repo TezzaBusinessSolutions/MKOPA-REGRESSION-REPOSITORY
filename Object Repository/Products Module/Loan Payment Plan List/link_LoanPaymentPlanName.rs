@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='LoanPaymentPlansGrid']/table/tbody/tr[td[text()='${plan_toApprove}']]</value>
+         <value>.//*[@id='LoanPaymentPlansGrid']/table/tbody/tr[td[text()='${}']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

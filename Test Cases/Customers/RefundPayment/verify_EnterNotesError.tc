@@ -8,7 +8,7 @@ TestCaseID: 16573</description>
    <comment></comment>
    <testCaseGuid>579c12a2-ec66-4312-9b1c-0d640684dcd7</testCaseGuid>
    <variable>
-      <defaultValue>'40'</defaultValue>
+      <defaultValue>'10'</defaultValue>
       <description></description>
       <id>5e9db0cf-dc7a-4fea-a426-fcabf8b5aeb8</id>
       <masked>false</masked>

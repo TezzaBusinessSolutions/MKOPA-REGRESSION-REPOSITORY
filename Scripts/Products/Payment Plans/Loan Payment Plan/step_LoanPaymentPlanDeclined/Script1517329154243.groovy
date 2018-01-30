@@ -19,9 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
-
 WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
 
 WebUI.delay(delay)
@@ -36,11 +33,13 @@ WebUI.delay(delay)
 
 WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/link_PaymentPlanPendingApprove', [('plan_toApprove') : plan_toApprove]))
 
+WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/dropdown_ApprovalStatus'))
+
+WebUI.delay(delay)
+
+WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/option_ApproveStatus'))
+
+WebUI.setText(findTestObject('Products Module/Payments Plans Pending Approval/input_ApproverNotes'), approver_notes)
+
 WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/button_Save'))
-
-WebUI.getText(findTestObject('Products Module/Approve New Subscription Payment Plan/message_ApprovalNotes'))
-
-String error = 'Please fill in the approval notes'
-
-WebUI.verifyElementText(findTestObject('Products Module/Approve New Subscription Payment Plan/message_ApprovalNotes'), error)
 

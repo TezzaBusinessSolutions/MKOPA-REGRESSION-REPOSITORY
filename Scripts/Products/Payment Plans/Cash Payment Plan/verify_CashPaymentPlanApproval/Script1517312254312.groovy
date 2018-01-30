@@ -19,30 +19,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
-
-WebUI.delay(delay)
-
-WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/step_ApprovePaymentPlan'), [('delay') : '5', ('plan_toApprove') : 'PlanReview1'
+        , ('approver_notes') : 'Approve Notes'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(delay)
 
-WebUI.click(findTestObject('Page Header and Menu/Products/link_AddLoanPaymentPlan'))
-
-WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_LoanPaymentPlanName'), loan_PaymentPlanName)
-
-WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_DisplayName'), loan_PaymentDisplayName)
-
-WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_RequesterNotes'), requester_Notes)
-
-WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/button_SaveLoanPaymentPlan'))
-
-WebUI.getText(findTestObject('Products Module/Add Loan Payment Plan/message_ValidLoanType'))
-
-String error = 'Please supply a valid loan type'
-
-WebUI.verifyElementText(findTestObject('Products Module/Add Loan Payment Plan/message_ValidLoanType'), error)
+WebUI.verifyElementPresent(findTestObject('Products Module/Cash Payment Plans/label_CashPaymentListName', [('plan_toApprove') : plan_toApprove]), 
+    0)
 

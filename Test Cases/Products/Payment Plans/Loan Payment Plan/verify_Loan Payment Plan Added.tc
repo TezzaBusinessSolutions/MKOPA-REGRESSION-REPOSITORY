@@ -8,13 +8,6 @@ The test case validates if a loan payment plan has been added successfully</desc
    <comment></comment>
    <testCaseGuid>108217f9-46c1-4b0a-b3d2-21bf65b1cfa5</testCaseGuid>
    <variable>
-      <defaultValue>findTestData('PaymentPlans/Paymentplannames').getValue(1, 1)</defaultValue>
-      <description></description>
-      <id>6c021cc8-b863-4371-9329-dcbb2b9cfa94</id>
-      <masked>false</masked>
-      <name>variable</name>
-   </variable>
-   <variable>
       <defaultValue>'5'</defaultValue>
       <description></description>
       <id>b8ca7e96-8405-4221-8a7a-2b1af0290992</id>
@@ -22,7 +15,7 @@ The test case validates if a loan payment plan has been added successfully</desc
       <name>delay</name>
    </variable>
    <variable>
-      <defaultValue>'Loan Name'</defaultValue>
+      <defaultValue>'Loan'</defaultValue>
       <description></description>
       <id>4d089558-2a1c-474a-911c-616f7066ca54</id>
       <masked>false</masked>
