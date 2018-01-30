@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>msg_CustomerPaymentHistoryLog_Payments</name>
+   <tag></tag>
+   <elementGuidId>9ad5b42a-7f96-4817-be31-fb4e6ed09845</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='history_logs_panel-1']/div[contains(normalize-space(),'${receiptID}')]</value>
+   </webElementProperties>
+</WebElementEntity>

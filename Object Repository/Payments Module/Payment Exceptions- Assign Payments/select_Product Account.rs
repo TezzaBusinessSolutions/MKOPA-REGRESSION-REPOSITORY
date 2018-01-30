@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='customer-div']/form/div[4]/div/div/span[1]</value>
+      <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
    </webElementProperties>
 </WebElementEntity>

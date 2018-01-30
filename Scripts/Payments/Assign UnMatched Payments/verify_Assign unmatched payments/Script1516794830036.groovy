@@ -19,36 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-int rowNum = new Random().nextInt(248 - 1) + 1
-
-WebUI.callTestCase(findTestCase('Payments/View unmatched payments/View unmatched payments steps'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Assign', [('reference') : reference]))
-
-WebUI.check(findTestObject('Payments Module/Payment Exceptions- Assign Payments/checkButton_Payer'))
-
-WebUI.sendKeys(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), findTestData(
-        'Customer Accounts/customer accounts').getValue(1, rowNum))
-
-WebUI.delay(2)
-
-WebUI.doubleClick(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/select_Product Account'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/select_Product Account'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/txt-product Account'))
-
-WebUI.delay(2)
-
-WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Payer Comments'), Comments)
-
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/button_Payer Resolve'))
+WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/step_Payment Exceptions Assign Payment'), [('customerAccount') : customerAccount
+        , ('reference') : reference, ('comments') : Comments, ('dealerAccount') : '', ('productAccount') : productAccount
+        , ('assignee') : assignee], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Payments Module/UnMatched Payment Assigned/successMsg_payment was successfuly signed '), 
     1)

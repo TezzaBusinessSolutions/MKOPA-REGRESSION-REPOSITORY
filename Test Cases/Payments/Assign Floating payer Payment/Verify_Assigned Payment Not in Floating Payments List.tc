@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify_Assigned Payment Not in Floating Payments List</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>763fb9c7-55cf-4d97-8de4-6a5194384b2d</testCaseGuid>
+   <variable>
+      <defaultValue>'HFX43AD69Q'</defaultValue>
+      <description></description>
+      <id>6131ca7c-8c85-44e5-8dd0-7b1507090649</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'23730786'</defaultValue>
+      <description></description>
+      <id>cbd999d7-fe43-4121-9bd4-6f1cfb7e1ff4</id>
+      <masked>false</masked>
+      <name>payerReference</name>
+   </variable>
+   <variable>
+      <defaultValue>'Assign To 23730786 '</defaultValue>
+      <description></description>
+      <id>62bc8475-c452-42b8-be8b-ac38742ed691</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+</TestCaseEntity>

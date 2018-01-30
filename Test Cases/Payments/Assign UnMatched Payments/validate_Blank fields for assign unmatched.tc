@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>message displayed upon leaving assignment fields blank</description>
+   <name>validate_Blank fields for assign unmatched</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>12c0746e-0400-4016-822d-7aa2e8c78113</testCaseGuid>
+   <variable>
+      <defaultValue>'9223016'</defaultValue>
+      <description></description>
+      <id>8bf610f8-4f8d-42d4-9523-37c0960cffa5</id>
+      <masked>false</masked>
+      <name>reference</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d25c6f6a-368f-4d8f-beb9-73b3013147a4</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c693cf7f-7978-48bd-bdda-6a334a5351b4</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d2da8ff6-c124-46d1-bd26-07606dee1309</id>
+      <masked>false</masked>
+      <name>dealerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'customer'</defaultValue>
+      <description></description>
+      <id>9df97b99-1546-48a8-984f-e71e2e171fcf</id>
+      <masked>false</masked>
+      <name>assignee</name>
+   </variable>
+</TestCaseEntity>

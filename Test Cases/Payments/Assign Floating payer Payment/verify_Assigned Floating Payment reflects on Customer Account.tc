@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify_Assigned Floating Payment reflects on Customer Account</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe9c2a93-53eb-4c7e-862b-dcd1b0ec4882</testCaseGuid>
+   <variable>
+      <defaultValue>'YJL99R92VZ'</defaultValue>
+      <description></description>
+      <id>eead4a67-ad5d-4c6e-8692-eb80a4d480bd</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'23730786'</defaultValue>
+      <description></description>
+      <id>a87ad5fe-2ae6-4a16-be7f-de64abc53ab7</id>
+      <masked>false</masked>
+      <name>payerReference</name>
+   </variable>
+   <variable>
+      <defaultValue>'Assigned 23730786'</defaultValue>
+      <description></description>
+      <id>203f3d1b-951b-4908-8f93-39981a388307</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+</TestCaseEntity>

@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*/div[span[text()='${status}']]
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(.,'In Payment')]</value>
+      <value>.//*/div[span[text()='${status}']]
+</value>
    </webElementProperties>
 </WebElementEntity>

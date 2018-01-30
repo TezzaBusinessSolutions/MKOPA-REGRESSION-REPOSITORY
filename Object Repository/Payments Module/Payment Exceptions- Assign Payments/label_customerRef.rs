@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_customerRef</name>
+   <tag></tag>
+   <elementGuidId>15d10d84-c284-40f1-9d53-7dd9a1bc952f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*/div[5]/div/ul/li[contains(normalize-space(),'${customerAcc}')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*/div[5]/div/ul/li[contains(normalize-space(),'${customerAcc}')]</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/View unmatched payments/View unmatched payments steps'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Common Payments/step_Navigate to Unmatched Payments'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Info', [('reference') : reference]))
 

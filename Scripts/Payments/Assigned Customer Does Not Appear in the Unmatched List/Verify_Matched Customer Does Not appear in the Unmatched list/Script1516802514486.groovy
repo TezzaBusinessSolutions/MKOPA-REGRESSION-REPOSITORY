@@ -19,8 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/verify a user can assign unmatched payments'), [('reference') : reference], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/verify_Assign unmatched payments'), [('reference') : reference
+        , ('Comments') : 'Assigned'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 

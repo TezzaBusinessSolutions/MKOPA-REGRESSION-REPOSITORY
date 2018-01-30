@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -34,7 +34,7 @@ WebUI.delay(delay)
 
 WebUI.closeBrowser()
 
-WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Payments/Refund/verify_Customer Refund Approved'), [('accountNumber') : '344474', ('approvalStatus') : 'Approved'
         , ('approvalNotes') : 'Account Approved', ('delay') : '5'], FailureHandling.STOP_ON_FAILURE)

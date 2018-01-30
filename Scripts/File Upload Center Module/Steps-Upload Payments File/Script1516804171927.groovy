@@ -26,7 +26,7 @@ CustomKeywords.'csvCreatorPackage.paymentFileGenerator.paymentFileGenerator'(Acc
 
 WebUI.delay(5)
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page Header and Menu/FileUploadCenter/Link-FileUploadMenu'), FailureHandling.STOP_ON_FAILURE)

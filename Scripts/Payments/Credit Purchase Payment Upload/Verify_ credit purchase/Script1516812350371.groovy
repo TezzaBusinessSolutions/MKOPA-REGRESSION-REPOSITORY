@@ -21,64 +21,42 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import sun.security.ssl.Alerts as Alerts
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), Account)
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+not_run: CPC = WebUI.getText(findTestObject('Customer Module/Customer List/label_CostPerCredit'))
 
-CPC = WebUI.getText(findTestObject('Customer Module/Customer List/label_CostPerCredit'))
+previousCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits', [('credits') : credits]))
 
-previousCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits'))
-
-WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '500', ('Account') : '10760526'
-<<<<<<< HEAD
-        , ('Phone') : '254722949777', ('filePath') : 'C:\\Users\\Stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-=======
-        , ('Phone') : '254722949777', ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
->>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
+        , ('Phone') : phoneNumber, ('filePath') : 'C:\\Users\\stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
         , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), Account)
-
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
-
 WebUI.refresh()
 
-currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_SentCredit'))
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
+
+currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits', [('credits') : credits]))
 
 WebUI.verifyGreaterThan(currentCredits, previousCredits)
 
-if (currentCredits > previousCredits) {
-    ' Throws a Javascript alert'
-    WebUI.executeJavaScript('alert("credits have increased proportionally")', null)
+WebUI.click(findTestObject('Customer Module/Customer List/link_DeviceSerial', [('deviceSerial') : deviceSerial]))
 
-    WebUI.verifyAlertPresent(2)
+WebUI.delay(2)
 
-    WebUI.dismissAlert()
+WebUI.switchToWindowTitle('Inventory item details | M-KOPAnet')
 
-    WebUI.click(findTestObject('Customer Module/Customer List/link_DeviceSerial'))
+WebUI.delay(2)
 
-    WebUI.delay(2)
+WebUI.scrollToElement(findTestObject('Customer Module/Customer List/button_CreditsSent'), 3)
 
-    WebUI.waitForPageLoad(10)
+WebUI.click(findTestObject('Customer Module/Customer List/button_CreditsSent'))
 
-    WebUI.scrollToElement(findTestObject('Customer Module/Customer List/button_CreditsSent'), 3)
-
-    WebUI.click(findTestObject('Customer Module/Customer List/button_CreditsSent'))
-
-    WebUI.verifyElementText(findTestObject('Customer Module/Customer List/label_SentCredit'), currentCredits)
-} else {
-    ' Throws a Javascript alert'
-    WebUI.executeJavaScript('alert("credits have increased proportionally")', null)
-
-    WebUI.verifyAlertPresent(2)
-
-    WebUI.dismissAlert()
-}
+WebUI.verifyElementText(findTestObject('Customer Module/Customer List/label_SentCredit'), currentCredits)
 
 WebUI.closeBrowser()
 

@@ -7,11 +7,25 @@ credits increase proportionally upon making a payment</description>
    <comment></comment>
    <testCaseGuid>0f0752d0-1a64-4216-903b-636b9ee4ba27</testCaseGuid>
    <variable>
-      <defaultValue>'10760526'</defaultValue>
+      <defaultValue>'20884690'</defaultValue>
       <description></description>
       <id>fc54a1ab-a623-4f2d-b3dc-bb813910aa4c</id>
       <masked>false</masked>
-      <name>Account</name>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'200'</defaultValue>
+      <description></description>
+      <id>d66a77e3-2528-4524-92bf-ba140412bd63</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'254714303857 '</defaultValue>
+      <description></description>
+      <id>665b4789-e2f6-41c4-a27e-8021b7502426</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
    </variable>
    <variable>
       <defaultValue>'credits have increased proprtionally'</defaultValue>
@@ -19,5 +33,19 @@ credits increase proportionally upon making a payment</description>
       <id>242a755e-a686-449d-9ac2-0449c4b03dec</id>
       <masked>false</masked>
       <name>alert</name>
+   </variable>
+   <variable>
+      <defaultValue>'41'</defaultValue>
+      <description></description>
+      <id>c824fc8e-d1a4-429e-85d0-b26216d62b07</id>
+      <masked>false</masked>
+      <name>credits</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4559e515-f35e-4ba4-a997-0d615053ab34</id>
+      <masked>false</masked>
+      <name>deviceSerial</name>
    </variable>
 </TestCaseEntity>

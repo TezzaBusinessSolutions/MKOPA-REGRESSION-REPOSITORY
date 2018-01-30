@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 displayNameGenerator = generateName('QWRTYPeuioasdFghjklMnbvcxz', 5)
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))

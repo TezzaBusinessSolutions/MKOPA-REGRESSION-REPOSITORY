@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>step_Payment Exceptions Assign Payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d9195f7-99bd-4225-bfcc-6c2740df25d0</testCaseGuid>
+   <variable>
+      <defaultValue>'7663677'</defaultValue>
+      <description></description>
+      <id>28e6ccd3-d02e-4d2f-9938-aff71f069987</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'0717654838'</defaultValue>
+      <description></description>
+      <id>d8e2c567-5ac9-46f0-8382-91e182ec21a7</id>
+      <masked>false</masked>
+      <name>reference</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sample'</defaultValue>
+      <description></description>
+      <id>0ac36b7f-83f6-4232-9a52-29182ea395c6</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>de433fbd-1982-4b63-98c8-2807706726f6</id>
+      <masked>false</masked>
+      <name>dealerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'7663677'</defaultValue>
+      <description></description>
+      <id>3a625ff1-66e8-4559-9363-105cd5cca63d</id>
+      <masked>false</masked>
+      <name>productAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'customer'</defaultValue>
+      <description>all lower case</description>
+      <id>66e19c26-ba29-4946-8c60-f2a17603010c</id>
+      <masked>false</masked>
+      <name>assignee</name>
+   </variable>
+</TestCaseEntity>
