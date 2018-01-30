@@ -19,20 +19,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/verify_Assign unmatched payments'), [('reference') : reference
-        , ('Comments') : 'Assigned'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.click(findTestObject('Page Header and Menu/Products/Link-Products'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page Header and Menu/Products/link_Other Configurations'))
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
+WebUI.click(findTestObject('Page Header and Menu/Products/Link_Configure Repayment Rates'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Products Module/Repayment Rate Configurations/Link_Add Configuration'))
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
+WebUI.click(findTestObject('Products Module/Repayment Rate Configurations/DropDown_Payment Plan'))
 
-WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
+WebUI.setText(findTestObject('Products Module/Repayment Rate Configurations/Input_Category'), 'Cheeteh')
 
-WebUI.verifyTextNotPresent(reference, false)
+WebUI.setText(findTestObject('Products Module/Repayment Rate Configurations/Input_MinimumValue'), '1')
 

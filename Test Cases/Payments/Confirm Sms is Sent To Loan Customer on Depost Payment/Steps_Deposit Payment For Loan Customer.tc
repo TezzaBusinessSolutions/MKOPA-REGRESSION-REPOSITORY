@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Steps_Deposit Payment For Loan Customer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>94b70e9a-6439-4c6a-9e49-69d57af6df75</testCaseGuid>
+   <variable>
+      <defaultValue>'2500'</defaultValue>
+      <description></description>
+      <id>89f6e92c-cc0d-46b8-a9ca-b998b269c046</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'28854540'</defaultValue>
+      <description></description>
+      <id>2e0bf693-8a06-41e1-8210-19f4929294f4</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'254729208685'</defaultValue>
+      <description></description>
+      <id>f80046ee-b040-46be-a728-213e6095b917</id>
+      <masked>false</masked>
+      <name>phoneNo</name>
+   </variable>
+   <variable>
+      <defaultValue>'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
+      <description></description>
+      <id>7f96067f-add5-403c-83c9-fa64e9a5df39</id>
+      <masked>false</masked>
+      <name>filepath</name>
+   </variable>
+   <variable>
+      <defaultValue>'\'Nice and paid on time\''</defaultValue>
+      <description></description>
+      <id>c1932626-bc28-47a4-92d0-715b3156b93f</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+</TestCaseEntity>

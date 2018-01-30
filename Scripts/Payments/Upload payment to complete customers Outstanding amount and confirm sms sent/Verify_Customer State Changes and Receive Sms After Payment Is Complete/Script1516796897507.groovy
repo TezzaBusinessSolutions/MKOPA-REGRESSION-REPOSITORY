@@ -19,9 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : '42100', ('Account') : '21737779'
-        , ('Phone') : '0727662019', ('filePath') : 'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : Amount, ('Account') : CustomerAccount
+        , ('Phone') : Phoneno, ('filePath') : filepath, ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : ''
+        , ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 

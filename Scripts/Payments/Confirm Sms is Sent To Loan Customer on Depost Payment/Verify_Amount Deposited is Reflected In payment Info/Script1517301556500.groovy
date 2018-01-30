@@ -19,20 +19,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/verify_Assign unmatched payments'), [('reference') : reference
-        , ('Comments') : 'Assigned'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Confirm Sms is Sent To Loan Customer on Depost Payment/Steps_Deposit Payment For Loan Customer'), 
+    [('amount') : amount, ('account') : account, ('phoneNo') : phoneNo, ('filepath') : filepath, ('comment') : comment], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+amountPaid = WebUI.getText(findTestObject('Customer Module/Customer Profile/lastAmountpaid'))
 
-WebUI.delay(2)
+WebUI.verifyEqual(amount, amountPaid)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
-
-WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
-
-WebUI.verifyTextNotPresent(reference, false)
+WebUI.click(findTestObject('Customer Module/Customer List/Radio-SMSBotton'))
 

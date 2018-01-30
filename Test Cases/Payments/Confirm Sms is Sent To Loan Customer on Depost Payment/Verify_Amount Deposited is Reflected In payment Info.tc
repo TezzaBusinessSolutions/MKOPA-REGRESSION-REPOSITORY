@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify_Amount Deposited is Reflected In payment Info</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>054762ba-7568-4062-974e-3ccffe0207c8</testCaseGuid>
+   <variable>
+      <defaultValue>'2500'</defaultValue>
+      <description></description>
+      <id>85bb640e-291e-4c6b-b637-a7f626c12694</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'28854540'</defaultValue>
+      <description></description>
+      <id>8cba0f0c-a789-42cf-a19e-e032cfd102f4</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'254729208685'</defaultValue>
+      <description></description>
+      <id>837ea428-a633-4764-950c-5a29b18a4e27</id>
+      <masked>false</masked>
+      <name>phoneNo</name>
+   </variable>
+   <variable>
+      <defaultValue>'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
+      <description></description>
+      <id>f9ed97df-9eef-47cd-bd1d-24048598cb98</id>
+      <masked>false</masked>
+      <name>filepath</name>
+   </variable>
+   <variable>
+      <defaultValue>'\'Nice and paid on time\''</defaultValue>
+      <description></description>
+      <id>62b0594d-d7b8-43e6-8ab5-dc701843d8e2</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+</TestCaseEntity>

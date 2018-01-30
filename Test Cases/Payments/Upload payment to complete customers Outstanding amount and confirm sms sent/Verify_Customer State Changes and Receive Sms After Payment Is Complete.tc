@@ -12,4 +12,25 @@
       <masked>false</masked>
       <name>CustomerAccount</name>
    </variable>
+   <variable>
+      <defaultValue>'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
+      <description></description>
+      <id>0ee4e0cb-6edd-4cfe-ba7a-cff0e9bd4723</id>
+      <masked>false</masked>
+      <name>filepath</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9554aa03-00ac-44fe-9840-a4a3dd0d2e81</id>
+      <masked>false</masked>
+      <name>Amount</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9caa14c4-1929-429c-97ab-6a9009044331</id>
+      <masked>false</masked>
+      <name>Phoneno</name>
+   </variable>
 </TestCaseEntity>

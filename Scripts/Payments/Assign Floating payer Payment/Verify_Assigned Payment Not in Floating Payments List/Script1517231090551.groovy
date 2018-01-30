@@ -19,20 +19,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/verify_Assign unmatched payments'), [('reference') : reference
-        , ('Comments') : 'Assigned'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Assign Floating payer Payment/step_Assign Floating Payment'), [('receiptNumber') : receiptNumber
+        , ('payerReference') : payerReference, ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-CustomerPayments'))
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-FloatingPayments'))
 
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
-
-WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
-
-WebUI.verifyTextNotPresent(reference, false)
+WebUI.verifyTextNotPresent(receiptNumber, false)
 

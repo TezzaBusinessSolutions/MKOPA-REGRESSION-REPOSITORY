@@ -19,20 +19,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/verify_Assign unmatched payments'), [('reference') : reference
-        , ('Comments') : 'Assigned'], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
+        , ('Phone') : phoneNo, ('filePath') : 'C:\\Users\\lewis.mocha\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Comment') : comment, ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Customer Module/Input-SearchForCustomer'))
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
+WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), account)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
-
-WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
-
-WebUI.verifyTextNotPresent(reference, false)
+WebUI.verifyTextPresent('Deposit Paid', false)
 

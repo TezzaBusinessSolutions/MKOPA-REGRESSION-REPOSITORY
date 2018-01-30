@@ -33,19 +33,15 @@ WebUI.delay(5)
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-FloatingPayments'))
 
 'change in the xpath and put anothe reference number after the test case is complete\r\n'
-WebUI.click(findTestObject('Payments Module/Floating Payer Payments/link_AssignFloatingPayer', [('ReciptNo') : ReciptNo]))
-
-WebUI.click(findTestObject('Payments Module/Assign Floating Payer Payments/Button-Assign'))
-
-WebUI.verifyTextPresent('\'Comment\' should not be empty.', false)
+WebUI.click(findTestObject('Payments Module/Floating Payer Payments/link_AssignFloatingPayer', [('ReciptNo') : receiptNumber]))
 
 WebUI.click(findTestObject('Payments Module/Assign Floating Payer Payments/Input-PayerReference'))
 
 WebUI.delay(2)
 
-WebUI.setMaskedText(findTestObject('Payments Module/Assign Floating Payer Payments/Input-PayerReference'), PayerReference)
+WebUI.setMaskedText(findTestObject('Payments Module/Assign Floating Payer Payments/Input-PayerReference'), payerReference)
 
-WebUI.setText(findTestObject('Payments Module/Assign Floating Payer Payments/Input-Comments'), 'Assigned due to lack of the owner')
+WebUI.setText(findTestObject('Payments Module/Assign Floating Payer Payments/Input-Comments'), comments)
 
 WebUI.delay(2)
 
@@ -58,26 +54,4 @@ WebUI.click(findTestObject('Payments Module/Assign Floating Payer Payments/Input
 WebUI.doubleClick(findTestObject('Payments Module/Assign Floating Payer Payments/SelectingProductAccount'))
 
 WebUI.click(findTestObject('Payments Module/Assign Floating Payer Payments/Button-Assign'))
-
-WebUI.delay(8)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-CustomerPayments'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-FloatingPayments'))
-
-WebUI.verifyTextNotPresent(ReciptNo, false)
-
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), PayerReference)
-
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Customer Module/Customer List/Radio_Paymentlist'))
 
