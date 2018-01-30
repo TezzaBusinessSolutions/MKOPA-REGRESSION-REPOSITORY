@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Link-Products</name>
+   <name>Text_LastPaymentDate</name>
    <tag></tag>
-   <elementGuidId>09cbf4bd-f42b-4f56-b487-445b7204ff2b</elementGuidId>
+   <elementGuidId>3ed5cffa-9eb9-4b30-8e29-1073498f7542</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li/span[text()='Products']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li/span[text()='Products']</value>
+      <value>.//*[@id='BlockedAccounts']//a[text()='Last Payment Date']</value>
    </webElementProperties>
 </WebElementEntity>

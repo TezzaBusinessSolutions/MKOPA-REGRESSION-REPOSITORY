@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Link-Products</name>
+   <name>Input_MinimumValue</name>
    <tag></tag>
-   <elementGuidId>09cbf4bd-f42b-4f56-b487-445b7204ff2b</elementGuidId>
+   <elementGuidId>3cf726b9-8ee7-471b-89f9-5a00ade9e09b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li/span[text()='Products']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li/span[text()='Products']</value>
+      <value>.//*[@id='MinimumValue']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Link-Products</name>
+   <name>DropDown_Payment Plan</name>
    <tag></tag>
-   <elementGuidId>09cbf4bd-f42b-4f56-b487-445b7204ff2b</elementGuidId>
+   <elementGuidId>f3c101ba-08b1-44a7-9644-eb95075eac17</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li/span[text()='Products']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li/span[text()='Products']</value>
+      <value>.//*[@id='divBodyMain']//span[text()='select']</value>
    </webElementProperties>
 </WebElementEntity>

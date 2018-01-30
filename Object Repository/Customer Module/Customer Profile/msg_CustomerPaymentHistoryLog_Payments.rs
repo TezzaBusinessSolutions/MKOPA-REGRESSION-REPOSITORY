@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Link-Products</name>
+   <name>msg_CustomerPaymentHistoryLog_Payments</name>
    <tag></tag>
-   <elementGuidId>09cbf4bd-f42b-4f56-b487-445b7204ff2b</elementGuidId>
+   <elementGuidId>9ad5b42a-7f96-4817-be31-fb4e6ed09845</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li/span[text()='Products']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li/span[text()='Products']</value>
+      <value>.//*[@id='history_logs_panel-1']/div[contains(normalize-space(),'${receiptID}')]</value>
    </webElementProperties>
 </WebElementEntity>

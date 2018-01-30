@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID 16741</description>
+   <name>Verify_Presence Of last Payment Date Column</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3088b227-a1a1-46a8-82ca-ace98aaaad25</testCaseGuid>
+</TestCaseEntity>

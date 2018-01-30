@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>validate_Assign Floating Payment Required Fields</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4174f2b-6892-4496-9233-b163bd6a904a</testCaseGuid>
+   <variable>
+      <defaultValue>'HXK4VFYFS9'</defaultValue>
+      <description></description>
+      <id>a99d1a45-01fe-4513-bb4e-afd8e25fd281</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'23730786'</defaultValue>
+      <description></description>
+      <id>696e0a21-6a18-4e0a-9ce1-968c4cead77e</id>
+      <masked>false</masked>
+      <name>payerReference</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>05d1c1dc-749a-420d-83ec-2cbd238d4623</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>step_Assign Floating Payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4bcd37df-eac3-420a-9ce2-2a2b93800762</testCaseGuid>
+   <variable>
+      <defaultValue>'VJ3OZC7GZ3'</defaultValue>
+      <description></description>
+      <id>fb4935d1-e1ac-4bb5-b738-7711086bcf60</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'23730786'</defaultValue>
+      <description></description>
+      <id>3cbfc5d5-d555-4bbc-9af8-b0d1a9498d85</id>
+      <masked>false</masked>
+      <name>payerReference</name>
+   </variable>
+   <variable>
+      <defaultValue>'Assign to 23730786 receipt VJ3OZC7GZ3'</defaultValue>
+      <description></description>
+      <id>c6ddc6aa-8ab5-4fc0-87df-a6f3691efc2d</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+</TestCaseEntity>
