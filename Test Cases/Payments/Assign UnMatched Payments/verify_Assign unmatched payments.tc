@@ -19,4 +19,11 @@
       <masked>false</masked>
       <name>Comments</name>
    </variable>
+   <variable>
+      <defaultValue>'7663677'</defaultValue>
+      <description></description>
+      <id>6792e5ca-8dd9-4cce-acaf-7e27f127e105</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
 </TestCaseEntity>

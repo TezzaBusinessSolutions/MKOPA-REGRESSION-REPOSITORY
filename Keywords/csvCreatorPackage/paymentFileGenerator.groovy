@@ -48,6 +48,9 @@ def  paymentFileGenerator(String account,String phone,String amount=null) {
 		amount = 100
 	}
 	
+	/*LocalDateTime t = LocalDateTime.now();
+	return t as String*/
+	
 	//Creating a parameterized File Location Path
 	String path = System.getenv('USERPROFILE')
 	File fileGenerated=new File(path+"/git/MKOPA-REGRESSION-REPOSITORY/Payment Files/payments.csv")
