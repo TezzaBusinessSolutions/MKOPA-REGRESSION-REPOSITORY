@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>information about the credits sent to a device upon making a payment</description>
-   <name>button_CreditsSent</name>
+   <description>A drop down to select the dealership</description>
+   <name>Dropdown-Dealership</name>
    <tag></tag>
-   <elementGuidId>a1e4e9ea-7739-42c1-81bb-e7c1e46f6b3c</elementGuidId>
+   <elementGuidId>5019faf8-bbcf-4502-98c2-e47917c0fa02</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='TabStrip']/ul/li/a[text()='Credits Sent']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='TabStrip']/ul/li/a[text()='Credits Sent']</value>
+      <value>.//*[@id='dealerCombo-input']</value>
    </webElementProperties>
 </WebElementEntity>

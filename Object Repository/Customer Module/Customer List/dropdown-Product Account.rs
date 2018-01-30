@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>information about the credits sent to a device upon making a payment</description>
-   <name>button_CreditsSent</name>
+   <description>The Product Account Selects the Payment Plan</description>
+   <name>dropdown-Product Account</name>
    <tag></tag>
-   <elementGuidId>a1e4e9ea-7739-42c1-81bb-e7c1e46f6b3c</elementGuidId>
+   <elementGuidId>0971f978-546a-4aa0-9dc1-8d273288a2eb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='TabStrip']/ul/li/a[text()='Credits Sent']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='TabStrip']/ul/li/a[text()='Credits Sent']</value>
+      <value>.//*[@id='div-context-info-content']//span/span[text()='select']</value>
    </webElementProperties>
 </WebElementEntity>

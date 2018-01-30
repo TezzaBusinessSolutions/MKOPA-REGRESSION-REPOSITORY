@@ -23,4 +23,32 @@ Upload the Payment file andd it should be in CSV Format</description>
       <masked>false</masked>
       <name>tagForUpload</name>
    </variable>
+   <variable>
+      <defaultValue>'300'</defaultValue>
+      <description></description>
+      <id>38aecce2-b922-4390-b666-7d3f8e6aa13f</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'1519035'</defaultValue>
+      <description></description>
+      <id>362f9c38-ccf7-4710-b500-b113413d29b5</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'254719889872 '</defaultValue>
+      <description></description>
+      <id>e0f0adf9-5d0d-4b7b-a08c-9e1b9eafc72f</id>
+      <masked>false</masked>
+      <name>phone</name>
+   </variable>
+   <variable>
+      <defaultValue>'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
+      <description></description>
+      <id>1556b507-0596-45b1-9f3e-7cc7748facdc</id>
+      <masked>false</masked>
+      <name>filePath</name>
+   </variable>
 </TestCaseEntity>

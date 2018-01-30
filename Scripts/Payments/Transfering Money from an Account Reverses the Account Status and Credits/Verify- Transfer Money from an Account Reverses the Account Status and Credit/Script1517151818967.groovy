@@ -20,11 +20,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Payments/Transfering Money from an Account Reverses the Account Status and Credits/Steps- Transfering money by an In finished Customer'), 
-    [('customerInFinishedPayment') : '3853350', ('depositReceipt') : '5XTC0Q6Z94', ('payerComment') : 'kwanza', ('customerReference') : '22715468'], 
-    FailureHandling.STOP_ON_FAILURE)
+    [('customerInFinishedPayment') : customerInFinishedPayment, ('depositReceipt') : depositReceipt, ('payerComment') : 'kwanza'
+        , ('customerReference') : '22715468'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Payments Transfer Approval/Steps-Approve Cash Transfer'), [('requestorNotes') : 'kwanza'
-        , ('comments') : 'I have approved the Transfer of the payment to the requested Account'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Payments Transfer Approval/Steps-Approve Cash Transfer'), [('requestorNotes') : requestorNotes
+        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
@@ -33,4 +33,10 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-
 
 WebUI.callTestCase(findTestCase('Common/Step_SearchSpecificCustomer'), [('customerToSearch') : customerInFinishedPayment], 
     FailureHandling.STOP_ON_FAILURE)
+
+finishedPaymentLabel = WebUI.getText(findTestObject('Customer Module/Customer List/Label-Finished Payment'))
+
+WebUI.verifyEqual(finishedPaymentLabel, labelStatus)
+
+WebUI.closeBrowser()
 

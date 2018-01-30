@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='div-device-allocation-info']//a[text()=&quot;${deviceSerial}&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='div-device-allocation-info']/div[1]/div[1]/div[2]/a</value>
+      <value>.//*[@id='div-device-allocation-info']//a[text()=&quot;${deviceSerial}&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

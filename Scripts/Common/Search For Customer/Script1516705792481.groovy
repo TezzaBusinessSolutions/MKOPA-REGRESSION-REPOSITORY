@@ -24,9 +24,6 @@ import java.util.Random as Random
 
 int rownum = new Random().nextInt(248 - 1) + 1
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
-
 WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Customer Accounts/customer accounts').getValue(
         1, rownum))
 

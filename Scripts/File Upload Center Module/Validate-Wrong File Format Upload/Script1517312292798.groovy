@@ -9,7 +9,6 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
-import com.kms.katalon.core.testcase.Variable as Variable
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
@@ -20,40 +19,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-tagged = tagGenerator('QWERTYUIOP1234567890LKJHGFDSAZXCVBNM', 5)
-
-CustomKeywords.'csvCreatorPackage.paymentFileGenerator.paymentFileGenerator'(Account, Phone, Amount)
-
-WebUI.delay(5)
-
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
+        , ('Phone') : phone, ('filePath') : filePath, ('Comment') : comment, ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page Header and Menu/FileUploadCenter/Link-FileUploadMenu'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/errorMsg_File Created Should be in CSV Format'), 
+    0)
 
-WebUI.click(findTestObject('File Upload Center Module/File Upload Center/button_MPESA'))
-
-WebUI.uploadFile(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/button_SELECT'), filePath)
-
-WebUI.setText(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/input_COMMENT'), Comment)
-
-WebUI.setText(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/input_Tag'), tagged)
-
-WebUI.click(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/button_UPLOAD'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/button_Close Window Button'))
-
-String tagGenerator(String chars, Integer length) {
-    Random rand = new Random()
-
-    StringBuilder sb = new StringBuilder()
-
-    for (int i = 0; i < length; i++) {
-        sb.append(chars.charAt(rand.nextInt(chars.length())))
-    }
-    
-    return sb.toString()
-}
+WebUI.closeBrowser()
 

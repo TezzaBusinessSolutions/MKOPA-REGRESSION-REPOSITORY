@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='PaymentsList']/table/tbody/tr[1]/td[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//td[contains(.,'${receiptNumber}')]</value>
+      <value>.//*[@id='PaymentsList']/table/tbody/tr[1]/td[1]</value>
    </webElementProperties>
 </WebElementEntity>

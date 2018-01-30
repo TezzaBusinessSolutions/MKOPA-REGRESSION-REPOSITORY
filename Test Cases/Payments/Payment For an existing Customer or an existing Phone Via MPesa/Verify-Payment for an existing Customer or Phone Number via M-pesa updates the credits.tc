@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify after uploading the payment the credits are updated</description>
+   <name>Verify-Payment for an existing Customer or Phone Number via M-pesa updates the credits</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bda4cca7-f16c-4bb7-946f-4e6b98709fb0</testCaseGuid>
+   <variable>
+      <defaultValue>'1519035'</defaultValue>
+      <description></description>
+      <id>eb22da64-8342-4f46-9dbc-9d7dee51e94a</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'210'</defaultValue>
+      <description></description>
+      <id>02748518-f01b-4fc5-9ab8-86314c1e2522</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'\'254719889872 \''</defaultValue>
+      <description></description>
+      <id>537c8b5b-bf42-4454-9695-b8146f196ea7</id>
+      <masked>false</masked>
+      <name>phone</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>8fee8cec-d97c-4b34-943a-dfc1b6ad478c</id>
+      <masked>false</masked>
+      <name>initialCustomerCredits</name>
+   </variable>
+   <variable>
+      <defaultValue>'\'0216021201-000502\''</defaultValue>
+      <description></description>
+      <id>85ecd7a6-c949-468d-a10c-045f0bb440cc</id>
+      <masked>false</masked>
+      <name>deviceSerialNumber</name>
+   </variable>
+</TestCaseEntity>

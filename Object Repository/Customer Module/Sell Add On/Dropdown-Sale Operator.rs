@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>information about the credits sent to a device upon making a payment</description>
-   <name>button_CreditsSent</name>
+   <description>Sale Operator Drop Down</description>
+   <name>Dropdown-Sale Operator</name>
    <tag></tag>
-   <elementGuidId>a1e4e9ea-7739-42c1-81bb-e7c1e46f6b3c</elementGuidId>
+   <elementGuidId>a492e742-4e9f-4b59-b6ff-bb08feaadf57</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='TabStrip']/ul/li/a[text()='Credits Sent']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='TabStrip']/ul/li/a[text()='Credits Sent']</value>
+      <value>.//*[@id='wdw-actions-content']/div[2]/form/div/div[3]/div[3]/div/div/span[1</value>
    </webElementProperties>
 </WebElementEntity>

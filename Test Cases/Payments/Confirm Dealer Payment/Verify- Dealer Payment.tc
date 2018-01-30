@@ -26,4 +26,18 @@
       <masked>false</masked>
       <name>text</name>
    </variable>
+   <variable>
+      <defaultValue>'200'</defaultValue>
+      <description></description>
+      <id>b437d42c-ae76-435f-a4cb-b94b1ca45656</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'254729921334'</defaultValue>
+      <description></description>
+      <id>c0af5721-8572-4abd-ab37-0fd3f13c7cb2</id>
+      <masked>false</masked>
+      <name>phone</name>
+   </variable>
 </TestCaseEntity>

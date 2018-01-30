@@ -6,10 +6,45 @@
    <comment></comment>
    <testCaseGuid>1a83273b-17ce-46a4-b788-9b3bf8fc6747</testCaseGuid>
    <variable>
-      <defaultValue>'3853350'</defaultValue>
+      <defaultValue>'13746542'</defaultValue>
       <description></description>
       <id>4adc0c20-e451-4907-81e5-f1025fe71bc1</id>
       <masked>false</masked>
       <name>customerInFinishedPayment</name>
+   </variable>
+   <variable>
+      <defaultValue>'KA42S71P2Y'</defaultValue>
+      <description></description>
+      <id>4790d271-72ca-40ff-a031-87128f210b78</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>47c6bee4-1550-47e7-bc39-e8e7d11d10ee</id>
+      <masked>false</masked>
+      <name>finishedPaymentLabel</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Customer Module/Customer List/Label-Finished Payment')</defaultValue>
+      <description></description>
+      <id>6d9ec519-0994-42a6-9b08-8c97a7a46228</id>
+      <masked>false</masked>
+      <name>labelStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>'kwanza'</defaultValue>
+      <description></description>
+      <id>0c93eccd-0679-4d65-9f2f-004e8bdec564</id>
+      <masked>false</masked>
+      <name>requestorNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have approved the transfer'</defaultValue>
+      <description></description>
+      <id>ba057d97-f934-4997-8de0-bdeee70c364c</id>
+      <masked>false</masked>
+      <name>comments</name>
    </variable>
 </TestCaseEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='div-account-info']/div[1]/div/div[5]/div[1]/div[2]</value>
+         <value>.//*[@id='div-account-info']/*//div[div[contains(normalize-space(),&quot;Credits&quot;)]]/div[text()='$credits']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='div-account-info']/div[1]/div/div[5]/div[1]/div[2]</value>
+      <value>.//*[@id='div-account-info']/*//div[div[contains(normalize-space(),&quot;Credits&quot;)]]/div[text()='$credits']</value>
    </webElementProperties>
 </WebElementEntity>

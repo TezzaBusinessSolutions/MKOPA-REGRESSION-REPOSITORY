@@ -18,12 +18,14 @@ import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
+import java.time.*
 
 import internal.GlobalVariable
 
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
+import java.text.SimpleDateFormat
 
 
 String generateRandom(String chars='QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length=10) {
@@ -47,6 +49,7 @@ def  paymentFileGenerator(String account,String phone,String amount=null) {
 	if(amount==null){
 		amount = 100
 	}
+
 	
 	//Creating a parameterized File Location Path
 	String path = System.getenv('USERPROFILE')
@@ -59,9 +62,8 @@ def  paymentFileGenerator(String account,String phone,String amount=null) {
 	def text=generateRandom()
 	fileGenerated.append("Receipt No.,Completion Time,Initiation Time,Details,Transaction Status,Paid In,Withdrawn,Balance,Balance Confirmed,Reason Type,Other Party Info,Linked Transaction ID,A/C No.\r\n")
 	fileGenerated.append(text+",15:50,20-04-2017 15:50,Pay Bill from "+phone+ " - Customer Credits Acc. "
-		+account+",Completed,"+amount+",,66,TRUE,Pay Utility,"+phone+"- Customer Credits,,"+account)
-	}
-	
+		+account+",Completed,"+amount+",,66,TRUE,Pay Utility,"+phone+"- Customer Credits,,"+account)}
+		
 	//Deletes the file if it exists
 	else {fileGenerated.delete()	
 	
