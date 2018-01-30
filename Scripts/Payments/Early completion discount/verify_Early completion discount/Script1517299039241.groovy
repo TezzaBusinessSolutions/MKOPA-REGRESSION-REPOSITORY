@@ -19,34 +19,36 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Common Payments/step_Navigate to Unmatched Payments'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Assign', [('reference') : reference]))
-
-WebUI.check(findTestObject('Payments Module/Payment Exceptions- Assign Payments/checkButton_Payer'))
-
-WebUI.sendKeys(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), customerAccount)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
 
 WebUI.delay(2)
 
-WebUI.doubleClick(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/select_Product Account'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/link_Incentives'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/select_Product Account'))
+WebUI.click(findTestObject('Page Header and Menu/Products/link_ListDiscounts'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Payments Module/List Discounts/page-5', [('page') : page]))
+
+discount = WebUI.getText(findTestObject('Payments Module/List Discounts/label_Discount', [('paymentPlan') : paymentPlan, ('discount') : discount]))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/drop_productAccount'))
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : customerAccount
+        , ('Phone') : phoneNumber, ('filePath') : 'C:\\Users\\stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.delay(5)
 
-WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Payer Comments'), Comments)
+WebUI.refresh()
 
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/button_Payer Resolve'))
+WebUI.callTestCase(findTestCase('Common/Step_SearchSpecificCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Payments Module/UnMatched Payment Assigned/successMsg_payment was successfuly signed '), 
-    1)
+WebUI.verifyElementText(findTestObject('Customer Module/Customer List/Label-In Payment', [('status') : status]), status)
 

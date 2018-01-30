@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>a select option to select a product account</description>
-   <name>select_Product Account</name>
+   <description></description>
+   <name>errorMsg_You have exceede 50 characters</name>
    <tag></tag>
-   <elementGuidId>24831bfe-0f0d-4dd1-8495-6d66faadd5b6</elementGuidId>
+   <elementGuidId>03e6b1c3-62be-423b-9de0-9ba6a33ac4a2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
+      <value>//span[@id='errorMessage']</value>
    </webElementProperties>
 </WebElementEntity>

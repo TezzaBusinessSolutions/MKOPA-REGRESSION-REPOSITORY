@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>a select option to select a product account</description>
-   <name>select_Product Account</name>
+   <description></description>
+   <name>radio_assignee</name>
    <tag></tag>
-   <elementGuidId>24831bfe-0f0d-4dd1-8495-6d66faadd5b6</elementGuidId>
+   <elementGuidId>c98c47d2-2aab-4fc3-a458-6efa7dd8b260</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
+      <value>.//*[@id='${assignee}-input']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>a select option to select a product account</description>
-   <name>select_Product Account</name>
+   <description></description>
+   <name>label_customerRef</name>
    <tag></tag>
-   <elementGuidId>24831bfe-0f0d-4dd1-8495-6d66faadd5b6</elementGuidId>
+   <elementGuidId>15d10d84-c284-40f1-9d53-7dd9a1bc952f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
+         <value>//*/div[5]/div/ul/li[contains(normalize-space(),'${customerAcc}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
+      <value>//*/div[5]/div/ul/li[contains(normalize-space(),'${customerAcc}')]</value>
    </webElementProperties>
 </WebElementEntity>

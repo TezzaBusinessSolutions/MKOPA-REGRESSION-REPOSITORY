@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>a select option to select a product account</description>
-   <name>select_Product Account</name>
+   <description>page 5 of list dicounts</description>
+   <name>page-5</name>
    <tag></tag>
-   <elementGuidId>24831bfe-0f0d-4dd1-8495-6d66faadd5b6</elementGuidId>
+   <elementGuidId>e8334978-ce04-41d0-8de0-5e9a68a83b1f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
+         <value>.//*[@id='DiscountList']/div/div[2]/div/a[text()='${page}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*/div[6]/div/ul/li[contains(normalize-space(),'${productAcc}')]</value>
+      <value>.//*[@id='DiscountList']/div/div[2]/div/a[text()='${page}']</value>
    </webElementProperties>
 </WebElementEntity>

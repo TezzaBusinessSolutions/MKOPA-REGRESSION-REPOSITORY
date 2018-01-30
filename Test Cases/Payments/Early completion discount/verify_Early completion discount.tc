@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID:16625
+a cutomer gets discount upon early payment of the loan amount aplicable</description>
+   <name>verify_Early completion discount</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>61c82d8e-ebc1-4085-9e82-76d0d6f34df0</testCaseGuid>
+   <variable>
+      <defaultValue>'431231'</defaultValue>
+      <description></description>
+      <id>3e5cc49d-0257-4a45-809f-e82f78c9838b</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>e27d3665-3bc1-441e-a83c-39c07802ad48</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variable>
+   <variable>
+      <defaultValue>'254714431231'</defaultValue>
+      <description></description>
+      <id>ecda38a4-c195-45c3-a3c2-dbce06e67235</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'16000'</defaultValue>
+      <description></description>
+      <id>0d0df3d9-a75f-4498-8efc-0a2d5d9d9ca7</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'M-KOPA 5 v1'</defaultValue>
+      <description></description>
+      <id>8c03b25e-b948-44e3-8b51-fa1b5e9cfa5f</id>
+      <masked>false</masked>
+      <name>paymentPlan</name>
+   </variable>
+   <variable>
+      <defaultValue>'4000'</defaultValue>
+      <description></description>
+      <id>7927c52b-2d18-4f54-88b8-9bf4de264d13</id>
+      <masked>false</masked>
+      <name>discount</name>
+   </variable>
+   <variable>
+      <defaultValue>'Finished Payment'</defaultValue>
+      <description></description>
+      <id>346ffbc3-a7bb-4755-8162-a9d5f428f711</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>
