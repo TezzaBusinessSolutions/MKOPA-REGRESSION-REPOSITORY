@@ -23,30 +23,32 @@ WebUI.callTestCase(findTestCase('Payments/Common Payments/step_Navigate to Unmat
 
 WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Assign', [('reference') : reference]))
 
-WebUI.check(findTestObject('Payments Module/Payment Exceptions- Assign Payments/checkButton_Payer'))
+WebUI.check(findTestObject('Payments Module/Payment Exceptions- Assign Payments/radio_assignee', [('assignee') : assignee]))
 
-WebUI.sendKeys(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), customerAccount)
+if (assignee == 'dealer') {
+    WebUI.sendKeys(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Account Number'), dealerAccount)
 
-WebUI.delay(2)
+    WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Dealer Comments'), Comments)
+} else {
+    WebUI.sendKeys(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), customerAccount)
 
-WebUI.doubleClick(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/select_Product Account'))
+    WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/label_customerRef', [('customerAcc') : customerAccount]), 
+        FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+    WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/select_Product Account'))
+    WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/drop_productAccount'))
 
-WebUI.delay(2)
+    WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/drop_productAccount'))
+    WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/select_Product Account', [('productAcc') : productAccount]))
 
-WebUI.delay(2)
+    WebUI.delay(2)
 
-WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Payer Comments'), Comments)
+    WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Payer Comments'), comments)
+}
 
 WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/button_Payer Resolve'))
-
-WebUI.verifyElementPresent(findTestObject('Payments Module/UnMatched Payment Assigned/successMsg_payment was successfuly signed '), 
-    1)
 

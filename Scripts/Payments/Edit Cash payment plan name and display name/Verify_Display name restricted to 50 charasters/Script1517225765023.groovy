@@ -19,18 +19,50 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+displayNameGenerator = generateName('qwertyuiopasdfghjklzxcvbnm', 51)
+
+displayNameGenerator1 = generateName('qwertyuiopasdfghjklzxcvbnm', 49)
+
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
+WebUI.click(findTestObject('Page Header and Menu/Products/Link-ListCashPaymentPlans'))
 
-WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
+WebUI.click(findTestObject('Payments Module/Cash Payment Plan/Link_Edit Cash Payment Plan', [('editCashPaymentPlan') : editCashPaymentPlan]))
+
+WebUI.setText(findTestObject('Payments Module/Edit Cash Payment Plan/input_Plan Display Name'), displayNameGenerator)
+
+WebUI.verifyElementPresent(findTestObject('Payments Module/Edit Cash Payment Plan/errorMsg_You have exceede 50 characters'), 
+    2)
+
+WebUI.clearText(findTestObject('Payments Module/Edit Cash Payment Plan/input_Plan Display Name'))
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Payments Module/Edit Cash Payment Plan/input_Requestor Notes'), requestorNotes)
+
+WebUI.setText(findTestObject('Payments Module/Edit Cash Payment Plan/input_Plan Display Name', [('editCashPaymentPlan') : editCashPaymentPlan]), 
+    displayNameGenerator1)
+
+WebUI.click(findTestObject('Payments Module/Edit Cash Payment Plan/button_Save'))
+
+String generateName(String chars, Integer length) {
+    Random rand = new Random()
+
+    StringBuilder sb = new StringBuilder()
+
+    for (int i = 0; i < length; i++) {
+        sb.append(chars.charAt(rand.nextInt(chars.length())))
+    }
+    
+    return sb.toString()
+}
 

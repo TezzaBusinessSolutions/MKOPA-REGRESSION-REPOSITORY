@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*/div[@class=&quot;validation-summary-errors&quot;]/ul/li[contains(normalize-space(),&quot;Invalid user name or password&quot;) or contains(normalize-space(),&quot;Please supply a valid user name for the operation&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*/ul/li[@text()=&quot;Invalid user name or password&quot;]</value>
+      <value>//*/div[@class=&quot;validation-summary-errors&quot;]/ul/li[contains(normalize-space(),&quot;Invalid user name or password&quot;) or contains(normalize-space(),&quot;Please supply a valid user name for the operation&quot;)]</value>
    </webElementProperties>
 </WebElementEntity>
