@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='OutboundCredits']/table/tbody/tr[1]/td[text()=&quot;${currentCredits}&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='div-device-info']/div[2]/div[1]/div[2]</value>
+      <value>.//*[@id='OutboundCredits']/table/tbody/tr[1]/td[text()=&quot;${currentCredits}&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

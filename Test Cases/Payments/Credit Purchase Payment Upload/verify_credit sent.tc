@@ -1,44 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>ID: 16688
-credits increase proportionally upon making a payment</description>
-   <name>Verify_ credit purchase</name>
+   <description></description>
+   <name>verify_credit sent</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0f0752d0-1a64-4216-903b-636b9ee4ba27</testCaseGuid>
+   <testCaseGuid>2c1d83ca-cb8e-4a48-ad30-6f6628bbd666</testCaseGuid>
+   <variable>
+      <defaultValue>'1215010701-001554'</defaultValue>
+      <description></description>
+      <id>f76f6b61-b2f0-45da-8d2c-2051e69aa27d</id>
+      <masked>false</masked>
+      <name>deviceSerial</name>
+   </variable>
    <variable>
       <defaultValue>'20884690'</defaultValue>
       <description></description>
-      <id>fc54a1ab-a623-4f2d-b3dc-bb813910aa4c</id>
+      <id>dea66849-b0eb-432e-907e-07e1d20307ec</id>
       <masked>false</masked>
       <name>account</name>
    </variable>
    <variable>
-      <defaultValue>'323'</defaultValue>
+      <defaultValue>'279'</defaultValue>
       <description></description>
-      <id>d66a77e3-2528-4524-92bf-ba140412bd63</id>
+      <id>fd792c1d-4acb-4b18-aea0-9169afdbb4c2</id>
       <masked>false</masked>
       <name>amount</name>
    </variable>
    <variable>
       <defaultValue>'254714303857 '</defaultValue>
       <description></description>
-      <id>665b4789-e2f6-41c4-a27e-8021b7502426</id>
+      <id>479b9144-5ab6-40b1-bf0b-3d4d937b56fe</id>
       <masked>false</masked>
       <name>phoneNumber</name>
    </variable>
    <variable>
-      <defaultValue>'49'</defaultValue>
+      <defaultValue>'85'</defaultValue>
       <description></description>
-      <id>c824fc8e-d1a4-429e-85d0-b26216d62b07</id>
+      <id>ae36c514-e3ef-4ef2-a496-0411b2810705</id>
       <masked>false</masked>
       <name>previousCredits</name>
    </variable>
    <variable>
-      <defaultValue>' 1215010701-001554'</defaultValue>
+      <defaultValue>'87'</defaultValue>
       <description></description>
-      <id>4559e515-f35e-4ba4-a997-0d615053ab34</id>
+      <id>6f86d23b-1290-4f82-8a83-8775d03eff1c</id>
       <masked>false</masked>
-      <name>deviceSerial</name>
+      <name>credits</name>
    </variable>
 </TestCaseEntity>

@@ -40,4 +40,11 @@
       <masked>false</masked>
       <name>assignee</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6e267725-daae-4e32-9840-24d3604edc26</id>
+      <masked>false</masked>
+      <name>productAccount</name>
+   </variable>
 </TestCaseEntity>

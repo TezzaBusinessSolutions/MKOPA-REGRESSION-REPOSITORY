@@ -17,7 +17,7 @@
       <description></description>
       <id>23748d43-bcd3-4992-bffd-c59128e137e7</id>
       <masked>false</masked>
-      <name>Comments</name>
+      <name>comments</name>
    </variable>
    <variable>
       <defaultValue>'7663677'</defaultValue>
@@ -39,5 +39,12 @@
       <id>9203df33-95a6-437e-889f-61694313ff94</id>
       <masked>false</masked>
       <name>productAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7af951f4-c0fb-42bc-8621-b7b7810c762f</id>
+      <masked>false</masked>
+      <name>deaerAccount</name>
    </variable>
 </TestCaseEntity>

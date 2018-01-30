@@ -19,10 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/step_Payment Exceptions Assign Payment'), [('customerAccount') : customerAccount
-        , ('reference') : reference, ('comments') : comments, ('dealerAccount') : '', ('productAccount') : productAccount
-        , ('assignee') : assignee], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Credit Purchase Payment Upload/Verify_ credit purchase'), [('account') : account
+        , ('amount') : amount, ('phoneNumber') : phoneNumber, ('previousCredits') : '41', ('deviceSerial') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Payments Module/UnMatched Payment Assigned/successMsg_payment was successfuly signed '), 
-    1)
+currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits', [('credits') : credits]))
+
+WebUI.click(findTestObject('Customer Module/Customer List/link_DeviceSerial', [('deviceSerial') : deviceSerial]))
+
+WebUI.delay(2)
+
+WebUI.switchToWindowTitle('Inventory item details | M-KOPAnet')
+
+WebUI.delay(2)
+
+WebUI.scrollToElement(findTestObject('Customer Module/Customer List/button_CreditsSent'), 3)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button_CreditsSent'))
+
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Customer Module/Customer List/label_SentCredit', [('currentCredits') : currentCredits]), 
+    2)
 

@@ -19,10 +19,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/step_Payment Exceptions Assign Payment'), [('customerAccount') : customerAccount
-        , ('reference') : reference, ('comments') : comments, ('dealerAccount') : '', ('productAccount') : productAccount
-        , ('assignee') : assignee], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Payments Module/UnMatched Payment Assigned/successMsg_payment was successfuly signed '), 
-    1)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
+
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Page Header and Menu/Products/link_Incentives'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page Header and Menu/Products/link_ListDiscounts'))
 
