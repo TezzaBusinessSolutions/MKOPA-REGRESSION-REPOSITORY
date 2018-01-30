@@ -22,37 +22,9 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
-
-WebUI.delay(delay)
-
-WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
-
-WebUI.delay(delay)
-
-WebUI.click(findTestObject('Page Header and Menu/Products/link_AddCashPaymentPlan'))
-
-WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_PaymentPlanName'), payment_PlanName)
-
-WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_PaymentPlanDisplayName'), payment_PlanDisplayName)
-
-WebUI.delay(delay)
-
-WebUI.scrollToElement(findTestObject('Products Module/Add Cash Payment Plan/option_OutletProductType', [('outletproducttype') : outletproducttype]), 
-    0)
-
-WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/option_OutletProductType', [('outletproducttype') : outletproducttype]), 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/button_AddProductType'))
-
-WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_TotalPrice'), total_Price)
-
-WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_RequesterNotes'), requester_Notes)
-
-WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/button_SaveCashPaymentPlan'))
-
-WebUI.delay(delay)
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/step_AddCashPaymentPlan'), [('delay') : '5', ('payment_PlanName') : 'PlanReview1'
+        , ('payment_PlanDisplayName') : 'Payment Plan Display Name Test', ('outletproducttype') : 'BluetoothTVOpt', ('total_Price') : '50'
+        , ('requester_Notes') : 'Payment Cash Plan Notes'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.getText(findTestObject('Products Module/Add Cash Payment Plan/label_SuccessfulCashPaymentPlanDetails'))
 
@@ -61,5 +33,5 @@ String cashpaymentdetails = 'Cash Payment Plan Details'
 WebUI.verifyElementText(findTestObject('Products Module/Add Cash Payment Plan/label_SuccessfulCashPaymentPlanDetails'), 
     cashpaymentdetails)
 
-WebUI.takeScreenshot()
+WebUI.closeBrowser()
 

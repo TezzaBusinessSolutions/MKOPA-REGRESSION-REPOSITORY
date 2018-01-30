@@ -22,17 +22,21 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [('customerAccount') : '27360571', ('depositReceipt') : 'KDG2J25T4I'
+        , ('delay') : '5', ('customerSearch') : '30990522'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), inputNotes)
+WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), '')
 
 WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
 
-//String errormsg = WebUI.getText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes'))
-String errormsg = 'Please fill in the request notes'
+WebUI.getText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]))
+
+String message = 'Please fill in the request notes'
 
 WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]), 
-    errormsg)
+    message)
+
+WebUI.closeBrowser()
 

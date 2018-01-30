@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>The test cases approves payment plans</description>
+   <name>verify_LoanPaymentPlansApproval</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ca4ba94c-894d-4a8e-9ab5-c8af07aa0cb3</testCaseGuid>
+   <variable>
+      <defaultValue>'MYLOAN'</defaultValue>
+      <description></description>
+      <id>531d93f3-1823-4bd9-af76-7e0664f1bfe4</id>
+      <masked>false</masked>
+      <name>plan_toApprove</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>b1251a0c-2b6c-4ab7-8026-3a32ae1f0324</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>'Approve Testing'</defaultValue>
+      <description></description>
+      <id>dc37f890-7a48-4655-b0bb-5ae809fffce3</id>
+      <masked>false</masked>
+      <name>approver_notes</name>
+   </variable>
+</TestCaseEntity>

@@ -22,65 +22,12 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/step_AddLoanPaymentPlan'), [('delay') : '5', ('loan_PaymentPlanName') : 'LoanTest7'
+        , ('loan_PaymentDisplayName') : 'Loan Display Name', ('outletproducttype') : 'BluetoothTVOpt', ('loan_Deposit') : '100'
+        , ('costpercredit') : '15', ('loan_Duration') : '5', ('requester_Notes') : 'Loan Payment Plan', ('total_Price') : '56'
+        , ('free_Activation') : '5', ('loan_Type') : 'HirePurchase'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(delay)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
-
-WebUI.delay(delay)
-
-WebUI.click(findTestObject('Page Header and Menu/Products/link_AddLoanPaymentPlan'))
-
-WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_LoanPaymentPlanName'), loan_PaymentPlanName)
-
-WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_DisplayName'), loan_PaymentDisplayName)
-
-WebUI.delay(delay)
-
-WebUI.scrollToElement(findTestObject('Products Module/Add Cash Payment Plan/option_OutletProductType', [('outletproducttype') : outletproducttype]), 
-    0)
-
-WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/option_OutletProductType', [('outletproducttype') : outletproducttype]))
-
-WebUI.click(findTestObject('Products Module/Add Cash Payment Plan/button_AddProductType'))
-
-WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_LoanDeposit'), loan_Deposit)
-
-WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_CostPerCredit'), costpercredit)
-
-WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_OptimalLoanDuration'), loan_Duration)
-
-WebUI.setText(findTestObject('Products Module/Add Loan Payment Plan/input_FreeUsageOnActivation'), free_Activation)
-
-WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_TotalPrice'), total_Price)
-
-WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/dropdown_CreditSystem'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(delay)
-
-WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/option_DailyCountdown'))
-
-WebUI.delay(delay)
-
-WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/dropdown_LoanType'))
-
-WebUI.delay(delay)
-
-WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/option_loanType', [('loan_Type') : loan_Type]))
-
-WebUI.setText(findTestObject('Products Module/Add Cash Payment Plan/input_RequesterNotes'), requester_Notes)
-
-WebUI.click(findTestObject('Products Module/Add Loan Payment Plan/button_SaveLoanPaymentPlan'))
-
-WebUI.delay(delay)
-
-WebUI.getText(findTestObject('Products Module/Add Loan Payment Plan/label_SuccessfulLoanPaymentPlanDetails'))
-
-String loanpaymentdetails = 'Loan Payment Plan Details'
-
-WebUI.verifyElementText(findTestObject('Products Module/Add Loan Payment Plan/label_SuccessfulLoanPaymentPlanDetails'), 
-    loanpaymentdetails)
-
-WebUI.takeScreenshot()
+WebUI.closeBrowser()
 

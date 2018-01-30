@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test Case ID: 16670
-The test case validates absence ofdeclined loan payment plan in loan payment plan list</description>
+The test case validates absence ofdeclined loan payment plan is in loan payment plan pending approval</description>
    <name>verify_DeclinedLoanPaymentAbsence</name>
    <tag></tag>
    <comment></comment>

@@ -2,18 +2,11 @@
 <TestCaseEntity>
    <description>Test Case ID:16539
 
-The case validates if error message is displayed when loan payment plan is added withou entering all required fields</description>
-   <name>verify_LoanPaymentPlanError</name>
+The case validates if error message is displayed when loan payment plan is added without entering valid loan type</description>
+   <name>verify_ValidLoanTypeError</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>07ed9062-c6f4-4694-af1f-5660a58fcc1f</testCaseGuid>
-   <variable>
-      <defaultValue>findTestData('PaymentPlans/Paymentplannames').getValue(1, 1)</defaultValue>
-      <description></description>
-      <id>87ff9fae-2184-4004-b15a-b1d5ad2d1aa3</id>
-      <masked>false</masked>
-      <name>variable</name>
-   </variable>
    <variable>
       <defaultValue>'5'</defaultValue>
       <description></description>

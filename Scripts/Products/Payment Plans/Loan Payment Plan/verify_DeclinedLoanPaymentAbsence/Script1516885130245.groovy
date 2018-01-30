@@ -19,6 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/verify_PaymentPlanDeclined'), [('plan_toApprove') : 'test bundled'
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/verify_LoanPaymentPlanDeclined'), [('plan_toApprove') : 'test bundled'
         , ('approver_notes') : 'Dissapprove Notes', ('delay') : '5'], FailureHandling.STOP_ON_FAILURE)
 

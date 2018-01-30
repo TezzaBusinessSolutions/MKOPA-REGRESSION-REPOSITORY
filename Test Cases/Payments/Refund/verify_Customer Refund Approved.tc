@@ -8,7 +8,7 @@ The test case Approves Cash Refund</description>
    <comment></comment>
    <testCaseGuid>e19a5040-f565-49af-bc84-032ee5b1d095</testCaseGuid>
    <variable>
-      <defaultValue>'KE11118563-2'</defaultValue>
+      <defaultValue>'30990522'</defaultValue>
       <description></description>
       <id>7b586108-2b36-4d79-8409-c5645de60766</id>
       <masked>false</masked>
