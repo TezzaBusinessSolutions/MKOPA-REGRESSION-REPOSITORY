@@ -19,18 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Common Payments/step_Navigate to Unmatched Payments'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Assign', [('reference') : reference]))
 
-WebUI.delay(2)
+WebUI.check(findTestObject('Payments Module/Payment Exceptions- Assign Payments/radio_assignee', [('assignee') : assignee]))
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
+if (assignee == 'dealer') {
+    WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Account Number'), dealerAccount)
 
-WebUI.delay(2)
+    WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Dealer Comments'), Comments)
+} else {
+    WebUI.sendKeys(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), customerAccount)
+}
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
+WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/button_Payer Resolve'))
 
-WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
+WebUI.verifyElementPresent(findTestObject('Payments Module/Payment Exceptions- Assign Payments/errorMsg_Please select valid payer acount'), 
+    2)
+
+WebUI.verifyElementPresent(findTestObject('Payments Module/Payment Exceptions- Assign Payments/errorMsg_Please select valid product Account'), 
+    2)
 

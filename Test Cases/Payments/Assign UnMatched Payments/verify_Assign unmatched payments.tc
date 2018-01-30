@@ -26,4 +26,18 @@
       <masked>false</masked>
       <name>customerAccount</name>
    </variable>
+   <variable>
+      <defaultValue>'customer'</defaultValue>
+      <description></description>
+      <id>eb9fb034-38a3-46cf-a5ce-b231b9130b8a</id>
+      <masked>false</masked>
+      <name>assignee</name>
+   </variable>
+   <variable>
+      <defaultValue>'7663677'</defaultValue>
+      <description></description>
+      <id>9203df33-95a6-437e-889f-61694313ff94</id>
+      <masked>false</masked>
+      <name>productAccount</name>
+   </variable>
 </TestCaseEntity>
