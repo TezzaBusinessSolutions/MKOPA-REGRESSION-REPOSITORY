@@ -27,13 +27,6 @@
       <name>Phone</name>
    </variable>
    <variable>
-      <defaultValue>'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'</defaultValue>
-      <description></description>
-      <id>0e2b2314-9a0f-4587-a764-22537774a6aa</id>
-      <masked>false</masked>
-      <name>filePath</name>
-   </variable>
-   <variable>
       <defaultValue>'Nice and paid on time'</defaultValue>
       <description></description>
       <id>e54ff2d0-9bcb-4c1e-ad16-71914e467c6d</id>

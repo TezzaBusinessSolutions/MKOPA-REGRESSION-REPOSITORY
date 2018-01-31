@@ -5,7 +5,7 @@
 1. Upload mpesa Payment File 
 2. Payments
 3. Verify if Payment is Visible to Recent Customer Payments</description>
-   <name>verify_Customer Payment has been made</name>
+   <name>verify_Customer Payment</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e8c9a74f-b298-40bf-974c-6097e19e06ba</testCaseGuid>
