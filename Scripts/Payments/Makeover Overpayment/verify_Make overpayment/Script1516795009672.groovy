@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
 
 WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-WebUI.getText(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+WebUI.getText(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]))
 
 WebUI.verifyNotEqual(depositReceipt, text)
 

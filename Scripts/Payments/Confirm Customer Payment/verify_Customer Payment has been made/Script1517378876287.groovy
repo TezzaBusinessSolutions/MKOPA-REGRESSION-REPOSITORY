@@ -38,15 +38,3 @@ WebUI.verifyEqual(text, receiptNumber)
 
 WebUI.closeBrowser()
 
-String generateRandom(String chars = 'QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length = 10) {
-    Random rand = new Random()
-
-    StringBuilder sb = new StringBuilder()
-
-    for (int i = 0; i < length; i++) {
-        sb.append(chars.charAt(rand.nextInt(chars.length())))
-    }
-    
-    return sb.toString()
-}
-

@@ -27,10 +27,10 @@ String availablebalance = WebUI.getText(findTestObject('Customer Module/Customer
 
 WebUI.delay(delay)
 
-WebUI.scrollToElement(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]), 
+WebUI.scrollToElement(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]), 
     0)
 
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]))
 
 System.out.println(availablebalance)
 
