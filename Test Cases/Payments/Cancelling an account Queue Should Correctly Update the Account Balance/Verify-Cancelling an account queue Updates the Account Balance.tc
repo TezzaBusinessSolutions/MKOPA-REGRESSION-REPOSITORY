@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search for A  customer
+Take Note of the Balance
+Sell an Add On
+Search the Customer and the Add On Details Purchased is displayed
+The Credits Change and Addiotional Credits reflect</description>
+   <name>Verify-Cancelling an account queue Updates the Account Balance</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fa2cea92-938a-47b2-ba79-2b03cad34675</testCaseGuid>
+</TestCaseEntity>

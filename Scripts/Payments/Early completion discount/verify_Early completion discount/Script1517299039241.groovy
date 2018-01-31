@@ -19,15 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Early completion discount/Steps_view list dicounts'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Payments Module/List Discounts/page-5', [('page') : page]))
-
-discount = WebUI.getText(findTestObject('Payments Module/List Discounts/label_Discount', [('paymentPlan') : paymentPlan, ('discount') : discount]))
-
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('Payments/Early completion discount/Steps_view list dicounts'), [('paymentPlan') : paymentPlan
+        , ('discount') : discount], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : customerAccount
         , ('Phone') : phoneNumber, ('filePath') : 'C:\\Users\\stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
@@ -37,7 +30,7 @@ WebUI.delay(5)
 
 WebUI.refresh()
 
-WebUI.callTestCase(findTestCase('Common/Step_SearchSpecificCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Customer Module/Customer List/Label-In Payment', [('status') : status]), status)
 

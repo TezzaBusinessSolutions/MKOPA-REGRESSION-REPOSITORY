@@ -31,7 +31,7 @@ WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSear
 
 WebUI.refresh()
 
-currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits'))
+currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/credits'))
 
 WebUI.verifyGreaterThan(currentCredits, previousCredits)
 

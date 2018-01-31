@@ -19,8 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_Refund Payment'), [('inputAmount') : '40', ('inputNotes') : 'Refund Testing Notes'
-        , ('delay') : '5'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_Refund Payment'), [('inputAmount') : amount, ('inputNotes') : refundNotes
+        , ('delay') : delay], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -28,7 +28,7 @@ WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), custome
 
 WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [('customerAccount') : '22860191'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [('customerAccount') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Customer Module/Customer List/label_Status'), status)
 

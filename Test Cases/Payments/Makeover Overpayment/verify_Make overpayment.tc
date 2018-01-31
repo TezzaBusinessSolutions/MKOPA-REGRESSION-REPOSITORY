@@ -6,31 +6,38 @@
    <comment></comment>
    <testCaseGuid>66a94090-7167-478b-8b0a-bbd226c800d2</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'MEALOP8D6H'</defaultValue>
       <description></description>
       <id>02ce6715-1eba-436f-8acc-ed857de293f4</id>
       <masked>false</masked>
       <name>receiptNumber</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>72b33777-3d25-449a-84d5-801dc98fed3d</id>
-      <masked>false</masked>
-      <name>text</name>
-   </variable>
-   <variable>
-      <defaultValue>'13190435'</defaultValue>
+      <defaultValue>'20504323 '</defaultValue>
       <description></description>
       <id>ad980be0-6e55-4727-9092-fc707f12b2c4</id>
       <masked>false</masked>
-      <name>Account</name>
+      <name>account</name>
    </variable>
    <variable>
-      <defaultValue>'MBA96FE9I0DF'</defaultValue>
+      <defaultValue>'KU87KDFUYDF'</defaultValue>
       <description></description>
       <id>58750736-3b51-4123-b4de-15bd0195d511</id>
       <masked>false</masked>
       <name>depositReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'200'</defaultValue>
+      <description></description>
+      <id>2e1405a6-ce57-484b-a18c-708abb93b998</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'254729601488'</defaultValue>
+      <description></description>
+      <id>8fce1f8a-ddac-4891-9445-70f441fa4301</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
    </variable>
 </TestCaseEntity>

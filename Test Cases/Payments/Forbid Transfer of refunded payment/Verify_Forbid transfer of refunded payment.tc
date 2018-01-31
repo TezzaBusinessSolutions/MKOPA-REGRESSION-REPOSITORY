@@ -20,4 +20,25 @@ an account that has requested for a payment refund should not be able to transfe
       <masked>false</masked>
       <name>status</name>
    </variable>
+   <variable>
+      <defaultValue>'50'</defaultValue>
+      <description></description>
+      <id>4abce108-de50-48f7-a20c-3a7edd26d449</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'refund test'</defaultValue>
+      <description></description>
+      <id>a6fd8e99-9546-47ec-9d1e-b2884b71c0ac</id>
+      <masked>false</masked>
+      <name>refundNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>3df8748f-d1ac-42c4-a7c4-10093a0167e8</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
 </TestCaseEntity>

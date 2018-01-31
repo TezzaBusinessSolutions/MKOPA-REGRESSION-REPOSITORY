@@ -5,9 +5,7 @@
 This test case verifies customer payment refund</description>
    <name>verify_RefundPayments</name>
    <tag></tag>
-   <comment>First Scenario-Missing Notes/Amount
-Missing Note
-Third Scenario-Valid Values</comment>
+   <comment>Third Scenario: Valid Credentials</comment>
    <testCaseGuid>5d90aa85-6215-46b2-adbb-63eb41d3b83b</testCaseGuid>
    <variable>
       <defaultValue>'Refund Testing'</defaultValue>
