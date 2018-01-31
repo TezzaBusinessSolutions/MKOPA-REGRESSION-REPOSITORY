@@ -7,7 +7,7 @@
    <testCaseGuid>4bcd37df-eac3-420a-9ce2-2a2b93800762</testCaseGuid>
    <variable>
       <defaultValue>'VJ3OZC7GZ3'</defaultValue>
-      <description></description>
+      <description>Floating payment receipt number</description>
       <id>fb4935d1-e1ac-4bb5-b738-7711086bcf60</id>
       <masked>false</masked>
       <name>receiptNumber</name>
@@ -25,5 +25,12 @@
       <id>c6ddc6aa-8ab5-4fc0-87df-a6f3691efc2d</id>
       <masked>false</masked>
       <name>comments</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d3416d3e-d2ac-4be6-b257-952c21b20650</id>
+      <masked>false</masked>
+      <name>variable</name>
    </variable>
 </TestCaseEntity>
