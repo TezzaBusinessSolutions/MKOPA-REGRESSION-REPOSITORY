@@ -19,24 +19,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : accountNumber
-        , ('Phone') : phone, ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : '', (text) : ''], 
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Customer Module/Customer List/hamburger-Hamburger Menu'))
+
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link_Dealers Payments List'))
-
-WebUI.delay(5)
-
-WebUI.getText(findTestObject('Payments Module/Dealer Payments/text_Receipt Number'))
-
-WebUI.verifyEqual(receiptNumber, text)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Customer Module/Customer List/button-Sell Add On'))
 

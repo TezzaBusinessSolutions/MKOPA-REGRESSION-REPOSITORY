@@ -8,7 +8,7 @@ Steps
 3. Edit 
 4. Update
 5. Approve The Changes in the Approver's Account</description>
-   <name>verify_Payment Plan name and Display Name are Editable</name>
+   <name>verify_name and Display name are Editable</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7d51251f-3fd0-4427-942c-c9f06c7d9041</testCaseGuid>

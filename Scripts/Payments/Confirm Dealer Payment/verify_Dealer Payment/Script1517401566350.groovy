@@ -17,36 +17,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKey
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import csvCreatorPackage.generate as generate
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : accountNumber
         , ('Phone') : phone, ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
         , ('Comment') : 'Nice and paid on time', ('receiptNumber') : receiptNumber], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
 
 WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-RecentCustomerPayments'))
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link_Dealers Payments List'))
 
-WebUI.delay(5)
+WebUI.delay(7)
 
-text = WebUI.getText(findTestObject('Payments Module/Recent Customer Payments/text_Receipt Number', [('receiptNumber') : receiptNumber]))
+text = WebUI.getText(findTestObject('Payments Module/Dealer Payments/text_Receipt Number'))
 
 WebUI.verifyEqual(text, receiptNumber)
 
 WebUI.closeBrowser()
-
-String generateRandom(String chars = 'QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length = 10) {
-    Random rand = new Random()
-
-    StringBuilder sb = new StringBuilder()
-
-    for (int i = 0; i < length; i++) {
-        sb.append(chars.charAt(rand.nextInt(chars.length())))
-    }
-    
-    return sb.toString()
-}
 

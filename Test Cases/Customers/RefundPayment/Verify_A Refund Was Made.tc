@@ -6,10 +6,31 @@
    <comment></comment>
    <testCaseGuid>f6843b12-aaf5-4dfa-a1aa-e330044d5efe</testCaseGuid>
    <variable>
-      <defaultValue>'40'</defaultValue>
+      <defaultValue>'10'</defaultValue>
       <description></description>
       <id>22c545c0-20d1-414c-b01f-3c54791b3dae</id>
       <masked>false</masked>
-      <name>Amountrefund</name>
+      <name>inputAmount</name>
+   </variable>
+   <variable>
+      <defaultValue>'Testing Refund'</defaultValue>
+      <description></description>
+      <id>bb806951-fcec-4a2f-9358-fe598e5ba966</id>
+      <masked>false</masked>
+      <name>input_Notes</name>
+   </variable>
+   <variable>
+      <defaultValue>'6'</defaultValue>
+      <description></description>
+      <id>b2bce518-700e-4553-9806-de536f7ee9d3</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>' A refund of KES 10.00 has been queued for approval'</defaultValue>
+      <description></description>
+      <id>20c878c7-a0ce-448e-a942-980be32b2789</id>
+      <masked>false</masked>
+      <name>success</name>
    </variable>
 </TestCaseEntity>
