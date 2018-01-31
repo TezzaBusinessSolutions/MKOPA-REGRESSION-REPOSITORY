@@ -21,8 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : accountNumber
         , ('Phone') : phone, ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : '', (text) : ''], 
-    FailureHandling.STOP_ON_FAILURE)
+        , ('Comment') : 'Nice and paid on time', ('receiptNumber') : receiptNumber], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -32,11 +31,11 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link_Dealers Payments List'))
 
-WebUI.delay(5)
+WebUI.delay(7)
 
-WebUI.getText(findTestObject('Payments Module/Dealer Payments/text_Receipt Number'))
+text = WebUI.getText(findTestObject('Payments Module/Dealer Payments/text_Receipt Number'))
 
-WebUI.verifyEqual(receiptNumber, text)
+WebUI.verifyEqual(text, receiptNumber)
 
 WebUI.closeBrowser()
 

@@ -13,18 +13,11 @@
       <name>accountNumber</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'QWJKILO09'</defaultValue>
       <description></description>
       <id>acb3661a-0dda-4dbb-b944-356623a7ae85</id>
       <masked>false</masked>
       <name>receiptNumber</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>57420bca-be2f-40e5-a123-e345b72d4562</id>
-      <masked>false</masked>
-      <name>text</name>
    </variable>
    <variable>
       <defaultValue>'200'</defaultValue>

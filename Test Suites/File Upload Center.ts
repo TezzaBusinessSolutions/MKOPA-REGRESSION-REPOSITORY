@@ -15,7 +15,7 @@
       <guid>0411ceb0-12ee-4bb2-9a05-2509c7e6fe8a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/File Upload Center Module/Verify-User is able to Upload Payment File</testCaseId>
+      <testCaseId>Test Cases/File Upload Center Module/verify_User is able to Upload Payment File</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -93,19 +93,7 @@
       <guid>73b053c5-26af-409d-aef7-072d11852d96</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Payments/Confirm Customer Payment/Verify-Customer Payment</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e3541c6b-e723-4147-923b-0968d65d3cbd</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6e958714-e9c9-491f-883f-a2fab1793405</variableId>
-      </variableLink>
+      <testCaseId>Test Cases/Payments/Confirm Customer Payment/verify_Customer Payment has been made</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -124,12 +112,18 @@
          <value></value>
          <variableId>056f2335-96ca-41d3-9ffe-e2c4678edb82</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bafc285f-cc27-47a7-8815-2c4980340d06</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>0449f692-281c-4b94-8780-bf072498f4fc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Payments/Confirm Dealer Payment/Verify- Dealer Payment</testCaseId>
+      <testCaseId>Test Cases/Payments/Confirm Dealer Payment/verify_Dealer Payment has been made</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -141,12 +135,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>acb3661a-0dda-4dbb-b944-356623a7ae85</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>57420bca-be2f-40e5-a123-e345b72d4562</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -165,7 +153,7 @@
       <guid>4093a9f6-0ec5-4bac-b404-88608d2d5a72</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Payments/Edit Cash payment plan name and display name/Verify- Payment Plan name and Display Name are Editable</testCaseId>
+      <testCaseId>Test Cases/Payments/Edit Cash payment plan name and display name/verify_Payment Plan name and Display Name are Editable</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

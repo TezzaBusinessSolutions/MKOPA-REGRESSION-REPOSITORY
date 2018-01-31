@@ -23,7 +23,7 @@ def rownum = new Random().nextInt(100 - 1) + 1
 
 def status = findTestObject('Customer Module/Customer List/Label-In Payment')
 
-WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.getText(findTestObject('Customer Module/Customer List/Label-In Payment'))
 
@@ -35,7 +35,7 @@ if (!(status)) {
 
 depositReceipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]))
 
 WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
 

@@ -27,10 +27,10 @@ WebUI.delay(delay)
 
 WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-WebUI.scrollToElement(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]), 
+WebUI.scrollToElement(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]), 
     0)
 
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]))
 
 WebUI.click(findTestObject('Customer Module/Customer List/button_RefundPayment'))
 

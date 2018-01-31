@@ -19,28 +19,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-def rownum = new Random().nextInt(248 - 1) + 1
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
 
-def status = findTestObject('Customer Module/Customer List/Label-In Payment')
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-
-WebUI.getText(findTestObject('Customer Module/Customer List/Label-In Payment'))
-
-if (!(status)) {
-    WebUI.closeBrowser()
-} else {
-    WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-}
-
-
-amountInPayment = WebUI.getText(findTestObject('Customer Module/Customer List/radio_Dealer', [('amount') : amount]))
-
-depositReceipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
-
-WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('paymentReceipt') : paymentReceipt]))
 
 WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
 
@@ -48,12 +34,15 @@ WebUI.check(findTestObject('Customer Module/Customer List/radio_Payer'))
 
 WebUI.delay(5)
 
-WebUI.sendKeys(findTestObject('Customer Module/Customer List/input_CustomerReference'), findTestData('Customer Accounts/customer accounts').getValue(
-        1, rownum))
+WebUI.sendKeys(findTestObject('Customer Module/Customer List/input_CustomerReference'), customerReference)
 
 WebUI.delay(2)
 
 WebUI.doubleClick(findTestObject('Customer Module/Customer List/input_CustomerReference'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Customer Module/Customer List/input_CustomerReference'))
 
 WebUI.delay(2)
 
@@ -77,4 +66,6 @@ WebUI.verifyElementPresent(findTestObject('Customer Module/Customer List/success
     0)
 
 WebUI.click(findTestObject('Customer Module/Customer List/button-Close Payment Details Window'))
+
+WebUI.closeBrowser()
 

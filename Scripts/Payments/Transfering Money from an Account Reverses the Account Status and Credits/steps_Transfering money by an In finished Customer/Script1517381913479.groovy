@@ -29,7 +29,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]))
 
 WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
 

@@ -18,20 +18,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.lang.String as String
-import java.lang.StringCoding as StringCoding
-import java.util.Random as Random
 
-int rownum = new Random().nextInt(248 - 1) + 1
-
-<<<<<<< HEAD
-=======
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
->>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), findTestData('Customer Accounts/customer accounts').getValue(
-        1, rownum))
+WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+WebUI.mouseOver(findTestObject('Customer Module/Customer List/hamburger-Hamburger Menu'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button-Sell Add On'))
 

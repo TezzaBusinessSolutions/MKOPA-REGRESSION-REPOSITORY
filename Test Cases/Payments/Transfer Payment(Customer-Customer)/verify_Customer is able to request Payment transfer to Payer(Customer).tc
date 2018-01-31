@@ -11,38 +11,31 @@ Steps
    <comment></comment>
    <testCaseGuid>ff573b69-ebb3-41b2-a7b9-5c2e775cb22e</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'30356495'</defaultValue>
       <description></description>
-      <id>360044da-2781-4685-b82b-55f0e7687d40</id>
+      <id>b6f0f1cf-598f-40f9-808f-28f079eb471d</id>
       <masked>false</masked>
-      <name>depositReceipt</name>
+      <name>account</name>
    </variable>
    <variable>
-      <defaultValue>'I have transferred the payment to your account'</defaultValue>
+      <defaultValue>'LAA9R9SQLX'</defaultValue>
       <description></description>
-      <id>4cc44067-87e5-4114-aeaa-f4f44225b9e2</id>
+      <id>5ddfc38d-6344-4d38-855c-d4526db61d78</id>
+      <masked>false</masked>
+      <name>paymentReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'28621706'</defaultValue>
+      <description></description>
+      <id>49ebaed6-a800-4c64-a6e4-3dc0f39a3d2f</id>
+      <masked>false</masked>
+      <name>customerReference</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have Transferred a Payment to your Account'</defaultValue>
+      <description></description>
+      <id>0ffb7684-bb36-4aa2-ba0a-906c1325689b</id>
       <masked>false</masked>
       <name>payerComment</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject(null)</defaultValue>
-      <description></description>
-      <id>f83318f1-a48e-4591-a21d-13eebc2c84c6</id>
-      <masked>false</masked>
-      <name>status</name>
-   </variable>
-   <variable>
-      <defaultValue>'1000'</defaultValue>
-      <description></description>
-      <id>91fa7539-c1b0-4993-8daf-ae20b4ee4b56</id>
-      <masked>false</masked>
-      <name>amount</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>6c0b6155-4954-45dd-b007-730f114be448</id>
-      <masked>false</masked>
-      <name>amountInPayment</name>
    </variable>
 </TestCaseEntity>
