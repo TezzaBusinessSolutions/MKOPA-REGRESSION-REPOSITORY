@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_CashPaymentListName</name>
+   <name>label_CashPaymentListNameDetails</name>
    <tag></tag>
-   <elementGuidId>f5a38d31-cf06-431f-b107-a23c8e3d03d1</elementGuidId>
+   <elementGuidId>ab801847-cde7-4538-ad7f-a96f9d8445ef</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ListCashPaymentPlans']/table/tbody/tr[td[text()='${plan_toApprove}']]</value>
+         <value>.//*[@id='ListCashPaymentPlans']/table/tbody/tr[td[text()='${plan_toApprove}']]/td/a[text()='Details']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ListCashPaymentPlans']/table/tbody/tr[td[text()='${plan_toApprove}']]</value>
+      <value>.//*[@id='ListCashPaymentPlans']/table/tbody/tr[td[text()='${plan_toApprove}']]/td/a[text()='Details']</value>
    </webElementProperties>
 </WebElementEntity>

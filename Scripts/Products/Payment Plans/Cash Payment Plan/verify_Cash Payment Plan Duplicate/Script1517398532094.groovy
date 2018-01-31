@@ -22,21 +22,13 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [('customerAccount') : '27360571', ('depositReceipt') : 'KDG2J25T4I'
-        , ('delay') : '5', ('customerSearch') : '30990522'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/step_AddCashPaymentPlan'), [('delay') : '5', ('payment_PlanName') : 'PlanReview2'
+        , ('payment_PlanDisplayName') : 'Payment Plan Display Name Test', ('outletproducttype') : 'BluetoothTVOpt', ('total_Price') : '50'
+        , ('requester_Notes') : 'Payment Cash Plan Notes'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), '')
+WebUI.delay(delay)
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), '')
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
-
-WebUI.getText(findTestObject('Customer Module/Customer List/message_EnterAmountOrNotes', [('error') : error]))
-
-String message = 'A value is required.'
-
-WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_EnterAmountOrNotes', [('error') : error]), 
-    message)
+WebUI.verifyElementPresent(findTestObject('Products Module/Add Cash Payment Plan/message_DuplicateError'), 0)
 
 WebUI.closeBrowser()
 

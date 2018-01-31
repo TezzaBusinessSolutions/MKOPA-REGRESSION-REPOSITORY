@@ -21,11 +21,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/step_ApprovePaymentPlan'), [('delay') : '5', ('plan_toApprove') : 'PlanReview1'
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/step_ApprovePaymentPlan'), [('delay') : '5', ('plan_toApprove') : 'AddNew'
         , ('approver_notes') : 'Approve Notes'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(delay)
 
 WebUI.verifyElementPresent(findTestObject('Products Module/Cash Payment Plans/label_CashPaymentListName', [('plan_toApprove') : plan_toApprove]), 
     0)
+
+WebUI.click(findTestObject('Products Module/Cash Payment Plans/label_CashPaymentListNameDetails', [('plan_toApprove') : plan_toApprove]))
+
+WebUI.delay(delay)
 

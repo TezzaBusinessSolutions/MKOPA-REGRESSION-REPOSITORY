@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_RefundPayments'), [('input_Notes') : 'Refund Testing', ('errormessage') : 'Please fill in the request notes'
+WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_RefundPayment'), [('input_Notes') : 'Refund Testing', ('errormessage') : 'Please fill in the request notes'
         , ('inputNotes') : '', ('inputAmount') : '10', ('error') : 'A value is required.', ('depositReceipt') : 'KDG2J25T4I'
         , ('delay') : '5', ('customerSearch') : '30990522'], FailureHandling.STOP_ON_FAILURE)
 

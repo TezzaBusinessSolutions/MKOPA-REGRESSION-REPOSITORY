@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test Case ID: 16670
-The test case validates absence ofdeclined loan payment plan is in loan payment plan pending approval</description>
+This test case validates absence of declined loan payment plan in loan payment plan pending approval</description>
    <name>verify_DeclinedLoanPaymentAbsence</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0e9d919a-f727-440c-a21a-3fe9b1a3bad9</testCaseGuid>
+   <variable>
+      <defaultValue>'LoanToDecline'</defaultValue>
+      <description></description>
+      <id>c5843795-1023-47af-8cc9-4d2979faa2e0</id>
+      <masked>false</masked>
+      <name>plan_toApprove</name>
+   </variable>
 </TestCaseEntity>

@@ -30,6 +30,8 @@ WebUI.delay(delay)
 
 WebUI.click(findTestObject('Page Header and Menu/Products/Link-ListCashPaymentPlans'))
 
+WebUI.delay(delay)
+
 WebUI.getText(findTestObject('Products Module/Cash Payment Plans/label_CashPaymentPlans'))
 
 String label = 'Cash Payment Plans'

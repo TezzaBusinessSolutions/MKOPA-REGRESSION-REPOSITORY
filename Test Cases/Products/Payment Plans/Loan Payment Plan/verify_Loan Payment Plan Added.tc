@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Test Case ID:16539
 
-The test case validates if a loan payment plan has been added successfully</description>
+This test case validates if a loan payment plan has been added successfully</description>
    <name>verify_Loan Payment Plan Added</name>
    <tag></tag>
    <comment></comment>

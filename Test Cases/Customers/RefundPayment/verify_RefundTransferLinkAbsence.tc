@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test case ID: 16601
-
-This test case verifies absence of Transfer/Refund link when approval has been made</description>
+This test case verifies absence of Transfer/Refund link when refund has been made</description>
    <name>verify_RefundTransferLinkAbsence</name>
    <tag></tag>
    <comment></comment>

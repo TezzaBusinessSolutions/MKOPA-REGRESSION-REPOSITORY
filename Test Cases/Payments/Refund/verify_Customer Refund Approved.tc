@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test Case ID: 16570
-
-The test case Approves Cash Refund</description>
+This test case Approves a refund Refund</description>
    <name>verify_Customer Refund Approved</name>
    <tag></tag>
    <comment></comment>

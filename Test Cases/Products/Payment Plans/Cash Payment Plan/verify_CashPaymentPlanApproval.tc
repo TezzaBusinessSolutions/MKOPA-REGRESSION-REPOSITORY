@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>The test case approves cash payment Plan</description>
+   <description>This test case approves cash payment Plan</description>
    <name>verify_CashPaymentPlanApproval</name>
    <tag></tag>
    <comment></comment>

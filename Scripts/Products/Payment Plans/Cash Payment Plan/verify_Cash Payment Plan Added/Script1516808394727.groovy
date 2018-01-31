@@ -22,9 +22,11 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/step_AddCashPaymentPlan'), [('delay') : '5', ('payment_PlanName') : 'PlanReview1'
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/step_AddCashPaymentPlan'), [('delay') : '5', ('payment_PlanName') : 'AddNew'
         , ('payment_PlanDisplayName') : 'Payment Plan Display Name Test', ('outletproducttype') : 'BluetoothTVOpt', ('total_Price') : '50'
         , ('requester_Notes') : 'Payment Cash Plan Notes'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(delay)
 
 WebUI.getText(findTestObject('Products Module/Add Cash Payment Plan/label_SuccessfulCashPaymentPlanDetails'))
 
