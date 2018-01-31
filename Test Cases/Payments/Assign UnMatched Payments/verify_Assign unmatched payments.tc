@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>17095f00-e964-4906-b28a-1f75e217a2d2</testCaseGuid>
    <variable>
-      <defaultValue>'1218071'</defaultValue>
+      <defaultValue>'11331647'</defaultValue>
       <description></description>
       <id>1737c0ca-4893-4ac0-87b7-735fcdfd42be</id>
       <masked>false</masked>
@@ -45,6 +45,6 @@
       <description></description>
       <id>7af951f4-c0fb-42bc-8621-b7b7810c762f</id>
       <masked>false</masked>
-      <name>deaerAccount</name>
+      <name>dealerAccount</name>
    </variable>
 </TestCaseEntity>

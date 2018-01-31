@@ -19,4 +19,11 @@
       <masked>false</masked>
       <name>discount</name>
    </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>92da2596-e92b-4c38-b80c-4ecc05efcc55</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variable>
 </TestCaseEntity>

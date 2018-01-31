@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
@@ -31,4 +31,10 @@ WebUI.mouseOver(findTestObject('Page Header and Menu/Products/link_Incentives'))
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Page Header and Menu/Products/link_ListDiscounts'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Payments Module/List Discounts/page-5', [('page') : page]))
+
+discount = WebUI.getText(findTestObject('Payments Module/List Discounts/label_Discount', [('paymentPlan') : paymentPlan, ('discount') : discount]))
 
