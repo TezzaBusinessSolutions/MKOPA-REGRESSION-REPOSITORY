@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Payments/Credit Purchase Payment Upload/Verify_ credit purchase'), [('account') : account
         , ('amount') : amount, ('phoneNumber') : phoneNumber, ('previousCredits') : '41', ('deviceSerial') : ''], FailureHandling.STOP_ON_FAILURE)
 
-currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits', [('credits') : credits]))
+currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/credits'))
 
 WebUI.click(findTestObject('Customer Module/Customer List/link_DeviceSerial', [('deviceSerial') : deviceSerial]))
 
@@ -31,6 +31,8 @@ WebUI.delay(2)
 WebUI.switchToWindowTitle('Inventory item details | M-KOPAnet')
 
 WebUI.delay(2)
+
+WebUI.refresh()
 
 WebUI.scrollToElement(findTestObject('Customer Module/Customer List/button_CreditsSent'), 3)
 
