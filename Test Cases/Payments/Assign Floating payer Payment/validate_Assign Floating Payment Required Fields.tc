@@ -26,4 +26,11 @@
       <masked>false</masked>
       <name>comments</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>046c1ced-de71-4b30-8975-8b2c1b3121ec</id>
+      <masked>false</masked>
+      <name>productAccount</name>
+   </variable>
 </TestCaseEntity>

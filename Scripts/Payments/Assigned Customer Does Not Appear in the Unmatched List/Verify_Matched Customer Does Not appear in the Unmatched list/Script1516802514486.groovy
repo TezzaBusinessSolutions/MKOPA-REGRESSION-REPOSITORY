@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/verify_Assign unmatched payments'), [('reference') : reference
         , ('comments') : comments, ('customerAccount') : customerAccount, ('assignee') : assignee, ('productAccount') : productAccount
-        , ('deaerAccount') : dealerAccount], FailureHandling.STOP_ON_FAILURE)
+        , ('dealerAccount') : dealerAccount], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 

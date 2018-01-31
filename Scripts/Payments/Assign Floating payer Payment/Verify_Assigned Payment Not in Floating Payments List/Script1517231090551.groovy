@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Payments/Assign Floating payer Payment/step_Assign Floating Payment'), [('receiptNumber') : receiptNumber
-        , ('payerReference') : payerReference, ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
+        , ('payerReference') : payerReference, ('comments') : comments, ('productAccount') : productAccount], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
