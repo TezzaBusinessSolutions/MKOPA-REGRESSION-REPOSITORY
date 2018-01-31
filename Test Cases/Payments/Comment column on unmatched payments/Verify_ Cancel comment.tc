@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Ability to cancel a comment on unmatched payment</description>
+   <name>Verify_ Cancel comment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>086cbd68-e6d3-41de-a4da-afae306f172b</testCaseGuid>
+   <variable>
+      <defaultValue>'2680626'</defaultValue>
+      <description></description>
+      <id>21606994-673c-4596-9888-81378551257e</id>
+      <masked>false</masked>
+      <name>reference</name>
+   </variable>
+   <variable>
+      <defaultValue>'sample comment'</defaultValue>
+      <description></description>
+      <id>9b642daa-9aea-489d-88c5-8c23ed0d9988</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+</TestCaseEntity>

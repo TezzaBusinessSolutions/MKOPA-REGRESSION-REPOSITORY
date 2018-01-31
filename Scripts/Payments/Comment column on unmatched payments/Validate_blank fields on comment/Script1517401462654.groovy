@@ -31,10 +31,6 @@ WebUI.setText(findTestObject('Payments Module/Unmatched Payments Details/input_C
 
 WebUI.click(findTestObject('Payments Module/Unmatched Payments Details/button_SaveComment'))
 
-'success messgae alert'
-WebUI.verifyAlertPresent(5)
-
-WebUI.delay(5)
-
-WebUI.acceptAlert()
+WebUI.verifyElementPresent(findTestObject('Object Repository/Payments Module/Unmatched Payments Details/label_MessageRequired'), 
+    2)
 

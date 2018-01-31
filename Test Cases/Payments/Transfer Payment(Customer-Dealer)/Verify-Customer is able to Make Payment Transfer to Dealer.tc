@@ -10,7 +10,7 @@
    <comment></comment>
    <testCaseGuid>43a264a2-983e-4edd-b79f-6f7c380ac944</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'QWRTE67T12189hdfffr'</defaultValue>
       <description></description>
       <id>6820b2f8-2f13-451b-a7cf-420773a9c30d</id>
       <masked>false</masked>
@@ -24,10 +24,17 @@
       <name>dealerComment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'12517586'</defaultValue>
       <description></description>
-      <id>4918b64e-4113-4db6-8d50-f5b20072d90e</id>
+      <id>10cfd788-dc62-4cac-840e-da0bd3d0eb88</id>
       <masked>false</masked>
-      <name>status</name>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'K0010'</defaultValue>
+      <description></description>
+      <id>ad724749-c3d0-4f28-895f-0d8356131996</id>
+      <masked>false</masked>
+      <name>dealerAccount</name>
    </variable>
 </TestCaseEntity>

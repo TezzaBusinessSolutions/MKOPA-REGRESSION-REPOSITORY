@@ -19,22 +19,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Common Payments/step_Navigate to Unmatched Payments'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Info', [('reference') : reference]))
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments Module/Unmatched Payments Details/link_AddComment'))
+WebUI.delay(2)
 
-WebUI.delay(3)
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-WebUI.setText(findTestObject('Payments Module/Unmatched Payments Details/input_Comment'), comment)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments Module/Unmatched Payments Details/button_SaveComment'))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
 
-'success messgae alert'
-WebUI.verifyAlertPresent(5)
+WebUI.delay(2)
 
-WebUI.delay(5)
-
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
 

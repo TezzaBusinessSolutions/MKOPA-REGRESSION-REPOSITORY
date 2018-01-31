@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>ID: 16726
-Ability to add comments on unmtched payments</description>
-   <name>Verify_Comments on unmatched payments</name>
+   <description></description>
+   <name>Validate_blank fields on comment</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>3eaadcdc-7e18-4bc7-b641-311824eeecfa</testCaseGuid>
+   <testCaseGuid>bf45de69-e3f1-49c5-90f9-903d8ff9d971</testCaseGuid>
    <variable>
-      <defaultValue>'Sample Test'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>327d87d5-c7b0-44e3-a228-3ae09b0664a0</id>
+      <id>b533e3c3-3852-48a6-b200-8fdfa2845890</id>
       <masked>false</masked>
       <name>comment</name>
    </variable>
    <variable>
       <defaultValue>'5679079'</defaultValue>
       <description></description>
-      <id>237efadd-a055-4c11-bb19-99694d4c6a71</id>
+      <id>0d67cd12-8315-4bdd-a1fb-73e4e9c30e2c</id>
       <masked>false</masked>
       <name>reference</name>
    </variable>

@@ -29,12 +29,7 @@ WebUI.delay(3)
 
 WebUI.setText(findTestObject('Payments Module/Unmatched Payments Details/input_Comment'), comment)
 
-WebUI.click(findTestObject('Payments Module/Unmatched Payments Details/button_SaveComment'))
+WebUI.click(findTestObject('Payments Module/Unmatched Payments Details/button_Cancel'))
 
-'success messgae alert'
-WebUI.verifyAlertPresent(5)
-
-WebUI.delay(5)
-
-WebUI.acceptAlert()
+WebUI.verifyAlertNotPresent(2)
 

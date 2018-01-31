@@ -19,36 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-def rownum = new Random().nextInt(100 - 1) + 1
+WebUI.callTestCase(findTestCase('Payments/Transfer Payment(Customer-Dealer)/Steps_ Transfer Payment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-def status = findTestObject('Customer Module/Customer List/Label-In Payment')
-
-WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.getText(findTestObject('Customer Module/Customer List/Label-In Payment'))
-
-if (!(status)) {
-    WebUI.closeBrowser()
-} else {
-    WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-}
-
-depositReceipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
+WebUI.delay(2)
 
 WebUI.check(findTestObject('Customer Module/Customer List/radio_Dealer'))
 
 WebUI.delay(3)
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), findTestData('Dealer Accounts/Dealers Accounts').getValue(
-        1, rownum))
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), dealerAccount)
 
-WebUI.doubleClick(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'))
-
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerComment'), dealerComment)
 
