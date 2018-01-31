@@ -19,12 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Customers/RefundPayment/Refund Payment'), [('inputAmount') : Amountrefund, ('inputNotes') : 'Refund Testing Notes'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(3)
-
-WebUI.verifyTextPresent('A refund of KES 40.00 has been queued for approval', false)
-
-WebUI.click(findTestObject('Customer Module/Customer List/Close_WindowforRefund'))
+WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_ValidCredentials'), [('inputAmount') : inputAmount, ('input_Notes') : input_Notes
+        , ('delay') : delay, ('success') : success], FailureHandling.STOP_ON_FAILURE)
 
