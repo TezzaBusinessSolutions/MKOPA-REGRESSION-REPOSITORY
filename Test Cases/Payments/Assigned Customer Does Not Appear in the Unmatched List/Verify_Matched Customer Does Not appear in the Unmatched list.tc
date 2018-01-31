@@ -6,10 +6,45 @@
    <comment></comment>
    <testCaseGuid>08b9fb58-5237-407a-b412-2547bc9749e1</testCaseGuid>
    <variable>
-      <defaultValue>'20987233'</defaultValue>
+      <defaultValue>'1218071'</defaultValue>
       <description></description>
       <id>5f915e82-90aa-41ca-af90-a556654d444b</id>
       <masked>false</masked>
       <name>reference</name>
+   </variable>
+   <variable>
+      <defaultValue>'Assigned'</defaultValue>
+      <description></description>
+      <id>2fed5798-30d3-4c08-9f41-ecb6308fc12a</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+   <variable>
+      <defaultValue>'7663677'</defaultValue>
+      <description></description>
+      <id>d61dc804-79d3-48f2-8fbb-378e9c5df7dc</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'customer'</defaultValue>
+      <description></description>
+      <id>88744c2b-55c1-4ab6-8c07-2a02055d6b73</id>
+      <masked>false</masked>
+      <name>assignee</name>
+   </variable>
+   <variable>
+      <defaultValue>'7663677'</defaultValue>
+      <description></description>
+      <id>30eeb5e5-17d8-42b4-a0a1-8c42225554d0</id>
+      <masked>false</masked>
+      <name>productAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>51bd708f-4d49-4f31-a8d5-60cbde992b79</id>
+      <masked>false</masked>
+      <name>dealerAccount</name>
    </variable>
 </TestCaseEntity>
