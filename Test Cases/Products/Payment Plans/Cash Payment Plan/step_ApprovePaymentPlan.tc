@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Step to approve a payment plan</description>
+   <name>step_ApprovePaymentPlan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>442941fe-1bc5-495b-8887-43cb8d4df689</testCaseGuid>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>9367e3cd-e829-42df-ab9d-f24a3d63befd</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ea2dd2d6-cab5-4f7d-8157-63b173c6c342</id>
+      <masked>false</masked>
+      <name>plan_toApprove</name>
+   </variable>
+   <variable>
+      <defaultValue>'Approve Notes'</defaultValue>
+      <description></description>
+      <id>9d574ede-4e9f-4de0-8503-0bafa849f2e8</id>
+      <masked>false</masked>
+      <name>approver_notes</name>
+   </variable>
+</TestCaseEntity>

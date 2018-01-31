@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>link_VerifyCashPlanName</name>
+   <tag></tag>
+   <elementGuidId>cd70c3a3-ddf5-41da-998d-2bf9b09b11c5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>.//*[@id='ListCashPaymentPlans']/table/tbody/tr[td[text()='${cashplan_Name}']]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='ListCashPaymentPlans']/table/tbody/tr[td[text()='${cashplan_Name}']]</value>
+   </webElementProperties>
+</WebElementEntity>

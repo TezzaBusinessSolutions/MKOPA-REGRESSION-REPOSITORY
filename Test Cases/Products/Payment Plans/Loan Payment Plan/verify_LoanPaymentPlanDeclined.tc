@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to declined loan payment plan
+Test Case ID: 16541</description>
+   <name>verify_LoanPaymentPlanDeclined</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae613a27-7ff7-47c5-b762-2c7cd4f7b1dd</testCaseGuid>
+   <variable>
+      <defaultValue>'Loan'</defaultValue>
+      <description></description>
+      <id>6ae85fa1-5481-4139-a1a7-c4c14a136cdb</id>
+      <masked>false</masked>
+      <name>plan_toApprove</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dissapprove Notes'</defaultValue>
+      <description></description>
+      <id>d763f6fa-c65e-4312-9e54-98bede6c9aa8</id>
+      <masked>false</masked>
+      <name>approver_notes</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>c2836e19-7714-4fc9-bf1c-9313ae087e65</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+</TestCaseEntity>

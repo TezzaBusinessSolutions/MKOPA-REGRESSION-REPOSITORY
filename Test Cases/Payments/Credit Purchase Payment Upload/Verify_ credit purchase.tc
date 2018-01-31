@@ -14,7 +14,7 @@ credits increase proportionally upon making a payment</description>
       <name>account</name>
    </variable>
    <variable>
-      <defaultValue>'200'</defaultValue>
+      <defaultValue>'323'</defaultValue>
       <description></description>
       <id>d66a77e3-2528-4524-92bf-ba140412bd63</id>
       <masked>false</masked>
@@ -28,21 +28,14 @@ credits increase proportionally upon making a payment</description>
       <name>phoneNumber</name>
    </variable>
    <variable>
-      <defaultValue>'credits have increased proprtionally'</defaultValue>
-      <description></description>
-      <id>242a755e-a686-449d-9ac2-0449c4b03dec</id>
-      <masked>false</masked>
-      <name>alert</name>
-   </variable>
-   <variable>
-      <defaultValue>'41'</defaultValue>
+      <defaultValue>'49'</defaultValue>
       <description></description>
       <id>c824fc8e-d1a4-429e-85d0-b26216d62b07</id>
       <masked>false</masked>
-      <name>credits</name>
+      <name>previousCredits</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>' 1215010701-001554'</defaultValue>
       <description></description>
       <id>4559e515-f35e-4ba4-a997-0d615053ab34</id>
       <masked>false</masked>

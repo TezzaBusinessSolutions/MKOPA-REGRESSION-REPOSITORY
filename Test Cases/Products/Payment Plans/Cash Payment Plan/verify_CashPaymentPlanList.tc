@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case ID: 16544
+The test case lists Cash payment plans</description>
+   <name>verify_CashPaymentPlanList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>57d17af8-230b-4e2f-9e54-ab072d23e372</testCaseGuid>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>1010e9cf-bf26-4ae1-90f0-9d3dd307c4cc</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+</TestCaseEntity>

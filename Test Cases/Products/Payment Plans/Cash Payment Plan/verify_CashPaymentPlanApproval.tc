@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>The test case approves cash payment Plan</description>
+   <name>verify_CashPaymentPlanApproval</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb0f85dc-bd71-45af-bb9b-774dad885589</testCaseGuid>
+   <variable>
+      <defaultValue>'PlanReview1'</defaultValue>
+      <description></description>
+      <id>33c5f448-0676-4903-9a47-7b128f1dd8e7</id>
+      <masked>false</masked>
+      <name>plan_toApprove</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cash Approval Notes'</defaultValue>
+      <description></description>
+      <id>38b13e24-50af-41ca-8afe-bbb8931a0b19</id>
+      <masked>false</masked>
+      <name>approver_notes</name>
+   </variable>
+   <variable>
+      <defaultValue>'10'</defaultValue>
+      <description></description>
+      <id>4e4732e1-4b92-469f-9fc7-3fe2f2a7c543</id>
+      <masked>false</masked>
+      <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>'chalo'</defaultValue>
+      <description></description>
+      <id>7ce3aff8-824b-4040-a817-eff2c36bc1c4</id>
+      <masked>false</masked>
+      <name>cashplan_Name</name>
+   </variable>
+</TestCaseEntity>

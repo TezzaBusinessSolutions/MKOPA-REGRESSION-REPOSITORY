@@ -19,35 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-Products'))
-
-WebUI.delay(delay)
-
-WebUI.mouseOver(findTestObject('Page Header and Menu/Products/Link-PaymentPlans'))
-
-WebUI.delay(delay)
-
-WebUI.click(findTestObject('Page Header and Menu/Products/link_PaymentPlansApproval'))
-
-WebUI.delay(delay)
-
-WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/link_PaymentPlanPendingApprove', [('plan_toApprove') : plan_toApprove]))
-
-WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/dropdown_ApprovalStatus'))
-
-WebUI.delay(delay)
-
-WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/option_ApproveStatus'))
-
-WebUI.setText(findTestObject('Products Module/Payments Plans Pending Approval/input_ApproverNotes'), approver_notes)
-
-WebUI.click(findTestObject('Products Module/Payments Plans Pending Approval/button_Save'))
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/step_ApproveLoanPaymentPlan'), [('delay') : '5'
+        , ('plan_toApprove') : 'LoanTest', ('approver_notes') : 'Approve Notes'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(delay)
 
 WebUI.verifyElementPresent(findTestObject('Products Module/Loan Payment Plan List/link_LoanPaymentPlanName', [('plan_toApprove') : plan_toApprove]), 
-    5)
+    0)
+
+WebUI.closeBrowser()
 

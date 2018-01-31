@@ -32,5 +32,3 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
 
-WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
-

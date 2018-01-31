@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify_credit sent</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2c1d83ca-cb8e-4a48-ad30-6f6628bbd666</testCaseGuid>
+   <variable>
+      <defaultValue>'1215010701-001554'</defaultValue>
+      <description></description>
+      <id>f76f6b61-b2f0-45da-8d2c-2051e69aa27d</id>
+      <masked>false</masked>
+      <name>deviceSerial</name>
+   </variable>
+   <variable>
+      <defaultValue>'20884690'</defaultValue>
+      <description></description>
+      <id>dea66849-b0eb-432e-907e-07e1d20307ec</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'279'</defaultValue>
+      <description></description>
+      <id>fd792c1d-4acb-4b18-aea0-9169afdbb4c2</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'254714303857 '</defaultValue>
+      <description></description>
+      <id>479b9144-5ab6-40b1-bf0b-3d4d937b56fe</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'85'</defaultValue>
+      <description></description>
+      <id>ae36c514-e3ef-4ef2-a496-0411b2810705</id>
+      <masked>false</masked>
+      <name>previousCredits</name>
+   </variable>
+   <variable>
+      <defaultValue>'87'</defaultValue>
+      <description></description>
+      <id>6f86d23b-1290-4f82-8a83-8775d03eff1c</id>
+      <masked>false</masked>
+      <name>credits</name>
+   </variable>
+</TestCaseEntity>

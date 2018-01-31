@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Payments/Assign UnMatched Payments/step_Payment Exceptions Assign Payment'), [('customerAccount') : customerAccount
-        , ('reference') : reference, ('comments') : Comments, ('dealerAccount') : '', ('productAccount') : productAccount
+        , ('reference') : reference, ('comments') : comments, ('dealerAccount') : '', ('productAccount') : productAccount
         , ('assignee') : assignee], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Payments Module/UnMatched Payment Assigned/successMsg_payment was successfuly signed '), 

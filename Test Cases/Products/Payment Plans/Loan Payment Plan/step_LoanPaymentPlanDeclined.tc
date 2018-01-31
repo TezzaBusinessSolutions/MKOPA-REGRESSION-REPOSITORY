@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Test case to declined loan payment plan
-Test Case ID: 16541</description>
-   <name>verify_PaymentPlanDeclined</name>
+   <description>Test Step to decline a loan payment plan</description>
+   <name>step_LoanPaymentPlanDeclined</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ae613a27-7ff7-47c5-b762-2c7cd4f7b1dd</testCaseGuid>
+   <testCaseGuid>5d9b38d0-7ee6-4d02-ac06-56bfbbd1e9bc</testCaseGuid>
    <variable>
-      <defaultValue>'BluetoothTV Test'</defaultValue>
+      <defaultValue>'test bundled'</defaultValue>
       <description></description>
-      <id>6ae85fa1-5481-4139-a1a7-c4c14a136cdb</id>
+      <id>83cdc755-78ba-470f-8687-5b8f5f7560cb</id>
       <masked>false</masked>
       <name>plan_toApprove</name>
    </variable>
    <variable>
       <defaultValue>'Dissapprove Notes'</defaultValue>
       <description></description>
-      <id>d763f6fa-c65e-4312-9e54-98bede6c9aa8</id>
+      <id>4c2ac778-9e53-455b-a8b7-7c6e896627f2</id>
       <masked>false</masked>
       <name>approver_notes</name>
    </variable>
    <variable>
       <defaultValue>'5'</defaultValue>
       <description></description>
-      <id>c2836e19-7714-4fc9-bf1c-9313ae087e65</id>
+      <id>71f60618-b27f-4001-acdf-7efde3bf06b7</id>
       <masked>false</masked>
       <name>delay</name>
    </variable>

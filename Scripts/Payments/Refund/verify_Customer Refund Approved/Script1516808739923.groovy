@@ -19,6 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
 WebUI.delay(delay)
@@ -29,7 +31,7 @@ WebUI.delay(delay)
 
 WebUI.click(findTestObject('Page Header and Menu/Payments/Link-ApproveCustomerRefund'))
 
-WebUI.click(findTestObject('Payments Module/Refunds Pending Approval/link_ApprovePendingRefund', [('accountNumber') : 'KE11118563-2']))
+WebUI.click(findTestObject('Payments Module/Refunds Pending Approval/link_ApprovePendingRefund', [('accountNumber') : '30990522']))
 
 WebUI.click(findTestObject('Payments Module/Approve Refund/dropdown_ApprovalStatus'))
 

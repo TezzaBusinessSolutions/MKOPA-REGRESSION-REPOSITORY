@@ -21,42 +21,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import sun.security.ssl.Alerts as Alerts
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
-
-not_run: CPC = WebUI.getText(findTestObject('Customer Module/Customer List/label_CostPerCredit'))
-
-previousCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits', [('credits') : credits]))
-
 WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
         , ('Phone') : phoneNumber, ('filePath') : 'C:\\Users\\stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
         , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
-
-WebUI.refresh()
+WebUI.delay(10)
 
 WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
 
-currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits', [('credits') : credits]))
+WebUI.refresh()
+
+currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/label_Credits'))
 
 WebUI.verifyGreaterThan(currentCredits, previousCredits)
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_DeviceSerial', [('deviceSerial') : deviceSerial]))
-
-WebUI.delay(2)
-
-WebUI.switchToWindowTitle('Inventory item details | M-KOPAnet')
-
-WebUI.delay(2)
-
-WebUI.scrollToElement(findTestObject('Customer Module/Customer List/button_CreditsSent'), 3)
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_CreditsSent'))
-
-WebUI.verifyElementText(findTestObject('Customer Module/Customer List/label_SentCredit'), currentCredits)
-
-WebUI.closeBrowser()
 
