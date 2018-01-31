@@ -6,7 +6,7 @@ Steps
 1. Search for Customer
 2. Customer Payment Info
 3. Transfer Payment Customer to Customer</description>
-   <name>Verify-Customer is able to request Payment transfer to Payer(Customer)</name>
+   <name>verify_Customer is able to request Payment transfer to Payer(Customer)</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ff573b69-ebb3-41b2-a7b9-5c2e775cb22e</testCaseGuid>

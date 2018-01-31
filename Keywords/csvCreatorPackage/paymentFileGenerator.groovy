@@ -45,9 +45,12 @@ You will have to update the following parameters (Amount, Phone and Account).
  Also change the path to store the file*/
 
 @Keyword
-def  paymentFileGenerator(String account,String phone,String amount=null) {
+def  paymentFileGenerator(String account,String phone,String amount=null,String receiptNumber) {
 	if(amount==null){
 		amount = 100
+	}
+	if(receiptNumber == null){
+		receiptNumber=generateRandom()
 	}
 
 	
@@ -62,18 +65,18 @@ def  paymentFileGenerator(String account,String phone,String amount=null) {
 	if(!fileGenerated.exists())
 	{
 		
-	def text=generateRandom()
+	
 	fileGenerated.append("Receipt No.,Completion Time,Initiation Time,Details,Transaction Status,Paid In,Withdrawn,Balance,Balance Confirmed,Reason Type,Other Party Info,Linked Transaction ID,A/C No.\r\n")
-	fileGenerated.append(text+",15:50,20-04-2017 15:50,Pay Bill from "+phone+ " - Customer Credits Acc. "
+	fileGenerated.append(receiptNumber+",15:50,20-04-2017 15:50,Pay Bill from "+phone+ " - Customer Credits Acc. "
 		+account+",Completed,"+amount+",,66,TRUE,Pay Utility,"+phone+"- Customer Credits,,"+account)}
 		
 	//Deletes the file if it exists
 	else {fileGenerated.delete()	
 	
 	//Generates the file and stores it in the location
-	def text=generateRandom()
+	
 	fileGenerated.append("Receipt No.,Completion Time,Initiation Time,Details,Transaction Status,Paid In,Withdrawn,Balance,Balance Confirmed,Reason Type,Other Party Info,Linked Transaction ID,A/C No.\r\n")
-	fileGenerated.append(text+",15:50,20-04-2017 15:50,Pay Bill from "+phone+ " - Customer Credits Acc. "
+	fileGenerated.append(receiptNumber+",15:50,20-04-2017 15:50,Pay Bill from "+phone+ " - Customer Credits Acc. "
 		+account+",Completed,"+amount+",,66,TRUE,Pay Utility,"+phone+"- Customer Credits,,"+account)}
 	
 }

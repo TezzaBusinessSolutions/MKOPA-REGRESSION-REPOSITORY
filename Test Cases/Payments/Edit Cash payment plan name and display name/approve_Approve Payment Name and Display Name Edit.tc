@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test Case to Approve Payment Name and Display Name Edit</description>
-   <name>Approve-Approve Payment Name and Display Name Edit</name>
+   <name>approve_Approve Payment Name and Display Name Edit</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3a30c140-7147-4c01-84dd-5a659ace9886</testCaseGuid>

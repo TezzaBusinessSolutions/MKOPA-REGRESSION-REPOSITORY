@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Steps
+
+1. Upload mpesa Payment File 
+2. Payments
+3. Verify if Payment is Visible to Recent Customer Payments</description>
+   <name>verify_Customer Payment has been made</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e8c9a74f-b298-40bf-974c-6097e19e06ba</testCaseGuid>
+   <variable>
+      <defaultValue>'321'</defaultValue>
+      <description></description>
+      <id>c6024dd6-cf55-4095-a04a-66505c2b2692</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'7954414'</defaultValue>
+      <description></description>
+      <id>821d9392-8119-42b4-b1fb-0f21005337c4</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'254716478999'</defaultValue>
+      <description></description>
+      <id>056f2335-96ca-41d3-9ffe-e2c4678edb82</id>
+      <masked>false</masked>
+      <name>phone</name>
+   </variable>
+   <variable>
+      <defaultValue>'ASDFG342SD'</defaultValue>
+      <description></description>
+      <id>bafc285f-cc27-47a7-8815-2c4980340d06</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+</TestCaseEntity>

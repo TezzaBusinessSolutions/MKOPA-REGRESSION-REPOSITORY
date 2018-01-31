@@ -20,13 +20,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 def rownum = new Random().nextInt(248 - 1) + 1
-<<<<<<< HEAD
+
 
 def status = findTestObject('Customer Module/Customer List/Label-In Payment')
-=======
->>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
 
-def status = findTestObject('Customer Module/Customer List/Label-In Payment')
 
 WebUI.getText(findTestObject('Customer Module/Customer List/Label-In Payment'))
 
@@ -35,11 +32,9 @@ if (!(status)) {
 } else {
     WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 }
-<<<<<<< HEAD
-=======
+
 
 amountInPayment = WebUI.getText(findTestObject('Customer Module/Customer List/radio_Dealer', [('amount') : amount]))
->>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
 
 depositReceipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
 

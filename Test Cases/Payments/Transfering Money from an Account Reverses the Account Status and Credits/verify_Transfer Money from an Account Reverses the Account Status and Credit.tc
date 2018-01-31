@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify- Transfer Money from an Account Reverses the Account Status and Credit</name>
+   <name>verify_Transfer Money from an Account Reverses the Account Status and Credit</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1a83273b-17ce-46a4-b788-9b3bf8fc6747</testCaseGuid>

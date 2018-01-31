@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Payments Module/Edit Cash Payment Plan/button_Save')
 
 WebUI.closeBrowser()
 
-WebUI.callTestCase(findTestCase('Payments/Edit Cash payment plan name and display name/Approve-Approve Payment Name and Display Name Edit'), 
+WebUI.callTestCase(findTestCase('Payments/Edit Cash payment plan name and display name/approve_Approve Payment Name and Display Name Edit'), 
     [('approveName') : 'Moran', ('approverNotes') : 'I find it necessary and fair enough to approve the change of name and display name. Reason being the current name is way too much \'bulk\''], 
     FailureHandling.STOP_ON_FAILURE)
 

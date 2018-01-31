@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Validate Wrong File Format Upload. The correct 
  file should be in csv Format</description>
-   <name>Validate-Wrong File Format Upload</name>
+   <name>validate_File Upload Format </name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b1e97d9f-4b70-40a2-b01f-3c02c14913d6</testCaseGuid>
@@ -12,13 +12,6 @@
       <id>70c9f31b-f815-4c55-9bdf-2c483dc4f836</id>
       <masked>false</masked>
       <name>amount</name>
-   </variable>
-   <variable>
-      <defaultValue>'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Files To Upload\\mkopa.docx'</defaultValue>
-      <description></description>
-      <id>dbbc2df8-3134-4c75-b9b4-aaf0cc5e3874</id>
-      <masked>false</masked>
-      <name>filePath</name>
    </variable>
    <variable>
       <defaultValue>'30638208'</defaultValue>
@@ -40,5 +33,12 @@
       <id>cbb25544-bda7-4725-aad5-f71873e5e366</id>
       <masked>false</masked>
       <name>comment</name>
+   </variable>
+   <variable>
+      <defaultValue>'mkopa.csv'</defaultValue>
+      <description></description>
+      <id>0d2a3d15-fd5d-45fe-a35d-3aaf75665fd8</id>
+      <masked>false</masked>
+      <name>fileName</name>
    </variable>
 </TestCaseEntity>

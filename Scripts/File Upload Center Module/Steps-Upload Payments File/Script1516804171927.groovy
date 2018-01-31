@@ -20,9 +20,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-tagged = tagGenerator('QWERTYUIOP1234567890LKJHGFDSAZXCVBNM', 5)
+String tagged = tagGenerator('QWERTYUIOP1234567890LKJHGFDSAZXCVBNM', 9)
 
-CustomKeywords.'csvCreatorPackage.paymentFileGenerator.paymentFileGenerator'(Account, Phone, Amount)
+CustomKeywords.'csvCreatorPackage.paymentFileGenerator.paymentFileGenerator'(Account, Phone, Amount, receiptNumber)
 
 WebUI.delay(5)
 
@@ -32,6 +32,8 @@ WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwang
 WebUI.click(findTestObject('Page Header and Menu/FileUploadCenter/Link-FileUploadMenu'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('File Upload Center Module/File Upload Center/button_MPESA'))
+
+WebUI.delay(2)
 
 WebUI.uploadFile(findTestObject('File Upload Center Module/Upload Payment File (MPESA)/button_SELECT'), filePath)
 

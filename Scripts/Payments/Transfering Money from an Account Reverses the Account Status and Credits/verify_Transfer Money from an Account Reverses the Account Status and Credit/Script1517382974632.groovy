@@ -19,21 +19,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('text') : text
-        , ('Account') : account, ('Phone') : phone, ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Transfering Money from an Account Reverses the Account Status and Credits/steps_Transfering money by an In finished Customer'), 
+    [('customerInFinishedPayment') : customerInFinishedPayment, ('depositReceipt') : depositReceipt, ('payerComment') : 'kwanza'
+        , ('customerReference') : '22715468'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
+WebUI.callTestCase(findTestCase('Payments/Payments Transfer Approval/Steps-Approve Cash Transfer'), [('requestorNotes') : requestorNotes
+        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.closeBrowser()
 
-WebUI.click(findTestObject('Page Header and Menu/Payments/Link-RecentCustomerPayments'))
+WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerInFinishedPayment], 
+    FailureHandling.STOP_ON_FAILURE)
 
-receiptNumber = WebUI.getText(findTestObject('Payments Module/Recent Customer Payments/text_Receipt Number', [('receiptNumber') : receiptNumber]))
+finishedPaymentLabel = WebUI.getText(findTestObject('Customer Module/Customer List/Label-Finished Payment'))
 
-WebUI.verifyEqual(receiptNumber, text)
+WebUI.verifyEqual(finishedPaymentLabel, labelStatus)
 
 WebUI.closeBrowser()
 

@@ -5,7 +5,7 @@
 File Upload Center
 Format the MPESA payment File Appropriately
 Upload the Payment file andd it should be in CSV Format</description>
-   <name>Verify-User is able to Upload Payment File</name>
+   <name>verify_User is able to Upload Payment File</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b39765b0-be27-44ce-97c8-c47e66045f07</testCaseGuid>

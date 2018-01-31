@@ -1,46 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Steps
-
-1. Upload mpesa Payment File 
-2. Payments
-3. Verify if Payment is Visible to Recent Customer Payments</description>
-   <name>Verify-Customer Payment</name>
+   <description>Validating that the required fields cannot be left balnk</description>
+   <name>validate_Payments File Upload Required Fields</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e8c9a74f-b298-40bf-974c-6097e19e06ba</testCaseGuid>
+   <testCaseGuid>ebd40213-463a-488b-b226-c5b0a2dc3818</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>e3541c6b-e723-4147-923b-0968d65d3cbd</id>
+      <id>8106a7c6-d353-4066-9930-de860b709824</id>
       <masked>false</masked>
-      <name>receiptNumber</name>
+      <name>comment</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6e958714-e9c9-491f-883f-a2fab1793405</id>
+      <id>f1120407-b033-4973-b209-3c4fba1de69b</id>
       <masked>false</masked>
-      <name>text</name>
+      <name>tag</name>
    </variable>
    <variable>
-      <defaultValue>'200'</defaultValue>
+      <defaultValue>'100'</defaultValue>
       <description></description>
-      <id>c6024dd6-cf55-4095-a04a-66505c2b2692</id>
+      <id>3f195fd6-1fc5-40ed-9d5a-f3f905b0fd7c</id>
       <masked>false</masked>
       <name>amount</name>
    </variable>
    <variable>
-      <defaultValue>'7954414'</defaultValue>
+      <defaultValue>'30638208'</defaultValue>
       <description></description>
-      <id>821d9392-8119-42b4-b1fb-0f21005337c4</id>
+      <id>f168f0d7-6eb1-49a1-b607-a37a2a0e06a5</id>
       <masked>false</masked>
       <name>account</name>
    </variable>
    <variable>
-      <defaultValue>'254716478999'</defaultValue>
+      <defaultValue>'254722471191'</defaultValue>
       <description></description>
-      <id>056f2335-96ca-41d3-9ffe-e2c4678edb82</id>
+      <id>a7b77642-ec7c-4e9a-9943-cf5a11e926f5</id>
       <masked>false</masked>
       <name>phone</name>
    </variable>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Transfer Payment to a Customer and Maker Checker Approves the Payment. Check if the amount has been transferred</description>
-   <name>Steps- Transfering money by an In finished Customer</name>
+   <name>steps_Transfering money by an In finished Customer</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>dd41deab-f84a-4521-8cb5-5b94413d76b7</testCaseGuid>

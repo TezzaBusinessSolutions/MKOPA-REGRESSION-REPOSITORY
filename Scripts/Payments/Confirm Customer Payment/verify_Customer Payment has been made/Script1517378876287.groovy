@@ -17,26 +17,36 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKey
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import csvCreatorPackage.generate as generate
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Transfering Money from an Account Reverses the Account Status and Credits/Steps- Transfering money by an In finished Customer'), 
-    [('customerInFinishedPayment') : customerInFinishedPayment, ('depositReceipt') : depositReceipt, ('payerComment') : 'kwanza'
-        , ('customerReference') : '22715468'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
+        , ('Phone') : phone, ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Comment') : 'Nice and paid on time', ('receiptNumber') : receiptNumber], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Payments Transfer Approval/Steps-Approve Cash Transfer'), [('requestorNotes') : requestorNotes
-        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.closeBrowser()
+WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-RecentCustomerPayments'))
 
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerInFinishedPayment], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(5)
 
-finishedPaymentLabel = WebUI.getText(findTestObject('Customer Module/Customer List/Label-Finished Payment'))
+text = WebUI.getText(findTestObject('Payments Module/Recent Customer Payments/text_Receipt Number', [('receiptNumber') : receiptNumber]))
 
-WebUI.verifyEqual(finishedPaymentLabel, labelStatus)
+WebUI.verifyEqual(text, receiptNumber)
 
 WebUI.closeBrowser()
+
+String generateRandom(String chars = 'QWERTYUIOPASDFGHJKLZXCVBNM1234567890', Integer length = 10) {
+    Random rand = new Random()
+
+    StringBuilder sb = new StringBuilder()
+
+    for (int i = 0; i < length; i++) {
+        sb.append(chars.charAt(rand.nextInt(chars.length())))
+    }
+    
+    return sb.toString()
+}
 
