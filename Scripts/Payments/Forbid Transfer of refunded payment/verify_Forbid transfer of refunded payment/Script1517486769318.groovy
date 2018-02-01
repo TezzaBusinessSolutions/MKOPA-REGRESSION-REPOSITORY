@@ -22,11 +22,24 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payments'), [('customerAccount') : '27360571', ('depositReceipt') : 'KDG2J25T4I'
-        , ('delay') : '5', ('customerSearch') : '30990522'], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.comment('Customer Refund Using Valid Credentials')
+WebUI.callTestCase(findTestCase('Common/Step_Refund Payments'), [('customerAccount') : customerAccount, ('depositReceipt') : depositReceipt
+        , ('delay') : delay, ('customerSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_ValidCredentials'), [('inputAmount') : '10', ('input_Notes') : 'Testing Refund'
-        , ('delay') : '6', ('success') : ' A refund of KES 10.00 has been queued for approval'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_RefundPayment'), [('input_Notes') : refundNotes, ('errormessage') : 'Please fill in the request notes'
+        , ('inputNotes') : '', ('inputAmount') : amount, ('error') : 'A value is required.', ('depositReceipt') : depositReceipt
+        , ('delay') : delay, ('customerSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(3)
+
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
+
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('paymentReceipt') : depositReceipt]))
+
+WebUI.verifyElementText(findTestObject('Customer Module/Customer List/label_Status', [('status') : status]), status)
 

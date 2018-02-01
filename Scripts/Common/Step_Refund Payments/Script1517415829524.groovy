@@ -19,18 +19,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), customerSearch)
-
-WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(delay)
 
 WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-not_run: WebUI.scrollToElement(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]), 
-    0)
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('paymentReceipt') : depositReceipt]))
 
 WebUI.click(findTestObject('Customer Module/Customer List/button_RefundPayment'))
 

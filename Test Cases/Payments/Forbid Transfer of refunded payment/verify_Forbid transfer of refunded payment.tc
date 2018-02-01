@@ -2,26 +2,26 @@
 <TestCaseEntity>
    <description>ID:16604
 an account that has requested for a payment refund should not be able to transfer payment</description>
-   <name>Verify_Forbid transfer of refunded payment</name>
+   <name>verify_Forbid transfer of refunded payment</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8bc7a153-454f-4584-9048-2d6941c45802</testCaseGuid>
    <variable>
-      <defaultValue>'27360571'</defaultValue>
+      <defaultValue>'24445490'</defaultValue>
       <description></description>
       <id>b9db4be7-08d5-46ee-a5bd-ed9497d3ad16</id>
       <masked>false</masked>
       <name>customerAccount</name>
    </variable>
    <variable>
-      <defaultValue>'Refund Pending'</defaultValue>
+      <defaultValue>'Refund Done'</defaultValue>
       <description></description>
       <id>6a3e0165-642a-45e2-9a38-6a27169c301c</id>
       <masked>false</masked>
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'50'</defaultValue>
+      <defaultValue>'60'</defaultValue>
       <description></description>
       <id>4abce108-de50-48f7-a20c-3a7edd26d449</id>
       <masked>false</masked>
@@ -40,5 +40,12 @@ an account that has requested for a payment refund should not be able to transfe
       <id>3df8748f-d1ac-42c4-a7c4-10093a0167e8</id>
       <masked>false</masked>
       <name>delay</name>
+   </variable>
+   <variable>
+      <defaultValue>'LIC971ZNAN'</defaultValue>
+      <description></description>
+      <id>60d3b16a-d70b-4bc3-a74f-7264b6583592</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
    </variable>
 </TestCaseEntity>

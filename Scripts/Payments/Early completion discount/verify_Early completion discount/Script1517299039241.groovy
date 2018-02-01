@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Early completion discount/Steps_view list dicounts'), [('paymentPlan') : paymentPlan
+WebUI.callTestCase(findTestCase('Payments/Early completion discount/steps_ View list dicounts'), [('paymentPlan') : paymentPlan
         , ('discount') : discount], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : customerAccount
