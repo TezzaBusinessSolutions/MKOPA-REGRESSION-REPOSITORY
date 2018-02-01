@@ -22,8 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 import sun.security.ssl.Alerts as Alerts
 
 WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
-        , ('Phone') : phoneNumber, ('filePath') : 'C:\\Users\\stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
+        , ('Phone') : phoneNumber, ('Comment') : 'Nice and paid on time', ('receiptNumber') : receiptNumber], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 

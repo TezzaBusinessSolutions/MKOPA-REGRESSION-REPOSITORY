@@ -5,7 +5,7 @@
 1. Search for Customer
 2. Navigate to Customer Account
 3. Select a payment to make the transfer from</description>
-   <name>Verify-Customer is able to Make Payment Transfer to Dealer</name>
+   <name>verify_Payment Transfer (Customer to Dealer)</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>43a264a2-983e-4edd-b79f-6f7c380ac944</testCaseGuid>

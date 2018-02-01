@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Steps_ Transfer Payment</name>
+   <name>steps_Transfer Payment</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fdf9ebc4-322e-42fa-800b-abe97a662058</testCaseGuid>

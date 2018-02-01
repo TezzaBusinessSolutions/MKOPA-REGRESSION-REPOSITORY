@@ -19,29 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment(Customer-Dealer)/Steps_ Transfer Payment'), [:], FailureHandling.STOP_ON_FAILURE)
-
-<<<<<<< HEAD
-WebUI.delay(2)
-=======
-def status = findTestObject('Customer Module/Customer List/Label-In Payment')
-
-WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.getText(findTestObject('Customer Module/Customer List/Label-In Payment'))
-
-if (!(status)) {
-    WebUI.closeBrowser()
-} else {
-    WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-}
-
-depositReceipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]))
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
->>>>>>> branch 'master' of https://github.com/TezzaBusinessSolutions/MKOPA-REGRESSION-REPOSITORY
+WebUI.callTestCase(findTestCase('Payments/Transfer Payment(Customer-Dealer)/steps_Transfer Payment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.check(findTestObject('Customer Module/Customer List/radio_Dealer'))
 

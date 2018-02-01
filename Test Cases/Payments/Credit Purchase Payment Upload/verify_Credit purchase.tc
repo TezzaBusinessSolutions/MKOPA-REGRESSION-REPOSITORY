@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>ID: 16688
 credits increase proportionally upon making a payment</description>
-   <name>Verify_ credit purchase</name>
+   <name>verify_Credit purchase</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0f0752d0-1a64-4216-903b-636b9ee4ba27</testCaseGuid>
@@ -40,5 +40,12 @@ credits increase proportionally upon making a payment</description>
       <id>4559e515-f35e-4ba4-a997-0d615053ab34</id>
       <masked>false</masked>
       <name>deviceSerial</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b577dd30-366b-4467-80d7-d25b976adbc4</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
    </variable>
 </TestCaseEntity>

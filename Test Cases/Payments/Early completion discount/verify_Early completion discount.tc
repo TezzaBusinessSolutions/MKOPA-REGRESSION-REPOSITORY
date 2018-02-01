@@ -55,4 +55,11 @@ a cutomer gets discount upon early payment of the loan amount aplicable</descrip
       <masked>false</masked>
       <name>status</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4a51342a-e9f6-4dcf-9d0a-bbb306d0de49</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
 </TestCaseEntity>
