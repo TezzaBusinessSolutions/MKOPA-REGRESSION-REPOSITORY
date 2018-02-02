@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Test case to declined loan payment plan
+   <description>This Test case verifies payment plan decline using loan payment Plan
 Test Case ID: 16541</description>
    <name>verify_LoanPaymentPlanDeclined</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ae613a27-7ff7-47c5-b762-2c7cd4f7b1dd</testCaseGuid>
    <variable>
-      <defaultValue>'Loan'</defaultValue>
+      <defaultValue>'LoanToDecline'</defaultValue>
       <description></description>
       <id>6ae85fa1-5481-4139-a1a7-c4c14a136cdb</id>
       <masked>false</masked>

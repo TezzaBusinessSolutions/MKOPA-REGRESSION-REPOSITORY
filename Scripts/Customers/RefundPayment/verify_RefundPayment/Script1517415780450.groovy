@@ -22,12 +22,11 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/step_AddLoanPaymentPlan'), [('delay') : '5', ('loan_PaymentPlanName') : 'Loan'
-        , ('loan_PaymentDisplayName') : 'Loan Display Name', ('outletproducttype') : 'BluetoothTVOpt', ('loan_Deposit') : '100'
-        , ('costpercredit') : '15', ('loan_Duration') : '5', ('requester_Notes') : 'Loan Payment Plan', ('total_Price') : '56'
-        , ('free_Activation') : '5', ('loan_Type') : 'HirePurchase'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Step_Refund Payments'), [('customerAccount') : '27360571', ('depositReceipt') : 'KDG2J25T4I'
+        , ('delay') : '5', ('customerSearch') : '30990522'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Products Module/Add Loan Payment Plan/message_DuplicateError'), 0)
+WebUI.comment('Customer Refund Using Valid Credentials')
 
-WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_ValidCredentials'), [('inputAmount') : '10', ('input_Notes') : 'Testing Refund'
+        , ('delay') : '6', ('success') : ' A refund of KES 10.00 has been queued for approval'], FailureHandling.STOP_ON_FAILURE)
 

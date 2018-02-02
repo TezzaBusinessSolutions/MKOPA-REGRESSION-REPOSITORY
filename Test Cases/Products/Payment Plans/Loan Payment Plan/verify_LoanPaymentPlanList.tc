@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test Case ID: 16543
-The test case lists loan payment plans</description>
+This test case lists loan payment plans</description>
    <name>verify_LoanPaymentPlanList</name>
    <tag></tag>
    <comment></comment>

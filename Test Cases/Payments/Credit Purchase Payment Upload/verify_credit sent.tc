@@ -40,4 +40,11 @@
       <masked>false</masked>
       <name>previousCredits</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f7da6a1c-8ef4-4891-b578-f6e19593c716</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
 </TestCaseEntity>

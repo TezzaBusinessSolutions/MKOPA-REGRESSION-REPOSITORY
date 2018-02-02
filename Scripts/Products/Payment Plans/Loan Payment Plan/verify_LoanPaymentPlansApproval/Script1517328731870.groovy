@@ -22,12 +22,16 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/step_ApproveLoanPaymentPlan'), [('delay') : '5'
-        , ('plan_toApprove') : 'LoanTest', ('approver_notes') : 'Approve Notes'], FailureHandling.STOP_ON_FAILURE)
+        , ('plan_toApprove') : 'LoanTest7', ('approver_notes') : 'Approve Notes'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(delay)
 
 WebUI.verifyElementPresent(findTestObject('Products Module/Loan Payment Plan List/link_LoanPaymentPlanName', [('plan_toApprove') : plan_toApprove]), 
     0)
+
+WebUI.click(findTestObject('Products Module/Loan Payment Plan List/label_LoanPaymentListNameDetails', [('plan_toApprove') : plan_toApprove]))
+
+WebUI.delay(delay)
 
 WebUI.closeBrowser()
 

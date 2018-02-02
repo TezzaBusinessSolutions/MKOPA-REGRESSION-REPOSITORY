@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Test Case ID: 16541
-Test case that validate if error message is thrown when declining a loan payment plan without entering valid data</description>
-   <name>verify_LoanEnterNotesError</name>
+   <description>This Test case that validate if error message is thrown when declining a loan payment plan without entering valid data</description>
+   <name>verify_DeclineLoanEnterNotesRequired</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d8bae504-da02-4016-8b74-c9f48138b7eb</testCaseGuid>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Test case that validates if a duplicate payment plan can be added</description>
-   <name>verify_Cash Payment Plan Duplicate Error</name>
+   <description>This Test case Verifies if a warning message is displayed informing the user that there already exist a similar Cash Plan</description>
+   <name>verify_Cash Payment Plan Duplicate</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>4c937b6a-3e26-4ca5-9fea-24ee3f4b5fe4</testCaseGuid>

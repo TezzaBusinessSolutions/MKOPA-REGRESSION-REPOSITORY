@@ -3,7 +3,7 @@
    <description>This test case verifies if error is thrown when notes are not submitted during refund
 
 TestCaseID: 16573</description>
-   <name>verify_EnterNotesError</name>
+   <name>verify_EnterNotesRequired</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>579c12a2-ec66-4312-9b1c-0d640684dcd7</testCaseGuid>

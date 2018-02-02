@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>steps_Transfer Payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fdf9ebc4-322e-42fa-800b-abe97a662058</testCaseGuid>
+   <variable>
+      <defaultValue>'12517586'</defaultValue>
+      <description></description>
+      <id>ab1a6869-bd05-4473-990a-f8524a48e29f</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'QWRTE67T12189hdfffr'</defaultValue>
+      <description></description>
+      <id>3fce118b-5f84-4ca4-bdc5-0b0467d18c50</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
+   </variable>
+</TestCaseEntity>

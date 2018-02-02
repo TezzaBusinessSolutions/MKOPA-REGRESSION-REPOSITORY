@@ -19,24 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Transfer Payment(Customer-Dealer)/steps_Transfer Payment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [('customerAccount') : '27360571', ('depositReceipt') : 'KDG2J25T4I'
-        , ('delay') : '5', ('customerSearch') : '30990522'], FailureHandling.STOP_ON_FAILURE)
+WebUI.check(findTestObject('Customer Module/Customer List/radio_Dealer'))
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Amount'), inputAmount)
+WebUI.delay(3)
 
-WebUI.setText(findTestObject('Customer Module/Customer List/input_Notes'), '')
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), dealerAccount)
 
-WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitRefund'))
+WebUI.delay(5)
 
-WebUI.getText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]))
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerComment'), dealerComment)
 
-String message = 'Please fill in the request notes'
+WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_Fillrequirednotes', [('error') : error]), 
-    message)
+WebUI.click(findTestObject('Customer Module/Customer List/button_SaveTransferToDealer'))
 
-WebUI.closeBrowser()
+WebUI.delay(5)
+
+WebUI.verifyElementPresent(findTestObject('Customer Module/Customer List/successMsg-successful dealer transfer'), 10)
+
+not_run: WebUI.click(findTestObject('Customer Module/Customer List/button-Close Payment Details Window'))
 

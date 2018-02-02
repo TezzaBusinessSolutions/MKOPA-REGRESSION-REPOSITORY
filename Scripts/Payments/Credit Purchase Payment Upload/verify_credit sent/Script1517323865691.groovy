@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Credit Purchase Payment Upload/Verify_ credit purchase'), [('account') : account
+WebUI.callTestCase(findTestCase('Payments/Credit Purchase Payment Upload/verify_Credit purchase'), [('account') : account
         , ('amount') : amount, ('phoneNumber') : phoneNumber, ('previousCredits') : '41', ('deviceSerial') : ''], FailureHandling.STOP_ON_FAILURE)
 
 currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/credits'))

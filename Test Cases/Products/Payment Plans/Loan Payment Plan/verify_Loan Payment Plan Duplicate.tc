@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test Case ID:16539
-
-The test case validates if a duplicate loan payment plan can be added</description>
-   <name>verify_Loan Payment Plan Duplicate Error</name>
+The test case verifies if a message is displayed informing the user that there already exist a similar loan payment plan</description>
+   <name>verify_Loan Payment Plan Duplicate</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>472d4352-320b-4880-833e-574a436d3c71</testCaseGuid>

@@ -22,12 +22,17 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/step_AddLoanPaymentPlan'), [('delay') : '5', ('loan_PaymentPlanName') : 'LoanReview'
-        , ('loan_PaymentDisplayName') : 'Loan Display Name', ('outletproducttype') : 'BluetoothTVOpt', ('loan_Deposit') : '100'
-        , ('costpercredit') : '15', ('loan_Duration') : '5', ('requester_Notes') : 'Loan Payment Plan', ('total_Price') : '56'
-        , ('free_Activation') : '5', ('loan_Type') : 'HirePurchase'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(delay)
+WebUI.delay(2)
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
 

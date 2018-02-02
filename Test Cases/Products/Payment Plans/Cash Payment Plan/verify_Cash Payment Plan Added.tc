@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test Case ID: 16540
-Test case that adds a cash payment plan</description>
+Test case verifies that a cash payment plan is added successfully</description>
    <name>verify_Cash Payment Plan Added</name>
    <tag></tag>
    <comment></comment>

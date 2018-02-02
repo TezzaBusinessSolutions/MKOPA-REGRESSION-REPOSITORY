@@ -21,10 +21,10 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/step_LoanPaymentPlanDeclined'), [('plan_toApprove') : 'test bundled'
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/step_LoanPaymentPlanDeclined'), [('plan_toApprove') : 'LoanToDecline'
         , ('approver_notes') : 'Dissapprove Notes', ('delay') : '5'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Products Module/Loan Payment Plan List/link_LoanPaymentPlanName', [('plan_toApprove') : plan_toApprove]), 
+not_run: WebUI.verifyElementPresent(findTestObject('Products Module/Loan Payment Plan List/link_LoanPaymentPlanName', [('plan_toApprove') : plan_toApprove]), 
     5)
 
 WebUI.closeBrowser()

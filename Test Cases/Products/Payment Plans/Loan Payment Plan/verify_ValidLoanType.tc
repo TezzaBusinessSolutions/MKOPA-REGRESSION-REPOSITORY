@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test Case ID:16539
-
 The case validates if error message is displayed when loan payment plan is added without entering valid loan type</description>
-   <name>verify_ValidLoanTypeError</name>
+   <name>verify_ValidLoanType</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>07ed9062-c6f4-4694-af1f-5660a58fcc1f</testCaseGuid>

@@ -2,6 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import java.awt.Window as Window
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -18,15 +19,18 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import sun.security.ssl.Alerts as Alerts
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('File Upload Center Module/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
+        , ('Phone') : phoneNumber, ('Comment') : 'Nice and paid on time', ('receiptNumber') : receiptNumber], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payment'), [('customerAccount') : '27360571', ('depositReceipt') : 'KDG2J25T4I'
-        , ('delay') : '5', ('customerSearch') : '30990522'], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(10)
 
-WebUI.comment('Third Scenario: Valid Credentials')
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_ValidCredentials'), [('inputAmount') : '10', ('input_Notes') : 'Testing Refund'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.refresh()
+
+currentCredits = WebUI.getText(findTestObject('Customer Module/Customer List/credits'))
+
+WebUI.verifyGreaterThan(currentCredits, previousCredits)
 

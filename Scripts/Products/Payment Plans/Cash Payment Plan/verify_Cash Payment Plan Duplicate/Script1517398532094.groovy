@@ -22,12 +22,13 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Products/Payment Plans/Loan Payment Plan/step_AddLoanPaymentPlan'), [('delay') : '5', ('loan_PaymentPlanName') : 'LoanReview'
-        , ('loan_PaymentDisplayName') : 'Loan Display Name', ('outletproducttype') : 'BluetoothTVOpt', ('loan_Deposit') : '100'
-        , ('costpercredit') : '15', ('loan_Duration') : '5', ('requester_Notes') : 'Loan Payment Plan', ('total_Price') : '56'
-        , ('free_Activation') : '5', ('loan_Type') : 'HirePurchase'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/step_AddCashPaymentPlan'), [('delay') : '5', ('payment_PlanName') : 'PlanReview2'
+        , ('payment_PlanDisplayName') : 'Payment Plan Display Name Test', ('outletproducttype') : 'BluetoothTVOpt', ('total_Price') : '50'
+        , ('requester_Notes') : 'Payment Cash Plan Notes'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(delay)
+
+WebUI.verifyElementPresent(findTestObject('Products Module/Add Cash Payment Plan/message_DuplicateError'), 0)
 
 WebUI.closeBrowser()
 
