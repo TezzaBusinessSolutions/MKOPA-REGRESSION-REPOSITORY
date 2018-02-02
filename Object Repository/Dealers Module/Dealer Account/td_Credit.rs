@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Amount of the Latest Payment or Transaction</description>
-   <name>td_Amount</name>
+   <description>The Credits Table data in Dealer Transactions</description>
+   <name>td_Credit</name>
    <tag></tag>
-   <elementGuidId>0ae5b6ca-21ee-48fd-acf8-0a181e110c5b</elementGuidId>
+   <elementGuidId>e5ca9906-f5be-4ca9-aecc-9a0d19c701d4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr['${row}']/td[4]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr['${row}']/td[4]</value>
+      <value>.//*[@id='TransactionsList']/table/tbody/tr/td[3]</value>
    </webElementProperties>
 </WebElementEntity>

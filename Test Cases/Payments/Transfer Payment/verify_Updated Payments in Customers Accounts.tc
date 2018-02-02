@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Transfer a Payment from Customer to Customer
+Search for both Customers and Confirm if their Payment accounts have been updated respectively.</description>
+   <name>verify_Updated Payments in Customers Accounts</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>767ce103-f469-43ff-87dc-776a62c57228</testCaseGuid>
+   <variable>
+      <defaultValue>'7172000361'</defaultValue>
+      <description></description>
+      <id>7d9c2edb-a41e-4505-8cc7-c6e0535bbb74</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'1878554280'</defaultValue>
+      <description></description>
+      <id>c434971b-f933-450e-a48e-39430005daf0</id>
+      <masked>false</masked>
+      <name>paymentReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'4359911353'</defaultValue>
+      <description></description>
+      <id>be6c448f-d502-46a9-a658-ffde722475cb</id>
+      <masked>false</masked>
+      <name>customerReference</name>
+   </variable>
+   <variable>
+      <defaultValue>'The transfer has been made'</defaultValue>
+      <description></description>
+      <id>40c21922-73a8-4f7c-a7d6-99eb66536de7</id>
+      <masked>false</masked>
+      <name>payerComment</name>
+   </variable>
+   <variable>
+      <defaultValue>'kwanza'</defaultValue>
+      <description></description>
+      <id>66d9dc72-f943-4b23-91f6-dcc48531a3e1</id>
+      <masked>false</masked>
+      <name>requestorNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have approved the request'</defaultValue>
+      <description></description>
+      <id>2e75967e-c7ab-4c16-a9ff-5a10949104d3</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+</TestCaseEntity>

@@ -93,7 +93,7 @@
       <guid>73b053c5-26af-409d-aef7-072d11852d96</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Payments/Confirm Customer Payment/verify_Customer Payment</testCaseId>
+      <testCaseId>Test Cases/Payments/Confirm Payments/verify_Customer Payment</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -123,7 +123,7 @@
       <guid>0449f692-281c-4b94-8780-bf072498f4fc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Payments/Confirm Dealer Payment/verify_Dealer Payment</testCaseId>
+      <testCaseId>Test Cases/Payments/Confirm Payments/verify_Dealer Payment</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

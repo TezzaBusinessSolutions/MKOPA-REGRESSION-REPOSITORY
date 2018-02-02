@@ -19,20 +19,38 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_SearchSpecificCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Customer Module/Customer List/link_DeviceSerial', [('deviceSerial') : deviceSerial]))
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-WebUI.switchToWindowTitle('Inventory item details | M-KOPAnet')
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Customer Module/Customer List/button_CreditsSent'))
+amountToTransfer = WebUI.getText(findTestObject('Customer Module/Customer List/td_Amount', [('row') : row]))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('paymentReceipt') : paymentReceipt]))
 
-WebUI.callTestCase(findTestCase('Common/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
-        , ('Phone') : phone, ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
+
+WebUI.check(findTestObject('Customer Module/Customer List/radio_Dealer'))
+
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), dealerAccountNumber)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Customer Module/Customer List/dropdown_Dealer Account', [('account') : account]))
+
+WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerComment'), comment)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button_SaveTransferToDealer'))
+
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Customer Module/Customer List/successMsg-transfer has been requested succesfully'), 
+    0)
+
+WebUI.click(findTestObject('Customer Module/Customer List/button-Close Payment Details Window'))
 

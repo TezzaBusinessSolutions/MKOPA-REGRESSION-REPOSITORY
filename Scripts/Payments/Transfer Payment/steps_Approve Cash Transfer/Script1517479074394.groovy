@@ -19,20 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.callTestCase(findTestCase('Common/Step_SearchSpecificCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Customer Module/Customer List/link_DeviceSerial', [('deviceSerial') : deviceSerial]))
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
 
-WebUI.switchToWindowTitle('Inventory item details | M-KOPAnet')
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Customer Module/Customer List/button_CreditsSent'))
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-PaymentTransfaresForApproval'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Payments Module/Approve Payments Transfers/Link_Approve Transfer', [('requestorNotes') : requestorNotes]))
 
-WebUI.callTestCase(findTestCase('Common/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
-        , ('Phone') : phone, ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
-        , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Payments Module/Approve Payments Transfers/input_Comments'), comments)
+
+WebUI.click(findTestObject('Payments Module/Approve Payments Transfers/Button-Save'))
+
+WebUI.delay(2)
+
+WebUI.verifyAlertPresent(20)
+
+WebUI.acceptAlert()
 

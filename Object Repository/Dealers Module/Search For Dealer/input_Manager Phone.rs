@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Amount of the Latest Payment or Transaction</description>
-   <name>td_Amount</name>
+   <description>Input Manager Phone Field</description>
+   <name>input_Manager Phone</name>
    <tag></tag>
-   <elementGuidId>0ae5b6ca-21ee-48fd-acf8-0a181e110c5b</elementGuidId>
+   <elementGuidId>c675d411-daa1-4562-9608-e48b7025439a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr['${row}']/td[4]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr['${row}']/td[4]</value>
+      <value>.//*[@id='ManagerPhone']</value>
    </webElementProperties>
 </WebElementEntity>

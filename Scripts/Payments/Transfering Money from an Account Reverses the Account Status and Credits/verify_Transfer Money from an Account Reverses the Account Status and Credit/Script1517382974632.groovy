@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Payments/Transfering Money from an Account Reve
     [('customerInFinishedPayment') : customerInFinishedPayment, ('depositReceipt') : depositReceipt, ('payerComment') : 'kwanza'
         , ('customerReference') : '22715468'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Payments Transfer Approval/Steps-Approve Cash Transfer'), [('requestorNotes') : requestorNotes
+WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Approve Cash Transfer'), [('requestorNotes') : requestorNotes
         , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()

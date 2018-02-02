@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verifies if the payment transfer reflects in the Dealers Account</description>
+   <name>verify_Updated Payment Transfer in Dealers Account</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>428f2f1a-c57e-4f44-a121-be029c8b1de0</testCaseGuid>
+   <variable>
+      <defaultValue>'K0877'</defaultValue>
+      <description></description>
+      <id>56aa5627-8cf2-42d4-938a-144a778b6e6e</id>
+      <masked>false</masked>
+      <name>dealerAccountNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nice Transaction'</defaultValue>
+      <description></description>
+      <id>3ccb0f88-5cc7-4316-be6f-34c202e649be</id>
+      <masked>false</masked>
+      <name>requestorNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have transferred the payment'</defaultValue>
+      <description></description>
+      <id>ac381618-a0a5-434c-92bd-8b2d28039abf</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+   <variable>
+      <defaultValue>'4961968'</defaultValue>
+      <description></description>
+      <id>e7762d93-305c-45ca-a9e5-a423d47ceff1</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'UEY8H35TXO'</defaultValue>
+      <description></description>
+      <id>85e34772-296b-4d9f-b16b-a32725668b97</id>
+      <masked>false</masked>
+      <name>paymentReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>ce02895d-6aa5-49bc-9049-ee444f5c5198</id>
+      <masked>false</masked>
+      <name>row</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validates wrong file format. Upload a file in another format rather than .csv</description>
+   <name>validate_File Upload Format</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1eba3bc2-21c1-4019-bba2-8e54fb651ff8</testCaseGuid>
+   <variable>
+      <defaultValue>'100'</defaultValue>
+      <description></description>
+      <id>b90d898d-4ac8-4689-9ea1-0df0c5c3f235</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'24747181'</defaultValue>
+      <description></description>
+      <id>2765a1e1-a2dc-405f-a400-67e945081801</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'254723321480 '</defaultValue>
+      <description></description>
+      <id>56fbb19d-695e-4569-8370-0adeeb2a3fc2</id>
+      <masked>false</masked>
+      <name>phone</name>
+   </variable>
+</TestCaseEntity>

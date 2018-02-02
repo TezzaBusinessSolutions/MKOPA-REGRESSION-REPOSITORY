@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Approves Payment Transfers for Approval.
+Steps
+
+Payments
+Payment Exceptions
+Payment Transfers for Approval</description>
+   <name>steps_Approve Cash Transfer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6f7f877b-7b60-4176-b763-bc45770e518b</testCaseGuid>
+   <variable>
+      <defaultValue>'kwanza'</defaultValue>
+      <description></description>
+      <id>82b9415d-a5e1-4142-869d-115c52494235</id>
+      <masked>false</masked>
+      <name>requestorNotes</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have approved the Transfer of the payment to the requested Account'</defaultValue>
+      <description></description>
+      <id>c5694b23-3dc9-4919-842a-ad711a30f0fa</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+</TestCaseEntity>
