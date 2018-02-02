@@ -21,11 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('paymentReceipt') : paymentReceipt]))
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
+WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Transfer Payment'), [('customerAccount') : '12517586', ('depositReceipt') : 'QWRTE67T12189hdfffr'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.check(findTestObject('Customer Module/Customer List/radio_Payer'))
 

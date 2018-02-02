@@ -19,25 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment(Customer-Dealer)/steps_Transfer Payment'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.check(findTestObject('Customer Module/Customer List/radio_Dealer'))
+WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), dealerAccount)
-
-WebUI.delay(5)
-
-WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerComment'), dealerComment)
+amountToTransfer = WebUI.getText(findTestObject('Customer Module/Customer List/td_Amount', [('row') : row]))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Customer Module/Customer List/button_SaveTransferToDealer'))
+WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerDepositReceipt', [('depositReceipt') : depositReceipt]))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Customer Module/Customer List/successMsg-successful dealer transfer'), 10)
-
-not_run: WebUI.click(findTestObject('Customer Module/Customer List/button-Close Payment Details Window'))
+WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
 

@@ -21,21 +21,12 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-
-WebUI.delay(2)
-
-amountToTransfer = WebUI.getText(findTestObject('Customer Module/Customer List/td_Amount', [('row') : row]))
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('paymentReceipt') : paymentReceipt]))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Customer Module/Customer List/button_TransferPayment'))
+WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Transfer Payment'), [('customerAccount') : customerAccount
+        , ('paymentReceipt') : paymentReceipt], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.check(findTestObject('Customer Module/Customer List/radio_Dealer'))
+
+WebUI.delay(5)
 
 WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerAccountNumber'), dealerAccountNumber)
 
@@ -47,10 +38,10 @@ WebUI.setText(findTestObject('Customer Module/Customer List/input_DealerComment'
 
 WebUI.click(findTestObject('Customer Module/Customer List/button_SaveTransferToDealer'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.verifyElementPresent(findTestObject('Customer Module/Customer List/successMsg-transfer has been requested succesfully'), 
-    0)
+    10)
 
 WebUI.click(findTestObject('Customer Module/Customer List/button-Close Payment Details Window'))
 
