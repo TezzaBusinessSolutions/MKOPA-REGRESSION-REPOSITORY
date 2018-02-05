@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test CaseID: 16666
+This Test case Verifies searching for a floating payment using Customer Receipt Number.
+Steps are as follows
+1. Identify the customer. These case will use KU87KDFUYDF as the receipt number
+2. Calling search for Payment test case
+TestCase ID: 16666</description>
+   <name>verify_Search for Floating payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8f78ce17-4af5-4ef3-aad2-460cadabdf8a</testCaseGuid>
+</TestCaseEntity>

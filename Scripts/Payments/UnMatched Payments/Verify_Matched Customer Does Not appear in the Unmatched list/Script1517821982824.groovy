@@ -19,27 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/UnMatched Payments/verify_Assign unmatched payments'), [('reference') : reference
+        , ('comments') : comments, ('customerAccount') : customerAccount, ('assignee') : assignee, ('productAccount') : productAccount
+        , ('dealerAccount') : dealerAccount], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/verify_Payment transfer (Customer-Customer)'), 
-    [('account') : account, ('paymentReceipt') : paymentReceipt, ('customerReference') : customerReference, ('payerComment') : payerComment], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.closeBrowser()
+WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Payments/Link-PaymentException'))
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Approve Cash Transfer'), [('requestorNotes') : requestorNotes
-        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerReference], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-UnmatchedPayment'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
+WebUI.verifyElementPresent(findTestObject('Payments Module/Unmatched Payments/text_UnMatched Payments'), 1)
 
-receipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
-
-WebUI.verifyEqual(receipt, paymentReceipt)
-
-WebUI.closeBrowser()
+WebUI.verifyTextNotPresent(reference, false)
 

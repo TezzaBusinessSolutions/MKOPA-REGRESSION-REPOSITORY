@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Payment transfer(Customer-Dealer)'), [('customerAccount') : customerAccount
+WebUI.callTestCase(findTestCase('Payments/Transfer Payment/verify_Payment transfer(Customer-Dealer)'), [('customerAccount') : customerAccount
         , ('paymentReceipt') : paymentReceipt, ('dealerAccountNumber') : dealerAccountNumber, ('comment') : comments, ('row') : row
         , ('account') : dealerAccountNumber], FailureHandling.STOP_ON_FAILURE)
 

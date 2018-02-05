@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID: 16726
+Ability to add comments on unmtched payments</description>
+   <name>Verify_Add Comments on unmatched payments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3eaadcdc-7e18-4bc7-b641-311824eeecfa</testCaseGuid>
+   <variable>
+      <defaultValue>'Sample Test'</defaultValue>
+      <description></description>
+      <id>327d87d5-c7b0-44e3-a228-3ae09b0664a0</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+   <variable>
+      <defaultValue>'5679079'</defaultValue>
+      <description></description>
+      <id>237efadd-a055-4c11-bb19-99694d4c6a71</id>
+      <masked>false</masked>
+      <name>reference</name>
+   </variable>
+</TestCaseEntity>

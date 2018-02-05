@@ -19,27 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Floating Payer Payment/step_Assign Floating Payment'), [('receiptNumber') : receiptNumber
+        , ('payerReference') : payerReference, ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/verify_Payment transfer (Customer-Customer)'), 
-    [('account') : account, ('paymentReceipt') : paymentReceipt, ('customerReference') : customerReference, ('payerComment') : payerComment], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Customer Module/Input-SearchForCustomer'), payerReference)
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Customer Module/IconBtn-Search'))
 
-WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(5)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Approve Cash Transfer'), [('requestorNotes') : requestorNotes
-        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Customer Module/Customer List/Radio_Paymentlist'))
 
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerReference], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Customer Module/Customer Profile/drop_CustomerPaymentHistoryLog_paymentDetails'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-
-receipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
-
-WebUI.verifyEqual(receipt, paymentReceipt)
-
-WebUI.closeBrowser()
+not_run: WebUI.verifyElementVisible(findTestObject('Customer Module/Customer Profile/msg_CustomerPaymentHistoryLog_Payments', 
+        [('receiptID') : receiptNumber]))
 

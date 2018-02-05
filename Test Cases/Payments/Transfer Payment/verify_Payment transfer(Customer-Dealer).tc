@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify_Payment transfer(Customer-Dealer)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fdf9ebc4-322e-42fa-800b-abe97a662058</testCaseGuid>
+   <variable>
+      <defaultValue>'12517586'</defaultValue>
+      <description></description>
+      <id>ab1a6869-bd05-4473-990a-f8524a48e29f</id>
+      <masked>false</masked>
+      <name>customerAccount</name>
+   </variable>
+   <variable>
+      <defaultValue>'QWRTE67T12189hdfffr'</defaultValue>
+      <description></description>
+      <id>3fce118b-5f84-4ca4-bdc5-0b0467d18c50</id>
+      <masked>false</masked>
+      <name>paymentReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'00046'</defaultValue>
+      <description></description>
+      <id>1a10cc09-e4d7-4416-b069-c3498a55d6c2</id>
+      <masked>false</masked>
+      <name>dealerAccountNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'Transferr has been requested'</defaultValue>
+      <description></description>
+      <id>0c91854a-9b0e-4910-b449-122037d90603</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>b5d9d4bb-3c5a-4c28-8642-1f090226b1eb</id>
+      <masked>false</masked>
+      <name>row</name>
+   </variable>
+   <variable>
+      <defaultValue>'K0877'</defaultValue>
+      <description></description>
+      <id>b9936da4-915d-41f6-b6cc-ae2ee98cd0c8</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+</TestCaseEntity>

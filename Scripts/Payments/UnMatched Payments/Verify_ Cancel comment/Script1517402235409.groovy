@@ -19,27 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/UnMatched Payments/step_Navigate to Unmatched Payments'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/verify_Payment transfer (Customer-Customer)'), 
-    [('account') : account, ('paymentReceipt') : paymentReceipt, ('customerReference') : customerReference, ('payerComment') : payerComment], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Info', [('reference') : reference]))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Payments Module/Unmatched Payments Details/link_AddComment'))
 
-WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Approve Cash Transfer'), [('requestorNotes') : requestorNotes
-        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Payments Module/Unmatched Payments Details/input_Comment'), comment)
 
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerReference], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments Module/Unmatched Payments Details/button_Cancel'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-
-receipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
-
-WebUI.verifyEqual(receipt, paymentReceipt)
-
-WebUI.closeBrowser()
+WebUI.verifyAlertNotPresent(2)
 

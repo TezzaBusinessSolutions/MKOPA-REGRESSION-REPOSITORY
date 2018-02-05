@@ -33,6 +33,6 @@ String success = 'A refund of KES 10.00 has been queued for approval'
 
 WebUI.verifyElementText(findTestObject('Customer Module/Customer List/message_RefundSuccessfull'), success)
 
-WebUI.callTestCase(findTestCase('Payments/Refund/verify_Customer Refund Approved'), [('accountNumber') : '24323310', ('approvalStatus') : 'Approved'
+WebUI.callTestCase(findTestCase('Payments/Refund Payments/verify_Customer Refund Approved'), [('accountNumber') : '24323310', ('approvalStatus') : 'Approved'
         , ('approvalNotes') : 'Account Approved', ('delay') : '5'], FailureHandling.STOP_ON_FAILURE)
 

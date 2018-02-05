@@ -36,6 +36,6 @@ WebUI.closeBrowser()
 
 WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Refund/verify_Customer Refund Approved'), [('accountNumber') : '344474', ('approvalStatus') : 'Approved'
+WebUI.callTestCase(findTestCase('Payments/Refund Payments/verify_Customer Refund Approved'), [('accountNumber') : '344474', ('approvalStatus') : 'Approved'
         , ('approvalNotes') : 'Account Approved', ('delay') : '5'], FailureHandling.STOP_ON_FAILURE)
 

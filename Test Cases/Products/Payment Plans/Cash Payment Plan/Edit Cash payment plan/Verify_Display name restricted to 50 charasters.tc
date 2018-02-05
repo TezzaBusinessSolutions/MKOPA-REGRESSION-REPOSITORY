@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID:35685
+display name field shoud only accept up to 50 charcters</description>
+   <name>Verify_Display name restricted to 50 charasters</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2d741c6-27bf-4220-bc26-864eb9545db4</testCaseGuid>
+   <variable>
+      <defaultValue>'Cash N2'</defaultValue>
+      <description></description>
+      <id>d64ba2e8-afc4-45f4-bad1-d9e5f0523051</id>
+      <masked>false</masked>
+      <name>editCashPaymentPlan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f2307ec9-0faf-43d9-a2b4-2cf9861c86de</id>
+      <masked>false</masked>
+      <name>displayNameGenerator</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4271493e-e56f-4975-a238-d77b4fa87427</id>
+      <masked>false</masked>
+      <name>displayNameGenerator1</name>
+   </variable>
+   <variable>
+      <defaultValue>'changed'</defaultValue>
+      <description></description>
+      <id>d1b4f287-ec2a-4e68-8f4e-ad836b4820a8</id>
+      <masked>false</masked>
+      <name>requestorNotes</name>
+   </variable>
+</TestCaseEntity>

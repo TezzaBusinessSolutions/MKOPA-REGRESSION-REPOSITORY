@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID: 16720
+A payment transfer request can be cancelled successfully</description>
+   <name>verify_Cancel Payment Transfer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>13572f82-e21a-4cc5-8743-815a38d568b1</testCaseGuid>
+   <variable>
+      <defaultValue>'2018-01-26 11:39:59'</defaultValue>
+      <description></description>
+      <id>b21ec66e-3e30-495b-9305-5917a5eac009</id>
+      <masked>false</masked>
+      <name>dateCreated</name>
+   </variable>
+   <variable>
+      <defaultValue>'cancelled'</defaultValue>
+      <description></description>
+      <id>acd717c5-43dc-41ad-b566-1d3e1cab2128</id>
+      <masked>false</masked>
+      <name>comments</name>
+   </variable>
+</TestCaseEntity>

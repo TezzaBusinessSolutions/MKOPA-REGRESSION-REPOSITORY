@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Transfer Payment Customer to Customer (i.e) Payer.
+
+Steps
+1. Search for Customer
+2. Customer Payment Info
+3. Transfer Payment Customer to Customer</description>
+   <name>verify_Payment transfer (Customer-Customer)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff573b69-ebb3-41b2-a7b9-5c2e775cb22e</testCaseGuid>
+   <variable>
+      <defaultValue>'30356495'</defaultValue>
+      <description></description>
+      <id>b6f0f1cf-598f-40f9-808f-28f079eb471d</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'LAA9R9SQLX'</defaultValue>
+      <description></description>
+      <id>5ddfc38d-6344-4d38-855c-d4526db61d78</id>
+      <masked>false</masked>
+      <name>paymentReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'28621706'</defaultValue>
+      <description></description>
+      <id>49ebaed6-a800-4c64-a6e4-3dc0f39a3d2f</id>
+      <masked>false</masked>
+      <name>customerReference</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have Transferred a Payment to your Account'</defaultValue>
+      <description></description>
+      <id>0ffb7684-bb36-4aa2-ba0a-906c1325689b</id>
+      <masked>false</masked>
+      <name>payerComment</name>
+   </variable>
+</TestCaseEntity>

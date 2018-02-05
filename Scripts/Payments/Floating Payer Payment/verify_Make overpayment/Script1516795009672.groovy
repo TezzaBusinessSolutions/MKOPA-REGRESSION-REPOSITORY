@@ -19,27 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
+        , ('Phone') : phoneNumber, ('filePath') : 'C:\\Users\\stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
+        , ('Comment') : 'Nice and paid on time', ('receiptNumber') : receiptNumber], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/verify_Payment transfer (Customer-Customer)'), 
-    [('account') : account, ('paymentReceipt') : paymentReceipt, ('customerReference') : customerReference, ('payerComment') : payerComment], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase('Payments/Floating Payer Payment/steps_Navigate to floating payments'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(6)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Approve Cash Transfer'), [('requestorNotes') : requestorNotes
-        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
+receiptText = WebUI.getText(findTestObject('Payments Module/Floating Payer Payments/text_receiptNumber', [('receiptNumber') : receiptNumber]))
 
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerReference], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyEqual(receiptText, receiptNumber)
+
+WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : account], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
 
-receipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
+WebUI.getText(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('depositReceipt') : depositReceipt]))
 
-WebUI.verifyEqual(receipt, paymentReceipt)
+WebUI.verifyNotEqual(depositReceipt, text)
 
 WebUI.closeBrowser()
 

@@ -19,27 +19,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Floating Payer Payment/step_Assign Floating Payment'), [('receiptNumber') : receiptNumber
+        , ('payerReference') : payerReference, ('comments') : comments, ('productAccount') : productAccount], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/verify_Payment transfer (Customer-Customer)'), 
-    [('account') : account, ('paymentReceipt') : paymentReceipt, ('customerReference') : customerReference, ('payerComment') : payerComment], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-Payments'))
 
-WebUI.closeBrowser()
+WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-CustomerPayments'))
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Approve Cash Transfer'), [('requestorNotes') : requestorNotes
-        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerReference], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page Header and Menu/Payments/Link-FloatingPayments'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-
-receipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
-
-WebUI.verifyEqual(receipt, paymentReceipt)
-
-WebUI.closeBrowser()
+WebUI.verifyTextNotPresent(receiptNumber, false)
 

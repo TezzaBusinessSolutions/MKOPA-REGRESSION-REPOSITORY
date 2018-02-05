@@ -19,27 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/UnMatched Payments/step_Navigate to Unmatched Payments'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/verify_Payment transfer (Customer-Customer)'), 
-    [('account') : account, ('paymentReceipt') : paymentReceipt, ('customerReference') : customerReference, ('payerComment') : payerComment], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments Module/Unmatched Payments/link_Assign', [('reference') : reference]))
 
-WebUI.closeBrowser()
+WebUI.check(findTestObject('Payments Module/Payment Exceptions- Assign Payments/radio_assignee', [('assignee') : assignee]))
 
-WebUI.callTestCase(findTestCase('Common/CheckerLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+if (assignee == 'dealer') {
+    WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Account Number'), dealerAccount)
 
-WebUI.callTestCase(findTestCase('Payments/Transfer Payment/steps_Approve Cash Transfer'), [('requestorNotes') : requestorNotes
-        , ('comments') : comments], FailureHandling.STOP_ON_FAILURE)
+    WebUI.setText(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Dealer Comments'), Comments)
+} else {
+    WebUI.sendKeys(findTestObject('Payments Module/Payment Exceptions- Assign Payments/input_Customer Reference'), customerAccount)
+}
 
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerReference], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments Module/Payment Exceptions- Assign Payments/button_Payer Resolve'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
+WebUI.verifyElementPresent(findTestObject('Payments Module/Payment Exceptions- Assign Payments/errorMsg_Please select valid payer acount'), 
+    2)
 
-receipt = WebUI.getText(findTestObject('Customer Module/Customer List/td_Receipt Number'))
-
-WebUI.verifyEqual(receipt, paymentReceipt)
-
-WebUI.closeBrowser()
+WebUI.verifyElementPresent(findTestObject('Payments Module/Payment Exceptions- Assign Payments/errorMsg_Please select valid product Account'), 
+    2)
 
