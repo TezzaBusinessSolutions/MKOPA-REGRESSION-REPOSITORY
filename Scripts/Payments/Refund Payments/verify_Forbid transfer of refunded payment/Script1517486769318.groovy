@@ -24,7 +24,7 @@ WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwang
 
 WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payments'), [('customerAccount') : customerAccount, ('depositReceipt') : depositReceipt
+WebUI.callTestCase(findTestCase('Common/steps_Refund Payments'), [('customerAccount') : customerAccount, ('depositReceipt') : depositReceipt
         , ('delay') : delay, ('customerSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_RefundPayment'), [('input_Notes') : refundNotes, ('errormessage') : 'Please fill in the request notes'

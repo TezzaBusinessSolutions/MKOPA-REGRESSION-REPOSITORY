@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Customer Module/Customer List/button_CreditsSent'))
 
 WebUI.closeBrowser()
 
-WebUI.callTestCase(findTestCase('Common/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account
+WebUI.callTestCase(findTestCase('Common/steps_Upload Payments File'), [('Amount') : amount, ('Account') : account
         , ('Phone') : phone, ('filePath') : 'C:\\Users\\dennis.gituto\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
         , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 

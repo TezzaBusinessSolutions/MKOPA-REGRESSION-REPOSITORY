@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>Test Data for Customer Payments Scripts</description>
+   <name>Customer Payments</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator>COMMA</csvSeperator>
+   <dataFileGUID>521c6da3-1e37-49e2-8b18-a64db689afd4</dataFileGUID>
+   <dataSourceUrl>C:\Users\dennis.gituto\git\MKOPA-REGRESSION-REPOSITORY\Data Files\Payments\Customer Payments\CustomerPayments.csv</dataSourceUrl>
+   <driver>CSV</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

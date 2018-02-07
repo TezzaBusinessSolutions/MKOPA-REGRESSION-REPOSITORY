@@ -20,6 +20,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 
-WebUI.callTestCase(findTestCase('Common/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : account, ('Phone') : phone
+WebUI.callTestCase(findTestCase('Common/steps_Upload Payments File'), [('Amount') : amount, ('Account') : account, ('Phone') : phone
         , ('Comment') : 'Nice and paid on time', ('receiptNumber') : null], FailureHandling.STOP_ON_FAILURE)
 
