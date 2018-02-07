@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Change the payment plan of a customer Awaiting screening. There should be no duplicates on the Customers awaiting Screening</description>
+   <name>verify_No duplicates on the Screening List</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d621d427-f58f-449b-98a1-ae06e32cb9fa</testCaseGuid>
+   <variable>
+      <defaultValue>'987898'</defaultValue>
+      <description></description>
+      <id>86e34dfa-8ebb-45af-8c05-da0a7f533061</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b7f95484-e55f-47c6-95e3-d261265f7d2c</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5e9dd996-e664-4485-a15c-8445fd34b847</id>
+      <masked>false</masked>
+      <name>plan</name>
+   </variable>
+</TestCaseEntity>

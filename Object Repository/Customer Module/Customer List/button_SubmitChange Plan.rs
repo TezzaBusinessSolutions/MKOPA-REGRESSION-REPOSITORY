@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>A drop down to select the dealership</description>
-   <name>Dropdown-Dealership</name>
+   <description></description>
+   <name>button_SubmitChange Plan</name>
    <tag></tag>
-   <elementGuidId>5019faf8-bbcf-4502-98c2-e47917c0fa02</elementGuidId>
+   <elementGuidId>004301ec-4d7b-46e1-96f1-7a0c0c3aa19b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='dealerCombo-input']</value>
+      <value>.//*[@id='submitChangePaymentPlanForm']</value>
    </webElementProperties>
 </WebElementEntity>

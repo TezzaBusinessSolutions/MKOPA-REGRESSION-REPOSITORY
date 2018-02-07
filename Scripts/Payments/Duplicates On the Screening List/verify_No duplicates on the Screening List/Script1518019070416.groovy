@@ -22,29 +22,35 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : '11118563'], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page Header and Menu/Customers/Link-Customer'))
+
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Page Header and Menu/Customers/link_Screening'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page Header and Menu/Customers/link_Customer Awaiting Screening'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Customer Module/Customers awaiting Screening/link_To Account', [('account') : account]))
 
 WebUI.mouseOver(findTestObject('Customer Module/Customer List/hamburger-Hamburger Menu'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Customer Module/Customer List/button_Change Plan'))
 
-WebUI.click(findTestObject('Customer Module/Customer List/button-Sell Add On'))
-
-WebUI.click(findTestObject('Customer Module/Sell Add On/Dropdown-Select'))
+WebUI.click(findTestObject('Customer Module/Customer List/dropdown_newPlanSelect'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Customer Module/Sell Add On/label_addon', [('addOn') : addOn]))
+WebUI.click(findTestObject('Customer Module/Customer List/select_newplanLabel', [('plan') : plan]))
 
-WebUI.setText(findTestObject('Customer Module/Sell Add On/input_Dealership'), '')
+WebUI.setText(findTestObject('Customer Module/Customer List/textaarea_Comment'), '')
 
-WebUI.click(findTestObject('Customer Module/Sell Add On/input_Dealership'))
+WebUI.click(findTestObject('Customer Module/Customer List/button_SubmitChange Plan'))
 
-WebUI.click(findTestObject('Customer Module/Sell Add On/Dropdown-Sale Outlet'))
+WebUI.verifyAlertPresent(20)
 
-WebUI.click(findTestObject('Customer Module/Sell Add On/Dropdown-Sale Operator'))
-
-WebUI.setText(findTestObject('Customer Module/Sell Add On/input-Comment'), '')
-
-WebUI.click(findTestObject('Customer Module/Sell Add On/Button-Sell'))
+WebUI.acceptAlert()
 

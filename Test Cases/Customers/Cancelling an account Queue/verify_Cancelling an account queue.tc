@@ -9,4 +9,18 @@ The Credits Change and Addiotional Credits reflect</description>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fa2cea92-938a-47b2-ba79-2b03cad34675</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>795e4637-e883-496a-b0df-7144916ace7b</id>
+      <masked>false</masked>
+      <name>addOn</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dc9fbdb6-15c3-4048-a31a-b0d938876697</id>
+      <masked>false</masked>
+      <name>dealership</name>
+   </variable>
 </TestCaseEntity>
