@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Test case ID 16629</description>
-   <name>Verify_Customer Sms is Created On Incoming Payment</name>
+   <name>verify_ Customer Sms is Created On Incoming Payment</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>90d7e376-3371-4f2b-bc9a-c72e26536e01</testCaseGuid>

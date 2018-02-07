@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify_Amount Deposited is Reflected In payment Info</name>
+   <name>verify_ Amount Deposited is Reflected In payment Info</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>054762ba-7568-4062-974e-3ccffe0207c8</testCaseGuid>

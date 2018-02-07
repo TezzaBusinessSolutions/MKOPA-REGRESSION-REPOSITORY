@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Verify after uploading the payment the credits are updated</description>
-   <name>Verify-Payment for an existing Customer or Phone Number via M-pesa updates the credits</name>
+   <name>verify- Payment for an existing Customer or Phone Number via M-pesa updates the credits</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>bda4cca7-f16c-4bb7-946f-4e6b98709fb0</testCaseGuid>

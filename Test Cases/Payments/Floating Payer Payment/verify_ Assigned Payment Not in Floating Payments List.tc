@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify_Assigned Payment Not in Floating Payments List</name>
+   <name>verify_ Assigned Payment Not in Floating Payments List</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>763fb9c7-55cf-4d97-8de4-6a5194384b2d</testCaseGuid>

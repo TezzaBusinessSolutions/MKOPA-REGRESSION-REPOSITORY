@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID:16691</description>
+   <name>verify_TimeStamp Inconsistencies</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1ddbafa-286c-4653-a6b6-9bd10aaac2a2</testCaseGuid>
+   <variable>
+      <defaultValue>'VBO5ERERV7'</defaultValue>
+      <description></description>
+      <id>b49c0324-5d7e-4746-9ea0-a74fa6906a82</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+</TestCaseEntity>

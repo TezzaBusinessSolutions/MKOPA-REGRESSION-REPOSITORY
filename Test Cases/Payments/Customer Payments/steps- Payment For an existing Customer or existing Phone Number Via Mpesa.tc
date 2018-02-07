@@ -3,7 +3,7 @@
    <description>Pick a customer In Payment
 Note his Credits
 Make A payment via Mpesa</description>
-   <name>Steps-Payment For an existing Customer or existing Phone Number Via Mpesa</name>
+   <name>steps- Payment For an existing Customer or existing Phone Number Via Mpesa</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>16ac745e-d923-4660-96f8-60968c6d41d4</testCaseGuid>
