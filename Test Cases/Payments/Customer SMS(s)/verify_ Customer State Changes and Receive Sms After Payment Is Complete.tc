@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Verify that the customer moves from in payment to finished payment state and a sms is reflected in the payment history</description>
-   <name>Verify_Customer State Changes and Receive Sms After Payment Is Complete</name>
+   <name>verify_ Customer State Changes and Receive Sms After Payment Is Complete</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0ea45b25-8e53-41db-81a6-3e82f17ea88c</testCaseGuid>
