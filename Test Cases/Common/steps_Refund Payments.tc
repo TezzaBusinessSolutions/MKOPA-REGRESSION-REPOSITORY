@@ -3,7 +3,7 @@
    <description>The test case:
 1. Refunds a customer
 2. Approves a refunded account</description>
-   <name>Step_Refund Payments</name>
+   <name>steps_Refund Payments</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ca526f66-ac62-47b5-8fde-7240ed34a379</testCaseGuid>

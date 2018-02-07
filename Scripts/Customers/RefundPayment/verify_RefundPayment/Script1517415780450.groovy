@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Step_Refund Payments'), [('customerAccount') : '27360571', ('depositReceipt') : 'KDG2J25T4I'
+WebUI.callTestCase(findTestCase('Common/steps_Refund Payments'), [('customerAccount') : '27360571', ('depositReceipt') : 'KDG2J25T4I'
         , ('delay') : '5', ('customerSearch') : '30990522'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.comment('Customer Refund Using Valid Credentials')

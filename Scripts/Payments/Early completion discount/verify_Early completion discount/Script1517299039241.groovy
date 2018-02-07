@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Payments/Early completion discount/steps_ View 
         , ('discount') : discount], FailureHandling.STOP_ON_FAILURE)
 
 <<<<<<< HEAD
-WebUI.callTestCase(findTestCase('Common/Steps-Upload Payments File'), [('Amount') : amount, ('Account') : customerAccount
+WebUI.callTestCase(findTestCase('Common/steps_Upload Payments File'), [('Amount') : amount, ('Account') : customerAccount
         , ('Phone') : phoneNumber, ('filePath') : 'C:\\Users\\stellah.ireri\\git\\MKOPA-REGRESSION-REPOSITORY\\Payment Files\\payments.csv'
         , ('Comment') : 'Nice and paid on time', ('tagged') : '', ('blankComment') : '', ('blankTag') : ''], FailureHandling.STOP_ON_FAILURE)
 =======

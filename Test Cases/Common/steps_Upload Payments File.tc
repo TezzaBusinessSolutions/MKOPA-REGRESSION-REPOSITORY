@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Verify one can Upload a Payment File, The Payment file should be Formatted Correctly</description>
-   <name>Steps-Upload Payments File</name>
+   <name>steps_Upload Payments File</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b6e2d17c-ccf7-4f92-8b9a-a1c88b28951d</testCaseGuid>

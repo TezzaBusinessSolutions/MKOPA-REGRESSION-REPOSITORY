@@ -19,27 +19,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/UserLogin'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : 'Kennedy.Mwangi@m-kopa.com', ('Password') : 'Ken0726//'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('Common/Search For Customer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/steps_Refund Payments'), [('customerAccount') : customerAccount, ('depositReceipt') : depositReceipt
-        , ('delay') : delay, ('customerSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Customers/RefundPayment/verify_RefundPayment'), [('input_Notes') : refundNotes, ('errormessage') : 'Please fill in the request notes'
-        , ('inputNotes') : '', ('inputAmount') : amount, ('error') : 'A value is required.', ('depositReceipt') : depositReceipt
-        , ('delay') : delay, ('customerSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(3)
-
-WebUI.callTestCase(findTestCase('Common/step_SearchCustomer'), [('customerToSearch') : customerAccount], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Customer Module/Customer List/hamburger-Hamburger Menu'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Customer Module/Customer List/image_MorePaymentInformation'))
-
-WebUI.click(findTestObject('Customer Module/Customer List/link_CustomerPaymentReceipt', [('paymentReceipt') : depositReceipt]))
-
-WebUI.verifyElementText(findTestObject('Customer Module/Customer List/label_Status', [('status') : status]), status)
+WebUI.click(findTestObject('Customer Module/Customer List/button-Sell Add On'))
 
